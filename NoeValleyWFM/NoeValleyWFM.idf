@@ -1,0 +1,1651 @@
+!-Generator IDFEditor 1.48
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: VERSION ===========
+
+Version,
+    8.5.0;                   !- Version Identifier
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SIMULATIONCONTROL ===========
+
+SimulationControl,
+    No,                      !- Do Zone Sizing Calculation
+    No,                      !- Do System Sizing Calculation
+    No,                      !- Do Plant Sizing Calculation
+    No,                      !- Run Simulation for Sizing Periods
+    Yes,                     !- Run Simulation for Weather File Run Periods
+    No,                      !- Do HVAC Sizing Simulation for Sizing Periods
+    1;                       !- Maximum Number of HVAC Sizing Simulation Passes
+
+
+!-   ===========  ALL OBJECTS IN CLASS: BUILDING ===========
+
+Building,
+    NoeValleyWFM.idf,        !- Name
+    356.17264763262676,      !- North Axis {deg}
+    City,                    !- Terrain
+    0.04,                    !- Loads Convergence Tolerance Value
+    0.4,                     !- Temperature Convergence Tolerance Value {deltaC}
+    FullInteriorAndExteriorWithReflections,  !- Solar Distribution
+    25,                      !- Maximum Number of Warmup Days
+    6;                       !- Minimum Number of Warmup Days
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SHADOWCALCULATION ===========
+
+ShadowCalculation,
+    AverageOverDaysInFrequency,  !- Calculation Method
+    30,                      !- Calculation Frequency
+    3000,                    !- Maximum Figures in Shadow Overlap Calculations
+    ConvexWeilerAtherton,    !- Polygon Clipping Algorithm
+    DetailedSkyDiffuseModeling;  !- Sky Diffuse Modeling Algorithm
+
+
+!-   ===========  ALL OBJECTS IN CLASS: TIMESTEP ===========
+
+Timestep,
+    6;                       !- Number of Timesteps per Hour
+
+
+!-   ===========  ALL OBJECTS IN CLASS: PROGRAMCONTROL ===========
+
+ProgramControl,
+    4;                       !- Number of Threads Allowed
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SITE:LOCATION ===========
+
+!Latitude
+!Longitude
+!Time Zone
+!Elevation
+Site:Location,
+    3950 24th St,            !- Name
+    37.752,                  !- Latitude {deg}
+    -122.431,                !- Longitude {deg}
+    -8,                      !- Time Zone {hr}
+    5;                       !- Elevation {m}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: RUNPERIOD ===========
+
+RunPeriod,
+    AnnualSimulation,        !- Name
+    1,                       !- Begin Month
+    1,                       !- Begin Day of Month
+    12,                      !- End Month
+    31,                      !- End Day of Month
+    UseWeatherFile,          !- Day of Week for Start Day
+    Yes,                     !- Use Weather File Holidays and Special Days
+    Yes,                     !- Use Weather File Daylight Saving Period
+    Yes,                     !- Apply Weekend Holiday Rule
+    Yes,                     !- Use Weather File Rain Indicators
+    Yes,                     !- Use Weather File Snow Indicators
+    1,                       !- Number of Times Runperiod to be Repeated
+    Yes,                     !- Increment Day of Week on repeat
+    2016;                    !- Start Year
+
+
+!-   ===========  ALL OBJECTS IN CLASS: MATERIAL ===========
+
+Material,
+    Acoustic Tile,           !- Name
+    MediumSmooth,            !- Roughness
+    0.0191,                  !- Thickness {m}
+    0.06,                    !- Conductivity {W/m-K}
+    368,                     !- Density {kg/m3}
+    590.000000000002,        !- Specific Heat {J/kg-K}
+    0.9,                     !- Thermal Absorptance
+    0.3,                     !- Solar Absorptance
+    0.3;                     !- Visible Absorptance
+
+Material,
+    Concrete_lightweight,    !- Name
+    MediumRough,             !- Roughness
+    0.1016,                  !- Thickness {m}
+    0.53,                    !- Conductivity {W/m-K}
+    1280,                    !- Density {kg/m3}
+    840.000000000002,        !- Specific Heat {J/kg-K}
+    0.9,                     !- Thermal Absorptance
+    0.5,                     !- Solar Absorptance
+    0.5;                     !- Visible Absorptance
+
+Material,
+    Brick,                   !- Name
+    MediumRough,             !- Roughness
+    0.1016,                  !- Thickness {m}
+    0.89,                    !- Conductivity {W/m-K}
+    1920,                    !- Density {kg/m3}
+    790,                     !- Specific Heat {J/kg-K}
+    0.9,                     !- Thermal Absorptance
+    0.7,                     !- Solar Absorptance
+    0.7;                     !- Visible Absorptance
+
+Material,
+    Concrete_Heavyweight,    !- Name
+    MediumRough,             !- Roughness
+    0.2032,                  !- Thickness {m}
+    1.95,                    !- Conductivity {W/m-K}
+    2240,                    !- Density {kg/m3}
+    900,                     !- Specific Heat {J/kg-K}
+    0.9,                     !- Thermal Absorptance
+    0.7,                     !- Solar Absorptance
+    0.7;                     !- Visible Absorptance
+
+Material,
+    Insulation_Rigid,        !- Name
+    MediumRough,             !- Roughness
+    0.0508,                  !- Thickness {m}
+    0.03,                    !- Conductivity {W/m-K}
+    43,                      !- Density {kg/m3}
+    1210,                    !- Specific Heat {J/kg-K}
+    0.9,                     !- Thermal Absorptance
+    0.7,                     !- Solar Absorptance
+    0.7;                     !- Visible Absorptance
+
+Material,
+    Gypsum,                  !- Name
+    MediumSmooth,            !- Roughness
+    0.019,                   !- Thickness {m}
+    0.16,                    !- Conductivity {W/m-K}
+    800,                     !- Density {kg/m3}
+    1090,                    !- Specific Heat {J/kg-K}
+    0.9,                     !- Thermal Absorptance
+    0.4,                     !- Solar Absorptance
+    0.4;                     !- Visible Absorptance
+
+
+!-   ===========  ALL OBJECTS IN CLASS: MATERIAL:AIRGAP ===========
+
+Material:AirGap,
+    AirGap,                  !- Name
+    0.18;                    !- Thermal Resistance {m2-K/W}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: CONSTRUCTION ===========
+
+Construction,
+    Floor_Ground,            !- Name
+    F16 Acoustic tile,       !- Outside Layer
+    F05 Ceiling air space resistance,  !- Layer 2
+    M11 100mm lightweight concrete;  !- Layer 3
+
+Construction,
+    Floor_Interior,          !- Name
+    F16 Acoustic tile,       !- Outside Layer
+    F05 Ceiling air space resistance,  !- Layer 2
+    M11 100mm lightweight concrete;  !- Layer 3
+
+Construction,
+    Wall_Exterior,           !- Name
+    M01 100mm brick,         !- Outside Layer
+    M15 200mm heavyweight concrete,  !- Layer 2
+    I02 50mm insulation board,  !- Layer 3
+    F04 Wall air space resistance,  !- Layer 4
+    G01a 19mm gypsum board;  !- Layer 5
+
+Construction,
+    Wall_Interior,           !- Name
+    M01 100mm brick,         !- Outside Layer
+    M15 200mm heavyweight concrete,  !- Layer 2
+    I02 50mm insulation board,  !- Layer 3
+    F04 Wall air space resistance,  !- Layer 4
+    G01a 19mm gypsum board;  !- Layer 5
+
+Construction,
+    Roof_Sales,              !- Name
+    M11 100mm lightweight concrete,  !- Outside Layer
+    F05 Ceiling air space resistance,  !- Layer 2
+    F16 Acoustic tile;       !- Layer 3
+
+Construction,
+    Roof_BOH,                !- Name
+    M11 100mm lightweight concrete,  !- Outside Layer
+    F05 Ceiling air space resistance,  !- Layer 2
+    F16 Acoustic tile;       !- Layer 3
+
+
+!-   ===========  ALL OBJECTS IN CLASS: GLOBALGEOMETRYRULES ===========
+
+GlobalGeometryRules,
+    LowerLeftCorner,         !- Starting Vertex Position
+    CounterClockWise,        !- Vertex Entry Direction
+    Relative,                !- Coordinate System
+    Relative,                !- Daylighting Reference Point Coordinate System
+    Relative;                !- Rectangular Surface Coordinate System
+
+
+!-   ===========  ALL OBJECTS IN CLASS: ZONE ===========
+
+Zone,
+    L1-126-BakeryService,    !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    ,                        !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    _Dup,                    !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    _Dup_Dup,                !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    _Dup_Dup_Dup,            !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S2-AislesWest,         !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S2-LoadingBOH,         !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S2-Shaft,              !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S2-Checkout,           !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S2-Bakery,             !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S2-AislesEast,         !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S2-ReachInPrepared,    !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S2-Shaft2,             !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    _Dup_Dup_Dup_Dup,        !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    _Dup_Dup_Dup_Dup_Dup,    !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L2-201-Walkins,          !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L2-201-Storage,          !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-158-BreakRoom,         !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L2-201-ExgStorage,       !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-161-Men,               !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-159-ExgVest,           !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-201-ExgStorage,        !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-152-MDF,               !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-PreparedFoods,      !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-Coffee,             !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-127-Coffee,           !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-117-SeafoodSurface,   !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-116-MeatService,      !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-111-GroceryFreezer,   !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-108-ProduceCooler,    !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-106-ReceivingTransformers2,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-102-ReceivingOffice,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-113-BeerCage,         !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-114-Backstock,        !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-102-Exit,             !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-Shaft,                !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-102-SelfCheckout,     !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-EntranceExit,     !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-104-ProduceCoolers1,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-104-ProduceCoolers3,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationReachInBeer,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationReachInMeatSubstitutes,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-102-Checkout4,        !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-102-Checkout3,        !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-102-Checkout2,        !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-102-Checkout1,        !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-103-Floral,           !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-102-CheckoutBagging,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesAisle1,      !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesAisle3,      !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationEndcap2,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-104-Produce,          !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationEndcap3,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesWine,        !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-124-SpecialtyService, !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesCirculation6,!- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationReachInBeverages,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-104-ProduceCirculation,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationAisle6,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-125-PreparedFoods1,   !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-125-PreparedFoods2,   !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesCirculation7,!- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesAisle10,     !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationAisle7,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesAisle9,      !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationAisle4,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationAisle3,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationAisle2,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationEndcap1,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationAisle1,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesCirculation2,!- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesAisle4,      !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesAisle5,      !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesAisle6,      !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesAisle7,      !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesAisle8,      !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesCirculation4,!- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationAisle5,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesAisle2,      !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationReachInDairy2,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesAisleBulk,   !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationReachInDairy3,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesCirculation3,!- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesCirculationMeatSeafood,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesCirculation1,!- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationReachInChees,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationReachInPrepared,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesCirculation5,!- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesCirculation8,!- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesCirculation9,!- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesCirculation10,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-101-SalesRefrigerationReachInDairy1,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-104-ProduceCoolers2,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-115-MeatSeafoodCooler,!- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-121-Men,              !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-118-PreparedFoodsPrep,!- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-120-Women,            !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-119-DeliCooler,       !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-122-Corridor,         !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-123-Stairs,           !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-109-Corridor,         !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-110-ProducePrep,      !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-Stairs,               !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-112-DairyCooler,      !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1-106-Receiving,        !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-SeafoodSurface,     !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-SalesRefrigerationReachPrepared,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-SalesSouth,         !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-SalesRefrigerationAisle6,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-Loading,            !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-SalesRefrigerationReachInDairy2,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-Produce,            !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-SalesAisle1,        !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-SalesNorth,         !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-SpecialtyService,   !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-Checkout,           !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-SalesAisle4,        !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-BeerCage,           !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-Backstock,          !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-Shaft,              !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-MeatSeafoodCooler,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-Men,                !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-PreparedFoodsPrep,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-Women,              !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-DeliCooler,         !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-Corridor,           !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-Stairs,             !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L1S1-DairyCooler,        !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-162-PrepRoom,          !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-BakeryFreezer,         !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-163-MeatPrep,          !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-123-Stairs,            !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-151-Stairs1,           !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-ExgWomen,              !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-157-ExgOffice,         !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-156-StlOffice,         !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-155-ExgOffice,         !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-154-ExgOffice,         !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-153-CashRoom,          !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    M-164-MeatCooler,        !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L2-205-RefrigerationEquipmentRoomUpper,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L2-201-Corridor,         !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L2-205-RefrigerationEquipmentRoomLower,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+Zone,
+    L2-201-Stairs1,          !- Name
+    0,                       !- Direction of Relative North {deg}
+    0.0,                     !- X Origin {m}
+    0.0,                     !- Y Origin {m}
+    0.0,                     !- Z Origin {m}
+    1;                       !- Type
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SHADING:BUILDING:DETAILED ===========
+
+Shading:Building:Detailed,
+    shdSrf_0_0_b922e86a-5c89-48c7-9245-f2ddeac1f852_0,  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    67.446853637695313,      !- Vertex 1 X-coordinate {m}
+    23.874208450317383,      !- Vertex 1 Y-coordinate {m}
+    2.0888099670410156,      !- Vertex 1 Z-coordinate {m}
+    67.446853637695313,      !- Vertex 2 X-coordinate {m}
+    25.877519607543945,      !- Vertex 2 Y-coordinate {m}
+    2.0888099670410156,      !- Vertex 2 Z-coordinate {m}
+    69.155952453613281,      !- Vertex 3 X-coordinate {m}
+    25.877519607543945,      !- Vertex 3 Y-coordinate {m}
+    2.0888099670410156,      !- Vertex 3 Z-coordinate {m}
+    69.155952453613281,      !- Vertex 4 X-coordinate {m}
+    23.874208450317383,      !- Vertex 4 Y-coordinate {m}
+    2.0888099670410156;      !- Vertex 4 Z-coordinate {m}
+
+Shading:Building:Detailed,
+    shdSrf_1_0_dab333b1-049b-4f56-8baa-e6dbb4e39894_0,  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    54.105430603027344,      !- Vertex 1 X-coordinate {m}
+    23.874208450317383,      !- Vertex 1 Y-coordinate {m}
+    2.0888099670410156,      !- Vertex 1 Z-coordinate {m}
+    54.105430603027344,      !- Vertex 2 X-coordinate {m}
+    25.877519607543945,      !- Vertex 2 Y-coordinate {m}
+    2.0888099670410156,      !- Vertex 2 Z-coordinate {m}
+    56.793838500976563,      !- Vertex 3 X-coordinate {m}
+    25.877519607543945,      !- Vertex 3 Y-coordinate {m}
+    2.0888099670410156,      !- Vertex 3 Z-coordinate {m}
+    56.793838500976563,      !- Vertex 4 X-coordinate {m}
+    23.874208450317383,      !- Vertex 4 Y-coordinate {m}
+    2.0888099670410156;      !- Vertex 4 Z-coordinate {m}
+
+Shading:Building:Detailed,
+    shdSrf_2_0_807f0eb4-6820-4f4a-bb66-1c49caf7e3ef_0,  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    38.221920013427734,      !- Vertex 1 X-coordinate {m}
+    23.878410339355469,      !- Vertex 1 Y-coordinate {m}
+    2.8194000720977783,      !- Vertex 1 Z-coordinate {m}
+    38.221920013427734,      !- Vertex 2 X-coordinate {m}
+    25.877519607543945,      !- Vertex 2 Y-coordinate {m}
+    2.8194000720977783,      !- Vertex 2 Z-coordinate {m}
+    58.946918487548828,      !- Vertex 3 X-coordinate {m}
+    25.877519607543945,      !- Vertex 3 Y-coordinate {m}
+    5.715000152587891,       !- Vertex 3 Z-coordinate {m}
+    58.946918487548828,      !- Vertex 4 X-coordinate {m}
+    23.878839492797852,      !- Vertex 4 Y-coordinate {m}
+    5.715000152587891;       !- Vertex 4 Z-coordinate {m}
+
+Shading:Building:Detailed,
+    shdSrf_3_0_5cc553ef-33b6-4ca4-adef-c297666f0745_0,  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    58.946918487548828,      !- Vertex 1 X-coordinate {m}
+    23.878839492797852,      !- Vertex 1 Y-coordinate {m}
+    5.715000152587891,       !- Vertex 1 Z-coordinate {m}
+    58.946918487548828,      !- Vertex 2 X-coordinate {m}
+    25.877519607543945,      !- Vertex 2 Y-coordinate {m}
+    5.715000152587891,       !- Vertex 2 Z-coordinate {m}
+    79.674720764160156,      !- Vertex 3 X-coordinate {m}
+    25.877519607543945,      !- Vertex 3 Y-coordinate {m}
+    2.8194000720977783,      !- Vertex 3 Z-coordinate {m}
+    79.674720764160156,      !- Vertex 4 X-coordinate {m}
+    23.881706237792969,      !- Vertex 4 Y-coordinate {m}
+    2.8194000720977783;      !- Vertex 4 Z-coordinate {m}
+
+Shading:Building:Detailed,
+    shdSrf_4_0_f275eaf8-4a8f-4862-9fe6-0748eb272513_0,  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    -34.700000762939453,     !- Vertex 1 X-coordinate {m}
+    40.0,                    !- Vertex 1 Y-coordinate {m}
+    0.0,                     !- Vertex 1 Z-coordinate {m}
+    -34.700000762939453,     !- Vertex 2 X-coordinate {m}
+    61.782958984375,         !- Vertex 2 Y-coordinate {m}
+    0.0,                     !- Vertex 2 Z-coordinate {m}
+    35.400001525878906,      !- Vertex 3 X-coordinate {m}
+    61.782958984375,         !- Vertex 3 Y-coordinate {m}
+    0.0,                     !- Vertex 3 Z-coordinate {m}
+    35.400001525878906,      !- Vertex 4 X-coordinate {m}
+    40.0,                    !- Vertex 4 Y-coordinate {m}
+    0.0;                     !- Vertex 4 Z-coordinate {m}
+
+Shading:Building:Detailed,
+    shdSrf_4_1_6c6c87cb-7888-4b3a-bf29-fa707f1afe72_0,  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    35.400001525878906,      !- Vertex 1 X-coordinate {m}
+    40.0,                    !- Vertex 1 Y-coordinate {m}
+    0.0,                     !- Vertex 1 Z-coordinate {m}
+    35.400001525878906,      !- Vertex 2 X-coordinate {m}
+    61.782958984375,         !- Vertex 2 Y-coordinate {m}
+    0.0,                     !- Vertex 2 Z-coordinate {m}
+    35.400001525878906,      !- Vertex 3 X-coordinate {m}
+    61.782958984375,         !- Vertex 3 Y-coordinate {m}
+    15.239999771118164,      !- Vertex 3 Z-coordinate {m}
+    35.400001525878906,      !- Vertex 4 X-coordinate {m}
+    40.0,                    !- Vertex 4 Y-coordinate {m}
+    15.239999771118164;      !- Vertex 4 Z-coordinate {m}
+
+Shading:Building:Detailed,
+    shdSrf_4_2_42bd58d2-80e2-4426-81da-bab87c6313b7_0,  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    -34.700000762939453,     !- Vertex 1 X-coordinate {m}
+    40.0,                    !- Vertex 1 Y-coordinate {m}
+    0.0,                     !- Vertex 1 Z-coordinate {m}
+    35.400001525878906,      !- Vertex 2 X-coordinate {m}
+    40.0,                    !- Vertex 2 Y-coordinate {m}
+    0.0,                     !- Vertex 2 Z-coordinate {m}
+    35.400001525878906,      !- Vertex 3 X-coordinate {m}
+    40.0,                    !- Vertex 3 Y-coordinate {m}
+    15.239999771118164,      !- Vertex 3 Z-coordinate {m}
+    -34.700000762939453,     !- Vertex 4 X-coordinate {m}
+    40.0,                    !- Vertex 4 Y-coordinate {m}
+    15.239999771118164;      !- Vertex 4 Z-coordinate {m}
+
+Shading:Building:Detailed,
+    shdSrf_4_3_b11150a8-a189-479e-aab6-5d62005dc46b_0,  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    -34.700000762939453,     !- Vertex 1 X-coordinate {m}
+    61.782958984375,         !- Vertex 1 Y-coordinate {m}
+    0.0,                     !- Vertex 1 Z-coordinate {m}
+    -34.700000762939453,     !- Vertex 2 X-coordinate {m}
+    40.0,                    !- Vertex 2 Y-coordinate {m}
+    0.0,                     !- Vertex 2 Z-coordinate {m}
+    -34.700000762939453,     !- Vertex 3 X-coordinate {m}
+    40.0,                    !- Vertex 3 Y-coordinate {m}
+    15.239999771118164,      !- Vertex 3 Z-coordinate {m}
+    -34.700000762939453,     !- Vertex 4 X-coordinate {m}
+    61.782958984375,         !- Vertex 4 Y-coordinate {m}
+    15.239999771118164;      !- Vertex 4 Z-coordinate {m}
+
+Shading:Building:Detailed,
+    shdSrf_4_4_76a926dc-f92f-4884-98c4-46ec21ba3687_0,  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    35.400001525878906,      !- Vertex 1 X-coordinate {m}
+    61.782958984375,         !- Vertex 1 Y-coordinate {m}
+    0.0,                     !- Vertex 1 Z-coordinate {m}
+    -34.700000762939453,     !- Vertex 2 X-coordinate {m}
+    61.782958984375,         !- Vertex 2 Y-coordinate {m}
+    0.0,                     !- Vertex 2 Z-coordinate {m}
+    -34.700000762939453,     !- Vertex 3 X-coordinate {m}
+    61.782958984375,         !- Vertex 3 Y-coordinate {m}
+    15.239999771118164,      !- Vertex 3 Z-coordinate {m}
+    35.400001525878906,      !- Vertex 4 X-coordinate {m}
+    61.782958984375,         !- Vertex 4 Y-coordinate {m}
+    15.239999771118164;      !- Vertex 4 Z-coordinate {m}
+
+Shading:Building:Detailed,
+    shdSrf_4_5_11587e88-bb64-4b09-8d49-7bffeea476ba_0,  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    -34.700000762939453,     !- Vertex 1 X-coordinate {m}
+    40.0,                    !- Vertex 1 Y-coordinate {m}
+    15.239999771118164,      !- Vertex 1 Z-coordinate {m}
+    35.400001525878906,      !- Vertex 2 X-coordinate {m}
+    40.0,                    !- Vertex 2 Y-coordinate {m}
+    15.239999771118164,      !- Vertex 2 Z-coordinate {m}
+    35.400001525878906,      !- Vertex 3 X-coordinate {m}
+    61.782958984375,         !- Vertex 3 Y-coordinate {m}
+    15.239999771118164,      !- Vertex 3 Z-coordinate {m}
+    -34.700000762939453,     !- Vertex 4 X-coordinate {m}
+    61.782958984375,         !- Vertex 4 Y-coordinate {m}
+    15.239999771118164;      !- Vertex 4 Z-coordinate {m}
+
+Shading:Building:Detailed,
+    shdSrf_5_0_d432ca66-8b5b-466e-b6b7-9e768ca199cc_0,  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    82.5999984741211,        !- Vertex 1 X-coordinate {m}
+    40.0,                    !- Vertex 1 Y-coordinate {m}
+    0.0,                     !- Vertex 1 Z-coordinate {m}
+    82.5999984741211,        !- Vertex 2 X-coordinate {m}
+    61.782958984375,         !- Vertex 2 Y-coordinate {m}
+    0.0,                     !- Vertex 2 Z-coordinate {m}
+    150.30000305175781,      !- Vertex 3 X-coordinate {m}
+    61.782958984375,         !- Vertex 3 Y-coordinate {m}
+    0.0,                     !- Vertex 3 Z-coordinate {m}
+    150.30000305175781,      !- Vertex 4 X-coordinate {m}
+    40.0,                    !- Vertex 4 Y-coordinate {m}
+    0.0;                     !- Vertex 4 Z-coordinate {m}
+
+Shading:Building:Detailed,
+    shdSrf_5_1_ee29fc3e-e695-4d6e-b3db-fffdc8337d4f_0,  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    82.5999984741211,        !- Vertex 1 X-coordinate {m}
+    61.782958984375,         !- Vertex 1 Y-coordinate {m}
+    0.0,                     !- Vertex 1 Z-coordinate {m}
+    82.5999984741211,        !- Vertex 2 X-coordinate {m}
+    40.0,                    !- Vertex 2 Y-coordinate {m}
+    0.0,                     !- Vertex 2 Z-coordinate {m}
+    82.5999984741211,        !- Vertex 3 X-coordinate {m}
+    40.0,                    !- Vertex 3 Y-coordinate {m}
+    15.239999771118164,      !- Vertex 3 Z-coordinate {m}
+    82.5999984741211,        !- Vertex 4 X-coordinate {m}
+    61.782958984375,         !- Vertex 4 Y-coordinate {m}
+    15.239999771118164;      !- Vertex 4 Z-coordinate {m}
+
+Shading:Building:Detailed,
+    shdSrf_5_2_1ee37058-9127-450b-8919-2e22931ebcd0_0,  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    82.5999984741211,        !- Vertex 1 X-coordinate {m}
+    40.0,                    !- Vertex 1 Y-coordinate {m}
+    0.0,                     !- Vertex 1 Z-coordinate {m}
+    150.30000305175781,      !- Vertex 2 X-coordinate {m}
+    40.0,                    !- Vertex 2 Y-coordinate {m}
+    0.0,                     !- Vertex 2 Z-coordinate {m}
+    150.30000305175781,      !- Vertex 3 X-coordinate {m}
+    40.0,                    !- Vertex 3 Y-coordinate {m}
+    15.239999771118164,      !- Vertex 3 Z-coordinate {m}
+    82.5999984741211,        !- Vertex 4 X-coordinate {m}
+    40.0,                    !- Vertex 4 Y-coordinate {m}
+    15.239999771118164;      !- Vertex 4 Z-coordinate {m}
+
+Shading:Building:Detailed,
+    shdSrf_5_3_dcaa9b8a-8181-4327-849f-dd1de52bfa5f_0,  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    150.30000305175781,      !- Vertex 1 X-coordinate {m}
+    40.0,                    !- Vertex 1 Y-coordinate {m}
+    0.0,                     !- Vertex 1 Z-coordinate {m}
+    150.30000305175781,      !- Vertex 2 X-coordinate {m}
+    61.782958984375,         !- Vertex 2 Y-coordinate {m}
+    0.0,                     !- Vertex 2 Z-coordinate {m}
+    150.30000305175781,      !- Vertex 3 X-coordinate {m}
+    61.782958984375,         !- Vertex 3 Y-coordinate {m}
+    15.239999771118164,      !- Vertex 3 Z-coordinate {m}
+    150.30000305175781,      !- Vertex 4 X-coordinate {m}
+    40.0,                    !- Vertex 4 Y-coordinate {m}
+    15.239999771118164;      !- Vertex 4 Z-coordinate {m}
+
+Shading:Building:Detailed,
+    shdSrf_5_4_af57a0df-12f6-4c92-bfc1-47de072ce793_0,  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    150.30000305175781,      !- Vertex 1 X-coordinate {m}
+    61.782958984375,         !- Vertex 1 Y-coordinate {m}
+    0.0,                     !- Vertex 1 Z-coordinate {m}
+    82.5999984741211,        !- Vertex 2 X-coordinate {m}
+    61.782958984375,         !- Vertex 2 Y-coordinate {m}
+    0.0,                     !- Vertex 2 Z-coordinate {m}
+    82.5999984741211,        !- Vertex 3 X-coordinate {m}
+    61.782958984375,         !- Vertex 3 Y-coordinate {m}
+    15.239999771118164,      !- Vertex 3 Z-coordinate {m}
+    150.30000305175781,      !- Vertex 4 X-coordinate {m}
+    61.782958984375,         !- Vertex 4 Y-coordinate {m}
+    15.239999771118164;      !- Vertex 4 Z-coordinate {m}
+
+Shading:Building:Detailed,
+    shdSrf_5_5_4c231962-1195-452d-95d7-68ce33a36f0d_0,  !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    82.5999984741211,        !- Vertex 1 X-coordinate {m}
+    40.0,                    !- Vertex 1 Y-coordinate {m}
+    15.239999771118164,      !- Vertex 1 Z-coordinate {m}
+    150.30000305175781,      !- Vertex 2 X-coordinate {m}
+    40.0,                    !- Vertex 2 Y-coordinate {m}
+    15.239999771118164,      !- Vertex 2 Z-coordinate {m}
+    150.30000305175781,      !- Vertex 3 X-coordinate {m}
+    61.782958984375,         !- Vertex 3 Y-coordinate {m}
+    15.239999771118164,      !- Vertex 3 Z-coordinate {m}
+    82.5999984741211,        !- Vertex 4 X-coordinate {m}
+    61.782958984375,         !- Vertex 4 Y-coordinate {m}
+    15.239999771118164;      !- Vertex 4 Z-coordinate {m}
+
