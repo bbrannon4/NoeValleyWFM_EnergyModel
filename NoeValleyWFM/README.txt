@@ -1,0 +1,1 @@
+This is the primary energyplus model for analysis.  Please try to keep reaosnably detailed commits to track changes and create backups.

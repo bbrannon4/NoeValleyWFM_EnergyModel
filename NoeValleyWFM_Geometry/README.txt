@@ -1,0 +1,1 @@
+This subdirectory is just a geometry export from the Rhino model.  Do not alter.
