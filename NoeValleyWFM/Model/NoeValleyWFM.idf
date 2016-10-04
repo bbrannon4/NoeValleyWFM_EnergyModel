@@ -129,8 +129,26 @@ WindowMaterial:SimpleGlazingSystem,
 !-   ===========  ALL OBJECTS IN CLASS: CONSTRUCTION ===========
 
 Construction,
-    Concrete Slab,           !- Name
+    Floor_Slab,              !- Name
     Concrete;                !- Outside Layer
+
+Construction,
+    Roof_Sales;              !- Name
+
+Construction,
+    Roof_BOH;                !- Name
+
+Construction,
+    Wall_Exterior;           !- Name
+
+Construction,
+    Wall_Underground;        !- Name
+
+Construction,
+    Wall_Interior;           !- Name
+
+Construction,
+    Ceiling_Interior;        !- Name
 
 
 !-   ===========  ALL OBJECTS IN CLASS: GLOBALGEOMETRYRULES ===========
