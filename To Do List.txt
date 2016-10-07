@@ -1,0 +1,16 @@
+Existing Model
+
+-Adjacencies
+-Plug Load Schedules
+-Lighting
+-Lighting Schedules
+-Constructions
+-Occupancts
+-Occupant Schedules
+-Refrigeration
+-Refrigeration Controls
+-Air Side HVAC
+-Water Side HVAC
+
+
+ECMs
