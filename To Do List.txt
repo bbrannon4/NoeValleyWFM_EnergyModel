@@ -1,16 +1,18 @@
 Existing Model
 
--Adjacencies
--Plug Load Schedules
--Lighting
--Lighting Schedules
--Constructions
+-Computers in BOH offices
 -Occupancts
+
+-Plug Load Schedules
+-Lighting Schedules
 -Occupant Schedules
--Refrigeration
--Refrigeration Controls
+
+-Check Adjacencies
+
+-Add windows and skylights
+
+-Construction definitions
+-Construction assignments
+
 -Air Side HVAC
 -Water Side HVAC
-
-
-ECMs
