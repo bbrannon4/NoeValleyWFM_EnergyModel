@@ -1,11 +1,9 @@
 Existing Model
 
--Computers in BOH offices
--Occupancts
+-Delete weird zones? (_Dup_Dup... and D75103 - I have no idea what they are)
 
 -Plug Load Schedules
 -Lighting Schedules
--Occupant Schedules
 
 -Check Adjacencies
 
