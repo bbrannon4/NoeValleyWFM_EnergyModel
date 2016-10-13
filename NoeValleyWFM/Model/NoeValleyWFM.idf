@@ -116,6 +116,20 @@ ScheduleTypeLimits,
 !-   ===========  ALL OBJECTS IN CLASS: SCHEDULE:COMPACT ===========
 
 Schedule:Compact,
+    ALWAYS_ON,               !- Name
+    On/Off,                  !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 24:00, 1;         !- Field 4
+
+Schedule:Compact,
+    ALWAYS_OFF,              !- Name
+    On/Off,                  !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 24:00, 0;         !- Field 4
+
+Schedule:Compact,
     CLOTHING_SCH,            !- Name
     Any Number,              !- Schedule Type Limits Name
     Through: 04/30,          !- Field 1
@@ -141,78 +155,6 @@ Schedule:Compact,
     Through: 12/31,          !- Field 1
     For: AllDays,            !- Field 2
     Until: 24:00, 0.2;       !- Field 4
-
-Schedule:Compact,
-    Equipment,               !- Name
-    Fraction,                !- Schedule Type Limits Name
-    Through: 12/31,          !- Field 1
-    For: Weekdays,           !- Field 2
-    Until: 06:00, 0.2,       !- Field 4
-    Until: 08:00, 0.4,       !- Field 6
-    Until: 09:00, 0.7,       !- Field 8
-    Until: 18:00, 0.9,       !- Field 10
-    Until: 20:00, 0.8,       !- Field 12
-    Until: 21:00, 0.7,       !- Field 14
-    Until: 22:00, 0.4,       !- Field 16
-    Until: 24:00, 0.2,       !- Field 18
-    For: Saturday,           !- Field 19
-    Until: 06:00, 0.15,      !- Field 21
-    Until: 08:00, 0.3,       !- Field 23
-    Until: 09:00, 0.5,       !- Field 25
-    Until: 10:00, 0.8,       !- Field 27
-    Until: 18:00, 0.9,       !- Field 29
-    Until: 19:00, 0.7,       !- Field 31
-    Until: 21:00, 0.5,       !- Field 33
-    Until: 22:00, 0.3,       !- Field 35
-    Until: 24:00, 0.15,      !- Field 37
-    For: SummerDesignDay,    !- Field 38
-    Until: 24:00, 1.0,       !- Field 40
-    For: WinterDesignDay,    !- Field 41
-    Until: 24:00, 0.0,       !- Field 43
-    For: Sunday Holidays AllOtherDays,  !- Field 44
-    Until: 06:00, 0.15,      !- Field 46
-    Until: 10:00, 0.3,       !- Field 48
-    Until: 12:00, 0.6,       !- Field 50
-    Until: 17:00, 0.8,       !- Field 52
-    Until: 18:00, 0.6,       !- Field 54
-    Until: 22:00, 0.4,       !- Field 56
-    Until: 24:00, 0.15;      !- Field 58
-
-Schedule:Compact,
-    Lighting,                !- Name
-    Fraction,                !- Schedule Type Limits Name
-    Through: 12/31,          !- Field 1
-    For: Weekdays,           !- Field 2
-    Until: 06:00, 0.05,      !- Field 4
-    Until: 08:00, 0.2,       !- Field 6
-    Until: 09:00, 0.5,       !- Field 8
-    Until: 18:00, 0.9,       !- Field 10
-    Until: 20:00, 0.6,       !- Field 12
-    Until: 21:00, 0.5,       !- Field 14
-    Until: 22:00, 0.2,       !- Field 16
-    Until: 24:00, 0.05,      !- Field 18
-    For: Saturday,           !- Field 19
-    Until: 06:00, 0.05,      !- Field 21
-    Until: 08:00, 0.1,       !- Field 23
-    Until: 09:00, 0.3,       !- Field 25
-    Until: 10:00, 0.6,       !- Field 27
-    Until: 18:00, 0.9,       !- Field 29
-    Until: 19:00, 0.5,       !- Field 31
-    Until: 21:00, 0.3,       !- Field 33
-    Until: 22:00, 0.1,       !- Field 35
-    Until: 24:00, 0.05,      !- Field 37
-    For: SummerDesignDay,    !- Field 38
-    Until: 24:00, 1.0,       !- Field 40
-    For: WinterDesignDay,    !- Field 41
-    Until: 24:00, 0.0,       !- Field 43
-    For: Sunday Holidays AllOtherDays,  !- Field 44
-    Until: 06:00, 0.05,      !- Field 46
-    Until: 10:00, 0.1,       !- Field 48
-    Until: 12:00, 0.4,       !- Field 50
-    Until: 17:00, 0.6,       !- Field 52
-    Until: 18:00, 0.4,       !- Field 54
-    Until: 22:00, 0.2,       !- Field 56
-    Until: 24:00, 0.05;      !- Field 58
 
 Schedule:Compact,
     Occupancy_Sales,         !- Name
@@ -369,6 +311,330 @@ Schedule:Compact,
     Until: 18:00, 0.2,       !- Field 60
     Until: 22:00, 0.1,       !- Field 62
     Until: 24:00, 0.0;       !- Field 64
+
+Schedule:Compact,
+    Equipment_Cashier,       !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 06:00, 0.2,       !- Field 4
+    Until: 08:00, 0.4,       !- Field 6
+    Until: 09:00, 0.7,       !- Field 8
+    Until: 18:00, 0.9,       !- Field 10
+    Until: 20:00, 0.8,       !- Field 12
+    Until: 21:00, 0.7,       !- Field 14
+    Until: 22:00, 0.4,       !- Field 16
+    Until: 24:00, 0.2,       !- Field 18
+    For: Saturday,           !- Field 19
+    Until: 06:00, 0.15,      !- Field 21
+    Until: 08:00, 0.3,       !- Field 23
+    Until: 09:00, 0.5,       !- Field 25
+    Until: 10:00, 0.8,       !- Field 27
+    Until: 18:00, 0.9,       !- Field 29
+    Until: 19:00, 0.7,       !- Field 31
+    Until: 21:00, 0.5,       !- Field 33
+    Until: 22:00, 0.3,       !- Field 35
+    Until: 24:00, 0.15,      !- Field 37
+    For: SummerDesignDay,    !- Field 38
+    Until: 24:00, 1.0,       !- Field 40
+    For: WinterDesignDay,    !- Field 41
+    Until: 24:00, 0.0,       !- Field 43
+    For: Sunday Holidays AllOtherDays,  !- Field 44
+    Until: 06:00, 0.15,      !- Field 46
+    Until: 10:00, 0.3,       !- Field 48
+    Until: 12:00, 0.6,       !- Field 50
+    Until: 17:00, 0.8,       !- Field 52
+    Until: 18:00, 0.6,       !- Field 54
+    Until: 22:00, 0.4,       !- Field 56
+    Until: 24:00, 0.15;      !- Field 58
+
+Schedule:Compact,
+    Equipment_Misc1,         !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 06:00, 0.2,       !- Field 4
+    Until: 08:00, 0.4,       !- Field 6
+    Until: 09:00, 0.7,       !- Field 8
+    Until: 18:00, 0.9,       !- Field 10
+    Until: 20:00, 0.8,       !- Field 12
+    Until: 21:00, 0.7,       !- Field 14
+    Until: 22:00, 0.4,       !- Field 16
+    Until: 24:00, 0.2,       !- Field 18
+    For: Saturday,           !- Field 19
+    Until: 06:00, 0.15,      !- Field 21
+    Until: 08:00, 0.3,       !- Field 23
+    Until: 09:00, 0.5,       !- Field 25
+    Until: 10:00, 0.8,       !- Field 27
+    Until: 18:00, 0.9,       !- Field 29
+    Until: 19:00, 0.7,       !- Field 31
+    Until: 21:00, 0.5,       !- Field 33
+    Until: 22:00, 0.3,       !- Field 35
+    Until: 24:00, 0.15,      !- Field 37
+    For: SummerDesignDay,    !- Field 38
+    Until: 24:00, 1.0,       !- Field 40
+    For: WinterDesignDay,    !- Field 41
+    Until: 24:00, 0.0,       !- Field 43
+    For: Sunday Holidays AllOtherDays,  !- Field 44
+    Until: 06:00, 0.15,      !- Field 46
+    Until: 10:00, 0.3,       !- Field 48
+    Until: 12:00, 0.6,       !- Field 50
+    Until: 17:00, 0.8,       !- Field 52
+    Until: 18:00, 0.6,       !- Field 54
+    Until: 22:00, 0.4,       !- Field 56
+    Until: 24:00, 0.15;      !- Field 58
+
+Schedule:Compact,
+    Equipment_Misc2,         !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 06:00, 0.2,       !- Field 4
+    Until: 08:00, 0.4,       !- Field 6
+    Until: 09:00, 0.7,       !- Field 8
+    Until: 18:00, 0.9,       !- Field 10
+    Until: 20:00, 0.8,       !- Field 12
+    Until: 21:00, 0.7,       !- Field 14
+    Until: 22:00, 0.4,       !- Field 16
+    Until: 24:00, 0.2,       !- Field 18
+    For: Saturday,           !- Field 19
+    Until: 06:00, 0.15,      !- Field 21
+    Until: 08:00, 0.3,       !- Field 23
+    Until: 09:00, 0.5,       !- Field 25
+    Until: 10:00, 0.8,       !- Field 27
+    Until: 18:00, 0.9,       !- Field 29
+    Until: 19:00, 0.7,       !- Field 31
+    Until: 21:00, 0.5,       !- Field 33
+    Until: 22:00, 0.3,       !- Field 35
+    Until: 24:00, 0.15,      !- Field 37
+    For: SummerDesignDay,    !- Field 38
+    Until: 24:00, 1.0,       !- Field 40
+    For: WinterDesignDay,    !- Field 41
+    Until: 24:00, 0.0,       !- Field 43
+    For: Sunday Holidays AllOtherDays,  !- Field 44
+    Until: 06:00, 0.15,      !- Field 46
+    Until: 10:00, 0.3,       !- Field 48
+    Until: 12:00, 0.6,       !- Field 50
+    Until: 17:00, 0.8,       !- Field 52
+    Until: 18:00, 0.6,       !- Field 54
+    Until: 22:00, 0.4,       !- Field 56
+    Until: 24:00, 0.15;      !- Field 58
+
+Schedule:Compact,
+    Equipment_Misc3,         !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 06:00, 0.2,       !- Field 4
+    Until: 08:00, 0.4,       !- Field 6
+    Until: 09:00, 0.7,       !- Field 8
+    Until: 18:00, 0.9,       !- Field 10
+    Until: 20:00, 0.8,       !- Field 12
+    Until: 21:00, 0.7,       !- Field 14
+    Until: 22:00, 0.4,       !- Field 16
+    Until: 24:00, 0.2,       !- Field 18
+    For: Saturday,           !- Field 19
+    Until: 06:00, 0.15,      !- Field 21
+    Until: 08:00, 0.3,       !- Field 23
+    Until: 09:00, 0.5,       !- Field 25
+    Until: 10:00, 0.8,       !- Field 27
+    Until: 18:00, 0.9,       !- Field 29
+    Until: 19:00, 0.7,       !- Field 31
+    Until: 21:00, 0.5,       !- Field 33
+    Until: 22:00, 0.3,       !- Field 35
+    Until: 24:00, 0.15,      !- Field 37
+    For: SummerDesignDay,    !- Field 38
+    Until: 24:00, 1.0,       !- Field 40
+    For: WinterDesignDay,    !- Field 41
+    Until: 24:00, 0.0,       !- Field 43
+    For: Sunday Holidays AllOtherDays,  !- Field 44
+    Until: 06:00, 0.15,      !- Field 46
+    Until: 10:00, 0.3,       !- Field 48
+    Until: 12:00, 0.6,       !- Field 50
+    Until: 17:00, 0.8,       !- Field 52
+    Until: 18:00, 0.6,       !- Field 54
+    Until: 22:00, 0.4,       !- Field 56
+    Until: 24:00, 0.15;      !- Field 58
+
+Schedule:Compact,
+    Equipment_Office,        !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 06:00, 0.2,       !- Field 4
+    Until: 08:00, 0.4,       !- Field 6
+    Until: 09:00, 0.7,       !- Field 8
+    Until: 18:00, 0.9,       !- Field 10
+    Until: 20:00, 0.8,       !- Field 12
+    Until: 21:00, 0.7,       !- Field 14
+    Until: 22:00, 0.4,       !- Field 16
+    Until: 24:00, 0.2,       !- Field 18
+    For: Saturday,           !- Field 19
+    Until: 06:00, 0.15,      !- Field 21
+    Until: 08:00, 0.3,       !- Field 23
+    Until: 09:00, 0.5,       !- Field 25
+    Until: 10:00, 0.8,       !- Field 27
+    Until: 18:00, 0.9,       !- Field 29
+    Until: 19:00, 0.7,       !- Field 31
+    Until: 21:00, 0.5,       !- Field 33
+    Until: 22:00, 0.3,       !- Field 35
+    Until: 24:00, 0.15,      !- Field 37
+    For: SummerDesignDay,    !- Field 38
+    Until: 24:00, 1.0,       !- Field 40
+    For: WinterDesignDay,    !- Field 41
+    Until: 24:00, 0.0,       !- Field 43
+    For: Sunday Holidays AllOtherDays,  !- Field 44
+    Until: 06:00, 0.15,      !- Field 46
+    Until: 10:00, 0.3,       !- Field 48
+    Until: 12:00, 0.6,       !- Field 50
+    Until: 17:00, 0.8,       !- Field 52
+    Until: 18:00, 0.6,       !- Field 54
+    Until: 22:00, 0.4,       !- Field 56
+    Until: 24:00, 0.15;      !- Field 58
+
+Schedule:Compact,
+    Lighting_Outdoor,        !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 06:00, 0.05,      !- Field 4
+    Until: 08:00, 0.2,       !- Field 6
+    Until: 09:00, 0.5,       !- Field 8
+    Until: 18:00, 0.9,       !- Field 10
+    Until: 20:00, 0.6,       !- Field 12
+    Until: 21:00, 0.5,       !- Field 14
+    Until: 22:00, 0.2,       !- Field 16
+    Until: 24:00, 0.05,      !- Field 18
+    For: Saturday,           !- Field 19
+    Until: 06:00, 0.05,      !- Field 21
+    Until: 08:00, 0.1,       !- Field 23
+    Until: 09:00, 0.3,       !- Field 25
+    Until: 10:00, 0.6,       !- Field 27
+    Until: 18:00, 0.9,       !- Field 29
+    Until: 19:00, 0.5,       !- Field 31
+    Until: 21:00, 0.3,       !- Field 33
+    Until: 22:00, 0.1,       !- Field 35
+    Until: 24:00, 0.05,      !- Field 37
+    For: SummerDesignDay,    !- Field 38
+    Until: 24:00, 1.0,       !- Field 40
+    For: WinterDesignDay,    !- Field 41
+    Until: 24:00, 0.0,       !- Field 43
+    For: Sunday Holidays AllOtherDays,  !- Field 44
+    Until: 06:00, 0.05,      !- Field 46
+    Until: 10:00, 0.1,       !- Field 48
+    Until: 12:00, 0.4,       !- Field 50
+    Until: 17:00, 0.6,       !- Field 52
+    Until: 18:00, 0.4,       !- Field 54
+    Until: 22:00, 0.2,       !- Field 56
+    Until: 24:00, 0.05;      !- Field 58
+
+Schedule:Compact,
+    Lighting_Ambient,        !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 06:00, 0.05,      !- Field 4
+    Until: 08:00, 0.2,       !- Field 6
+    Until: 09:00, 0.5,       !- Field 8
+    Until: 18:00, 0.9,       !- Field 10
+    Until: 20:00, 0.6,       !- Field 12
+    Until: 21:00, 0.5,       !- Field 14
+    Until: 22:00, 0.2,       !- Field 16
+    Until: 24:00, 0.05,      !- Field 18
+    For: Saturday,           !- Field 19
+    Until: 06:00, 0.05,      !- Field 21
+    Until: 08:00, 0.1,       !- Field 23
+    Until: 09:00, 0.3,       !- Field 25
+    Until: 10:00, 0.6,       !- Field 27
+    Until: 18:00, 0.9,       !- Field 29
+    Until: 19:00, 0.5,       !- Field 31
+    Until: 21:00, 0.3,       !- Field 33
+    Until: 22:00, 0.1,       !- Field 35
+    Until: 24:00, 0.05,      !- Field 37
+    For: SummerDesignDay,    !- Field 38
+    Until: 24:00, 1.0,       !- Field 40
+    For: WinterDesignDay,    !- Field 41
+    Until: 24:00, 0.0,       !- Field 43
+    For: Sunday Holidays AllOtherDays,  !- Field 44
+    Until: 06:00, 0.05,      !- Field 46
+    Until: 10:00, 0.1,       !- Field 48
+    Until: 12:00, 0.4,       !- Field 50
+    Until: 17:00, 0.6,       !- Field 52
+    Until: 18:00, 0.4,       !- Field 54
+    Until: 22:00, 0.2,       !- Field 56
+    Until: 24:00, 0.05;      !- Field 58
+
+Schedule:Compact,
+    Lighting_Task,           !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 06:00, 0.05,      !- Field 4
+    Until: 08:00, 0.2,       !- Field 6
+    Until: 09:00, 0.5,       !- Field 8
+    Until: 18:00, 0.9,       !- Field 10
+    Until: 20:00, 0.6,       !- Field 12
+    Until: 21:00, 0.5,       !- Field 14
+    Until: 22:00, 0.2,       !- Field 16
+    Until: 24:00, 0.05,      !- Field 18
+    For: Saturday,           !- Field 19
+    Until: 06:00, 0.05,      !- Field 21
+    Until: 08:00, 0.1,       !- Field 23
+    Until: 09:00, 0.3,       !- Field 25
+    Until: 10:00, 0.6,       !- Field 27
+    Until: 18:00, 0.9,       !- Field 29
+    Until: 19:00, 0.5,       !- Field 31
+    Until: 21:00, 0.3,       !- Field 33
+    Until: 22:00, 0.1,       !- Field 35
+    Until: 24:00, 0.05,      !- Field 37
+    For: SummerDesignDay,    !- Field 38
+    Until: 24:00, 1.0,       !- Field 40
+    For: WinterDesignDay,    !- Field 41
+    Until: 24:00, 0.0,       !- Field 43
+    For: Sunday Holidays AllOtherDays,  !- Field 44
+    Until: 06:00, 0.05,      !- Field 46
+    Until: 10:00, 0.1,       !- Field 48
+    Until: 12:00, 0.4,       !- Field 50
+    Until: 17:00, 0.6,       !- Field 52
+    Until: 18:00, 0.4,       !- Field 54
+    Until: 22:00, 0.2,       !- Field 56
+    Until: 24:00, 0.05;      !- Field 58
+
+Schedule:Compact,
+    Lighting_BOH,            !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 06:00, 0.05,      !- Field 4
+    Until: 08:00, 0.2,       !- Field 6
+    Until: 09:00, 0.5,       !- Field 8
+    Until: 18:00, 0.9,       !- Field 10
+    Until: 20:00, 0.6,       !- Field 12
+    Until: 21:00, 0.5,       !- Field 14
+    Until: 22:00, 0.2,       !- Field 16
+    Until: 24:00, 0.05,      !- Field 18
+    For: Saturday,           !- Field 19
+    Until: 06:00, 0.05,      !- Field 21
+    Until: 08:00, 0.1,       !- Field 23
+    Until: 09:00, 0.3,       !- Field 25
+    Until: 10:00, 0.6,       !- Field 27
+    Until: 18:00, 0.9,       !- Field 29
+    Until: 19:00, 0.5,       !- Field 31
+    Until: 21:00, 0.3,       !- Field 33
+    Until: 22:00, 0.1,       !- Field 35
+    Until: 24:00, 0.05,      !- Field 37
+    For: SummerDesignDay,    !- Field 38
+    Until: 24:00, 1.0,       !- Field 40
+    For: WinterDesignDay,    !- Field 41
+    Until: 24:00, 0.0,       !- Field 43
+    For: Sunday Holidays AllOtherDays,  !- Field 44
+    Until: 06:00, 0.05,      !- Field 46
+    Until: 10:00, 0.1,       !- Field 48
+    Until: 12:00, 0.4,       !- Field 50
+    Until: 17:00, 0.6,       !- Field 52
+    Until: 18:00, 0.4,       !- Field 54
+    Until: 22:00, 0.2,       !- Field 56
+    Until: 24:00, 0.05;      !- Field 58
 
 
 !-   ===========  ALL OBJECTS IN CLASS: MATERIAL ===========
@@ -30869,7 +31135,7 @@ Lights,
 ElectricEquipment,
     10300A - Checkstand,     !- Name
     L1-102-Checkout1 Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30882,7 +31148,7 @@ ElectricEquipment,
 ElectricEquipment,
     10300B - Checkstand,     !- Name
     L1-102-Checkout2 Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30895,7 +31161,7 @@ ElectricEquipment,
 ElectricEquipment,
     10300C - Checkstand,     !- Name
     L1-102-Checkout3 Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30908,7 +31174,7 @@ ElectricEquipment,
 ElectricEquipment,
     10300D - Checkstand,     !- Name
     L1-102-Checkout4 Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30921,7 +31187,7 @@ ElectricEquipment,
 ElectricEquipment,
     10301 - Express Check,   !- Name
     L1-102-SelfCheckout Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30934,7 +31200,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600A - Register,       !- Name
     L1-102-Checkout1 Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30947,7 +31213,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600B - Register,       !- Name
     L1-102-Checkout2 Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30960,7 +31226,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600C - Register,       !- Name
     L1-102-Checkout3 Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30973,7 +31239,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600D - Register,       !- Name
     L1-102-Checkout4 Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30986,7 +31252,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600F - Register,       !- Name
     L1-102-SelfCheckout Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30999,7 +31265,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600G - Register,       !- Name
     L1-102-SelfCheckout Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31012,7 +31278,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600H - Register,       !- Name
     L1-102-SelfCheckout Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31025,7 +31291,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600J - Register,       !- Name
     L1-102-SelfCheckout Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31038,7 +31304,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600K - Register,       !- Name
     L1-103-Floral Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31051,7 +31317,7 @@ ElectricEquipment,
 ElectricEquipment,
     9305 - Espressor Brewer, !- Name
     L1-127-Coffee Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     4600,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31064,7 +31330,7 @@ ElectricEquipment,
 ElectricEquipment,
     9306 - Grinder,          !- Name
     L1-127-Coffee Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1080,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31077,7 +31343,7 @@ ElectricEquipment,
 ElectricEquipment,
     9516 - Register,         !- Name
     L1-127-Coffee Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31090,7 +31356,7 @@ ElectricEquipment,
 ElectricEquipment,
     9304 - Coffee Brewer,    !- Name
     L1-126-BakeryService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     4600,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31103,7 +31369,7 @@ ElectricEquipment,
 ElectricEquipment,
     9307A - Grinder,         !- Name
     L1-126-BakeryService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1080,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31116,7 +31382,7 @@ ElectricEquipment,
 ElectricEquipment,
     9307B - Grinder,         !- Name
     L1-126-BakeryService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1080,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31129,7 +31395,7 @@ ElectricEquipment,
 ElectricEquipment,
     9302 - Scale,            !- Name
     L1-126-BakeryService Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     120,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31142,7 +31408,7 @@ ElectricEquipment,
 ElectricEquipment,
     9312 - Ice Machine,      !- Name
     L1-126-BakeryService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    ALWAYS_ON,               !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     624,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31155,7 +31421,7 @@ ElectricEquipment,
 ElectricEquipment,
     9313 - Wheat Grass Juicer,  !- Name
     L1-126-BakeryService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     696,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31168,7 +31434,7 @@ ElectricEquipment,
 ElectricEquipment,
     9300 - Freezer,          !- Name
     L1-126-BakeryService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    ALWAYS_ON,               !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     816,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31181,7 +31447,7 @@ ElectricEquipment,
 ElectricEquipment,
     9301 - Refrigerator,     !- Name
     L1-126-BakeryService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    ALWAYS_ON,               !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     120,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31194,7 +31460,7 @@ ElectricEquipment,
 ElectricEquipment,
     9311A - Blender,         !- Name
     L1-126-BakeryService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1344,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31207,7 +31473,7 @@ ElectricEquipment,
 ElectricEquipment,
     9311B - Blender,         !- Name
     L1-126-BakeryService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1344,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31220,7 +31486,7 @@ ElectricEquipment,
 ElectricEquipment,
     9311C - Blender,         !- Name
     L1-126-BakeryService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1344,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31233,7 +31499,7 @@ ElectricEquipment,
 ElectricEquipment,
     9309 - Dishwasher,       !- Name
     L1-126-BakeryService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1848,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31246,7 +31512,7 @@ ElectricEquipment,
 ElectricEquipment,
     12301 - Bailer,          !- Name
     L1-106-ReceivingTransformers2 Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     11592,                   !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31259,7 +31525,7 @@ ElectricEquipment,
 ElectricEquipment,
     12517 - Flytrap,         !- Name
     L1-106-ReceivingTransformers2 Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    ALWAYS_ON,               !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     70,                      !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31272,7 +31538,7 @@ ElectricEquipment,
 ElectricEquipment,
     5116 - Food Bar,         !- Name
     L1-125-PreparedFoods2 Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc2,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     9027,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31285,7 +31551,7 @@ ElectricEquipment,
 ElectricEquipment,
     5248 - Hot Food,         !- Name
     L1-125-PreparedFoods2 Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc2,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1747,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31298,7 +31564,7 @@ ElectricEquipment,
 ElectricEquipment,
     5115 - Salad Bar,        !- Name
     L1-125-PreparedFoods1 Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc2,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     998,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31311,7 +31577,7 @@ ElectricEquipment,
 ElectricEquipment,
     4300 - Scale,            !- Name
     L1-124-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     120,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31324,7 +31590,7 @@ ElectricEquipment,
 ElectricEquipment,
     4301 - Wrapper,          !- Name
     L1-124-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     240,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31337,7 +31603,7 @@ ElectricEquipment,
 ElectricEquipment,
     4302 - Mini Wrapper,     !- Name
     L1-124-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     240,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31350,7 +31616,7 @@ ElectricEquipment,
 ElectricEquipment,
     4303 - Cheese Grater,    !- Name
     L1-124-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1200,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31363,7 +31629,7 @@ ElectricEquipment,
 ElectricEquipment,
     4504 - Fly Trap,         !- Name
     L1-124-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    ALWAYS_ON,               !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     70,                      !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31376,7 +31642,7 @@ ElectricEquipment,
 ElectricEquipment,
     4505 - Food Processor,   !- Name
     L1-124-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     70,                      !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31389,7 +31655,7 @@ ElectricEquipment,
 ElectricEquipment,
     5288 - Veggie Dryer,     !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     696,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31402,7 +31668,7 @@ ElectricEquipment,
 ElectricEquipment,
     5253 - Ref Table Top,    !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     660,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31415,7 +31681,7 @@ ElectricEquipment,
 ElectricEquipment,
     5254 - Sandwhich Table,  !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1440,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31428,7 +31694,7 @@ ElectricEquipment,
 ElectricEquipment,
     5290 - Sealer,           !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1200,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31441,7 +31707,7 @@ ElectricEquipment,
 ElectricEquipment,
     5298 - Rotisserie,       !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     640,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31454,7 +31720,7 @@ ElectricEquipment,
 ElectricEquipment,
     5284A - Convection Steamer,  !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     17000,                   !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31467,7 +31733,7 @@ ElectricEquipment,
 ElectricEquipment,
     5284B - Convection Steamer,  !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     17000,                   !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31480,7 +31746,7 @@ ElectricEquipment,
 ElectricEquipment,
     5328 - Alto Shaam,       !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     811,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31493,7 +31759,7 @@ ElectricEquipment,
 ElectricEquipment,
     5500 - Fly Trap,         !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    ALWAYS_ON,               !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     70,                      !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31506,7 +31772,7 @@ ElectricEquipment,
 ElectricEquipment,
     2329 - Blast Chiller,    !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc3,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1176,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31519,7 +31785,7 @@ ElectricEquipment,
 ElectricEquipment,
     5268 - Scale,            !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     120,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31532,7 +31798,7 @@ ElectricEquipment,
 ElectricEquipment,
     5455 - Ref Table Top,    !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     660,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31545,7 +31811,7 @@ ElectricEquipment,
 ElectricEquipment,
     2300A - Scale,           !- Name
     L1-117-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     120,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31558,7 +31824,7 @@ ElectricEquipment,
 ElectricEquipment,
     2300B - Scale,           !- Name
     L1-117-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     120,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31571,7 +31837,7 @@ ElectricEquipment,
 ElectricEquipment,
     2307 - Food Processor,   !- Name
     L1-117-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     840,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31584,7 +31850,7 @@ ElectricEquipment,
 ElectricEquipment,
     2313A - Ref Table Top,   !- Name
     L1-117-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     660,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31597,7 +31863,7 @@ ElectricEquipment,
 ElectricEquipment,
     2313B - Ref Table Top,   !- Name
     L1-117-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     660,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31610,7 +31876,7 @@ ElectricEquipment,
 ElectricEquipment,
     2308 - Wrapper,          !- Name
     L1-117-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     240,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31623,7 +31889,7 @@ ElectricEquipment,
 ElectricEquipment,
     2508 - Fly Trap,         !- Name
     L1-117-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    ALWAYS_ON,               !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     70,                      !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31636,7 +31902,7 @@ ElectricEquipment,
 ElectricEquipment,
     3300A - Scale,           !- Name
     L1-116-MeatService Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     120,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31649,7 +31915,7 @@ ElectricEquipment,
 ElectricEquipment,
     3300B - Scale,           !- Name
     L1-116-MeatService Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     120,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31662,7 +31928,7 @@ ElectricEquipment,
 ElectricEquipment,
     3213A - Ref Table Top,   !- Name
     L1-116-MeatService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     660,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31675,7 +31941,7 @@ ElectricEquipment,
 ElectricEquipment,
     3213B - Ref Table Top,   !- Name
     L1-116-MeatService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     660,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31688,7 +31954,7 @@ ElectricEquipment,
 ElectricEquipment,
     3213C - Ref Table Top,   !- Name
     L1-116-MeatService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     660,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31701,7 +31967,7 @@ ElectricEquipment,
 ElectricEquipment,
     3213D - Ref Table Top,   !- Name
     L1-116-MeatService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     660,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31714,7 +31980,7 @@ ElectricEquipment,
 ElectricEquipment,
     3308 - Table Top Grinder,!- Name
     L1-116-MeatService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     740,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31727,7 +31993,7 @@ ElectricEquipment,
 ElectricEquipment,
     3302 - Slicer,           !- Name
     L1-116-MeatService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     300,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31740,7 +32006,7 @@ ElectricEquipment,
 ElectricEquipment,
     3320 - Wrapper,          !- Name
     L1-116-MeatService Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     780,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31753,7 +32019,7 @@ ElectricEquipment,
 ElectricEquipment,
     8309A-F - Nut Grinders,  !- Name
     L1-101-SalesAisleBulk Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     6240,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31766,7 +32032,7 @@ ElectricEquipment,
 ElectricEquipment,
     1304 - Wrapper,          !- Name
     L1-110-ProducePrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     750,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31779,7 +32045,7 @@ ElectricEquipment,
 ElectricEquipment,
     1301 - Scale,            !- Name
     L1-110-ProducePrep Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     120,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31792,7 +32058,7 @@ ElectricEquipment,
 ElectricEquipment,
     1311 - Food Processor,   !- Name
     L1-110-ProducePrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1008,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31805,7 +32071,7 @@ ElectricEquipment,
 ElectricEquipment,
     1515 - Fly Trap,         !- Name
     L1-110-ProducePrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    ALWAYS_ON,               !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     70,                      !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31818,7 +32084,7 @@ ElectricEquipment,
 ElectricEquipment,
     2114 - Ice Flaker,       !- Name
     L1-110-ProducePrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     811,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31831,7 +32097,7 @@ ElectricEquipment,
 ElectricEquipment,
     12319 - Refrigerator,    !- Name
     M-158-BreakRoom Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    ALWAYS_ON,               !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1000,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31844,7 +32110,7 @@ ElectricEquipment,
 ElectricEquipment,
     12320 - Microwave,       !- Name
     M-158-BreakRoom Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1600,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31857,7 +32123,7 @@ ElectricEquipment,
 ElectricEquipment,
     5288 - Vegetable Dryer,  !- Name
     M-162-PrepRoom Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     696,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31870,7 +32136,7 @@ ElectricEquipment,
 ElectricEquipment,
     3305 - Mixer,            !- Name
     M-164-MeatCooler Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     9360,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31883,7 +32149,7 @@ ElectricEquipment,
 ElectricEquipment,
     3509 - Fly Trap,         !- Name
     M-163-MeatPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    ALWAYS_ON,               !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     30,                      !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31896,7 +32162,7 @@ ElectricEquipment,
 ElectricEquipment,
     3304 - Meat Saw,         !- Name
     M-163-MeatPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     2200,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31909,7 +32175,7 @@ ElectricEquipment,
 ElectricEquipment,
     3306 - Sausage Stuffer,  !- Name
     M-163-MeatPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1296,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31922,7 +32188,7 @@ ElectricEquipment,
 ElectricEquipment,
     3309 - Tumbler,          !- Name
     M-163-MeatPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     576,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31935,7 +32201,7 @@ ElectricEquipment,
 ElectricEquipment,
     3312 - Tenderizer,       !- Name
     M-163-MeatPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     900,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31948,7 +32214,7 @@ ElectricEquipment,
 ElectricEquipment,
     3300 - Scale,            !- Name
     M-163-MeatPrep Thermal Zone,  !- Zone or ZoneList Name
-    Cashier,                 !- Schedule Name
+    Equipment_Cashier,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     120,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31961,7 +32227,7 @@ ElectricEquipment,
 ElectricEquipment,
     3308 - Grinder,          !- Name
     M-163-MeatPrep Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Misc1,         !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     740,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31974,7 +32240,7 @@ ElectricEquipment,
 ElectricEquipment,
     12517 - Fly Trap,        !- Name
     L2-201-Storage Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    ALWAYS_ON,               !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     70,                      !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31987,7 +32253,7 @@ ElectricEquipment,
 ElectricEquipment,
     Desktop,                 !- Name
     M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Office,        !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     155,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -32000,7 +32266,7 @@ ElectricEquipment,
 ElectricEquipment,
     Desktop,                 !- Name
     M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Office,        !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     155,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -32013,7 +32279,7 @@ ElectricEquipment,
 ElectricEquipment,
     Desktop (x10),           !- Name
     M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Office,        !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1550,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -32026,7 +32292,7 @@ ElectricEquipment,
 ElectricEquipment,
     Desktop,                 !- Name
     M-154-ExgOffice Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Office,        !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     155,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -32039,7 +32305,7 @@ ElectricEquipment,
 ElectricEquipment,
     Desktop,                 !- Name
     M-155-ExgOffice Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Office,        !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     155,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -32052,7 +32318,7 @@ ElectricEquipment,
 ElectricEquipment,
     Laptop (x4),             !- Name
     M-156-StlOffice Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Office,        !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     200,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -32065,7 +32331,7 @@ ElectricEquipment,
 ElectricEquipment,
     Printer (lg),            !- Name
     M-156-StlOffice Thermal Zone,  !- Zone or ZoneList Name
-    ,                        !- Schedule Name
+    Equipment_Office,        !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     320,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -32076,139 +32342,74 @@ ElectricEquipment,
     Staff Computers;         !- End-Use Subcategory
 
 
-!-   ===========  ALL OBJECTS IN CLASS: GASEQUIPMENT ===========
-
-GasEquipment,
-    ,                        !- Name
-    ,                        !- Zone or ZoneList Name
-    ,                        !- Schedule Name
-    EquipmentLevel,          !- Design Level Calculation Method
-    ,                        !- Design Level {W}
-    ,                        !- Power per Zone Floor Area {W/m2}
-    ,                        !- Power per Person {W/Person}
-    ,                        !- Fraction Latent
-    ,                        !- Fraction Radiant
-    ,                        !- Fraction Lost
-    ,                        !- Carbon Dioxide Generation Rate {m3/s-W}
-    General;                 !- End-Use Subcategory
-
-
-!-   ===========  ALL OBJECTS IN CLASS: HOTWATEREQUIPMENT ===========
-
-HotWaterEquipment,
-    ,                        !- Name
-    ,                        !- Zone or ZoneList Name
-    ,                        !- Schedule Name
-    EquipmentLevel,          !- Design Level Calculation Method
-    ,                        !- Design Level {W}
-    ,                        !- Power per Zone Floor Area {W/m2}
-    ,                        !- Power per Person {W/Person}
-    ,                        !- Fraction Latent
-    ,                        !- Fraction Radiant
-    ,                        !- Fraction Lost
-    General;                 !- End-Use Subcategory
-
-
-!-   ===========  ALL OBJECTS IN CLASS: ELECTRICEQUIPMENT:ITE:AIRCOOLED ===========
-
-ElectricEquipment:ITE:AirCooled,
-    ,                        !- Name
-    ,                        !- Zone Name
-    Watts/Unit,              !- Design Power Input Calculation Method
-    ,                        !- Watts per Unit {W}
-    1,                       !- Number of Units
-    ,                        !- Watts per Zone Floor Area {W/m2}
-    ,                        !- Design Power Input Schedule Name
-    ,                        !- CPU Loading  Schedule Name
-    ,                        !- CPU Power Input Function of Loading and Air Temperature Curve Name
-    ,                        !- Design Fan Power Input Fraction
-    ,                        !- Design Fan Air Flow Rate per Power Input {m3/s-W}
-    ,                        !- Air Flow Function of Loading and Air Temperature Curve Name
-    ,                        !- Fan Power Input Function of Flow Curve Name
-    15,                      !- Design Entering Air Temperature {C}
-    None,                    !- Environmental Class
-    AdjustedSupply,          !- Air Inlet Connection Type
-    ,                        !- Air Inlet Room Air Model Node Name
-    ,                        !- Air Outlet Room Air Model Node Name
-    ,                        !- Supply Air Node Name
-    ,                        !- Design Recirculation Fraction
-    ,                        !- Recirculation Function of Loading and Supply Temperature Curve Name
-    1,                       !- Design Electric Power Supply Efficiency
-    ,                        !- Electric Power Supply Efficiency Function of Part Load Ratio Curve Name
-    1,                       !- Fraction of Electric Power Supply Losses to Zone
-    ITE-CPU,                 !- CPU End-Use Subcategory
-    ITE-Fans,                !- Fan End-Use Subcategory
-    ITE-UPS;                 !- Electric Power Supply End-Use Subcategory
-
-
 !-   ===========  ALL OBJECTS IN CLASS: EXTERIOR:LIGHTS ===========
 
 Exterior:Lights,
     M3-A Exterior,           !- Name
-    ,                        !- Schedule Name
+    Lighting_Outdoor,        !- Schedule Name
     70,                      !- Design Level {W}
     AstronomicalClock,       !- Control Option
     Exterior Lighting;       !- End-Use Subcategory
 
 Exterior:Lights,
     M3-B Exterior,           !- Name
-    ,                        !- Schedule Name
+    Lighting_Outdoor,        !- Schedule Name
     70,                      !- Design Level {W}
     AstronomicalClock,       !- Control Option
     Exterior Lighting;       !- End-Use Subcategory
 
 Exterior:Lights,
     M3-C Exterior,           !- Name
-    ,                        !- Schedule Name
+    Lighting_Outdoor,        !- Schedule Name
     70,                      !- Design Level {W}
     AstronomicalClock,       !- Control Option
     Exterior Lighting;       !- End-Use Subcategory
 
 Exterior:Lights,
     M3-D Exterior,           !- Name
-    ,                        !- Schedule Name
+    Lighting_Outdoor,        !- Schedule Name
     70,                      !- Design Level {W}
     AstronomicalClock,       !- Control Option
     Exterior Lighting;       !- End-Use Subcategory
 
 Exterior:Lights,
     M3-E Exterior,           !- Name
-    ,                        !- Schedule Name
+    Lighting_Outdoor,        !- Schedule Name
     70,                      !- Design Level {W}
     AstronomicalClock,       !- Control Option
     Exterior Lighting;       !- End-Use Subcategory
 
 Exterior:Lights,
     M3-F Exterior,           !- Name
-    ,                        !- Schedule Name
+    Lighting_Outdoor,        !- Schedule Name
     70,                      !- Design Level {W}
     AstronomicalClock,       !- Control Option
     Exterior Lighting;       !- End-Use Subcategory
 
 Exterior:Lights,
     M3-G Exterior,           !- Name
-    ,                        !- Schedule Name
+    Lighting_Outdoor,        !- Schedule Name
     70,                      !- Design Level {W}
     AstronomicalClock,       !- Control Option
     Exterior Lighting;       !- End-Use Subcategory
 
 Exterior:Lights,
     M3-H Exterior,           !- Name
-    ,                        !- Schedule Name
+    Lighting_Outdoor,        !- Schedule Name
     70,                      !- Design Level {W}
     AstronomicalClock,       !- Control Option
     Exterior Lighting;       !- End-Use Subcategory
 
 Exterior:Lights,
     M4-A Exterior,           !- Name
-    ,                        !- Schedule Name
+    Lighting_Outdoor,        !- Schedule Name
     26,                      !- Design Level {W}
     AstronomicalClock,       !- Control Option
     Exterior Lighting;       !- End-Use Subcategory
 
 Exterior:Lights,
     M4-B Exterior,           !- Name
-    ,                        !- Schedule Name
+    Lighting_Outdoor,        !- Schedule Name
     26,                      !- Design Level {W}
     AstronomicalClock,       !- Control Option
     Exterior Lighting;       !- End-Use Subcategory
