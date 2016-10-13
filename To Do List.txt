@@ -1,13 +1,9 @@
 Existing Model
 
--Delete weird zones? (_Dup_Dup... and D75103 - I have no idea what they are)
 
--Plug Load Schedules
 -Lighting Schedules
 
--Check Adjacencies
-
--Add windows and skylights
+-Check Adjacencies and shade object types
 
 -Construction definitions
 -Construction assignments
