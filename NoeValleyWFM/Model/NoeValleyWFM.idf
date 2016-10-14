@@ -18,8 +18,7 @@ SimulationControl,
     No,                      !- Do Plant Sizing Calculation
     No,                      !- Run Simulation for Sizing Periods
     Yes,                     !- Run Simulation for Weather File Run Periods
-    No,                      !- Do HVAC Sizing Simulation for Sizing Periods
-    1;                       !- Maximum Number of HVAC Sizing Simulation Passes
+    No;                      !- Do HVAC Sizing Simulation for Sizing Periods
 
 
 !-   ===========  ALL OBJECTS IN CLASS: BUILDING ===========
@@ -1566,21 +1565,6 @@ Zone,
     0, 0, 0;                            !- X,Y,Z  {m}
 
 Zone,
-    _Dup Thermal Zone,       !- Name
-    0,                       !- Direction of Relative North {deg}
-    0, 0, 0;                            !- X,Y,Z  {m}
-
-Zone,
-    _Dup_Dup Thermal Zone,   !- Name
-    0,                       !- Direction of Relative North {deg}
-    0, 0, 0;                            !- X,Y,Z  {m}
-
-Zone,
-    _Dup_Dup_Dup Thermal Zone,  !- Name
-    0,                       !- Direction of Relative North {deg}
-    0, 0, 0;                            !- X,Y,Z  {m}
-
-Zone,
     _Dup_Dup_Dup_Dup Thermal Zone,  !- Name
     0,                       !- Direction of Relative North {deg}
     0, 0, 0;                            !- X,Y,Z  {m}
@@ -1589,13 +1573,6 @@ Zone,
     _Dup_Dup_Dup_Dup_Dup Thermal Zone,  !- Name
     0,                       !- Direction of Relative North {deg}
     0, 0, 0;                            !- X,Y,Z  {m}
-
-Zone,
-    D75103,                  !- Name
-    0.0,                     !- Direction of Relative North {deg}
-    0.0, 0.0, 0.0,                      !- X,Y,Z  {m}
-    ,                        !- Type
-    1;                       !- Multiplier
 
 
 !-   ===========  ALL OBJECTS IN CLASS: ZONELIST ===========
@@ -7999,66 +7976,6 @@ BuildingSurface:Detailed,
                                         !- X,Y,Z  4 {m}
 
 BuildingSurface:Detailed,
-    _Srf_0_Dup,              !- Name
-    Floor,                   !- Surface Type
-    Hole,                    !- Construction Name
-    _Dup Thermal Zone,       !- Zone Name
-    outdoors,                !- Outside Boundary Condition
-    ,                        !- Outside Boundary Condition Object
-    SunExposed,              !- Sun Exposure
-    WindExposed,             !- Wind Exposure
-    ,                        !- View Factor to Ground
-    4,                       !- Number of Vertices
-    56.793838500977, 25.877519607544, 2.088809967041,
-                                        !- X,Y,Z  1 {m}
-    56.793838500977, 23.874208450317, 2.088809967041,
-                                        !- X,Y,Z  2 {m}
-    54.105430603027, 23.874208450317, 2.088809967041,
-                                        !- X,Y,Z  3 {m}
-    54.105430603027, 25.877519607544, 2.088809967041;
-                                        !- X,Y,Z  4 {m}
-
-BuildingSurface:Detailed,
-    _Srf_0_Dup_Dup,          !- Name
-    Floor,                   !- Surface Type
-    Hole,                    !- Construction Name
-    _Dup_Dup Thermal Zone,   !- Zone Name
-    outdoors,                !- Outside Boundary Condition
-    ,                        !- Outside Boundary Condition Object
-    SunExposed,              !- Sun Exposure
-    WindExposed,             !- Wind Exposure
-    ,                        !- View Factor to Ground
-    4,                       !- Number of Vertices
-    58.946918487549, 23.878839492798, 5.715000152588,
-                                        !- X,Y,Z  1 {m}
-    38.221920013428, 23.878410339356, 2.819400072098,
-                                        !- X,Y,Z  2 {m}
-    38.221920013428, 25.877519607544, 2.819400072098,
-                                        !- X,Y,Z  3 {m}
-    58.946918487549, 25.877519607544, 5.715000152588;
-                                        !- X,Y,Z  4 {m}
-
-BuildingSurface:Detailed,
-    _Srf_0_Dup_Dup_Dup,      !- Name
-    Floor,                   !- Surface Type
-    Hole,                    !- Construction Name
-    _Dup_Dup_Dup Thermal Zone,  !- Zone Name
-    outdoors,                !- Outside Boundary Condition
-    ,                        !- Outside Boundary Condition Object
-    SunExposed,              !- Sun Exposure
-    WindExposed,             !- Wind Exposure
-    ,                        !- View Factor to Ground
-    4,                       !- Number of Vertices
-    58.946918487549, 25.877519607544, 5.715000152588,
-                                        !- X,Y,Z  1 {m}
-    79.674720764160, 25.877519607544, 2.819400072098,
-                                        !- X,Y,Z  2 {m}
-    79.674720764160, 23.881706237793, 2.819400072098,
-                                        !- X,Y,Z  3 {m}
-    58.946918487549, 23.878839492798, 5.715000152588;
-                                        !- X,Y,Z  4 {m}
-
-BuildingSurface:Detailed,
     _Srf_0_Dup_Dup_Dup_Dup,  !- Name
     Floor,                   !- Surface Type
     Hole,                    !- Construction Name
@@ -8096,26 +8013,6 @@ BuildingSurface:Detailed,
     82.599998474121, 40.000000000000, 0.000000000000,
                                         !- X,Y,Z  3 {m}
     82.599998474121, 61.782958984375, 0.000000000000;
-                                        !- X,Y,Z  4 {m}
-
-BuildingSurface:Detailed,
-    _Srf_0,                  !- Name
-    Floor,                   !- Surface Type
-    Hole,                    !- Construction Name
-    D75103,                  !- Zone Name
-    outdoors,                !- Outside Boundary Condition
-    ,                        !- Outside Boundary Condition Object
-    SunExposed,              !- Sun Exposure
-    WindExposed,             !- Wind Exposure
-    ,                        !- View Factor to Ground
-    4,                       !- Number of Vertices
-    69.155952453613, 25.877519607544, 2.088809967041,
-                                        !- X,Y,Z  1 {m}
-    69.155952453613, 23.874208450317, 2.088809967041,
-                                        !- X,Y,Z  2 {m}
-    67.446853637695, 23.874208450317, 2.088809967041,
-                                        !- X,Y,Z  3 {m}
-    67.446853637695, 25.877519607544, 2.088809967041;
                                         !- X,Y,Z  4 {m}
 
 BuildingSurface:Detailed,
@@ -25791,271 +25688,227 @@ BuildingSurface:Detailed,
                                         !- X,Y,Z  4 {m}
 
 
-!-   ===========  ALL OBJECTS IN CLASS: WINDOW ===========
+!-   ===========  ALL OBJECTS IN CLASS: FENESTRATIONSURFACE:DETAILED ===========
 
-  FenestrationSurface:Detailed,
-    L1S2_Windows,  !- Name
-    Window,  !- Surface Type
-    Glass,  !- Construction Name
-    L1S2-Checkout_Srf_8,  !- Building Surface Name
-    ,  !- Outside Boundary Condition Object
-    ,  !- View Factor to Ground
-    ,  !- Shading Control Name
-    ,  !- Frame and Divider Name
-    1,  !- Multiplier
-    4,  !- Number of Vertices
-    52.801994256592,  !- Vertex 1 X-coordinate {m}
-    25.877519607544,  !- Vertex 1 Y-coordinate {m}
-    4.038600072098,  !- Vertex 1 Z-coordinate {m}
-    52.801994256592,  !- Vertex 2 X-coordinate {m}
-    25.877519607544,  !- Vertex 2 Y-coordinate {m}
-    2.819400072098,  !- Vertex 2 Z-coordinate {m}
-    62.555594256592,  !- Vertex 3 X-coordinate {m}
-    25.877519607544,  !- Vertex 3 Y-coordinate {m}
-    2.819400072098,  !- Vertex 3 Z-coordinate {m}
-    62.555594256592,  !- Vertex 4 X-coordinate {m}
-    25.877519607544,  !- Vertex 4 Y-coordinate {m}
-    4.038600072098;  !- Vertex 4 Z-coordinate {m}
+FenestrationSurface:Detailed,
+    L1S2_Windows,            !- Name
+    Window,                  !- Surface Type
+    Glass,                   !- Construction Name
+    L1S2-Checkout_Srf_8,     !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    ,                        !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1,                       !- Multiplier
+    4,                       !- Number of Vertices
+    52.801994256592, 25.877519607544, 4.038600072098,
+                                        !- X,Y,Z  1 {m}
+    52.801994256592, 25.877519607544, 2.819400072098,
+                                        !- X,Y,Z  2 {m}
+    62.555594256592, 25.877519607544, 2.819400072098,
+                                        !- X,Y,Z  3 {m}
+    62.555594256592, 25.877519607544, 4.038600072098;
+                                        !- X,Y,Z  4 {m}
 
-  FenestrationSurface:Detailed,
-    L1S1_Windows,  !- Name
-    Window,  !- Surface Type
-    Glass,  !- Construction Name
-    ,  !- Building Surface Name
-    ,  !- Outside Boundary Condition Object
-    ,  !- View Factor to Ground
-    ,  !- Shading Control Name
-    ,  !- Frame and Divider Name
-    1,  !- Multiplier
-    4,  !- Number of Vertices
-    52.192394256592,  !- Vertex 1 X-coordinate {m}
-    25.877519607544,  !- Vertex 1 Y-coordinate {m}
-    2.590799996567,  !- Vertex 1 Z-coordinate {m}
-    52.192394256592,  !- Vertex 2 X-coordinate {m}
-    25.877519607544,  !- Vertex 2 Y-coordinate {m}
-    2.133599996567,  !- Vertex 2 Z-coordinate {m}
-    71.157050256592,  !- Vertex 3 X-coordinate {m}
-    25.877519607544,  !- Vertex 3 Y-coordinate {m}
-    2.133599996567,  !- Vertex 3 Z-coordinate {m}
-    71.157050256592,  !- Vertex 4 X-coordinate {m}
-    25.877519607544,  !- Vertex 4 Y-coordinate {m}
-    2.590799996567;  !- Vertex 4 Z-coordinate {m}
+FenestrationSurface:Detailed,
+    L1S1_Windows,            !- Name
+    Window,                  !- Surface Type
+    Glass,                   !- Construction Name
+    ,     !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    ,                        !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1,                       !- Multiplier
+    4,                       !- Number of Vertices
+    52.192394256592, 25.877519607544, 2.590799996567,
+                                        !- X,Y,Z  1 {m}
+    52.192394256592, 25.877519607544, 2.133599996567,
+                                        !- X,Y,Z  2 {m}
+    71.157050256592, 25.877519607544, 2.133599996567,
+                                        !- X,Y,Z  3 {m}
+    71.157050256592, 25.877519607544, 2.590799996567;
+                                        !- X,Y,Z  4 {m}
 
-  FenestrationSurface:Detailed,
-    L1_Windows1,  !- Name
-    Window,  !- Surface Type
-    Glass,  !- Construction Name
+FenestrationSurface:Detailed,
+    L1_Windows1,             !- Name
+    Window,                  !- Surface Type
+    Glass,                   !- Construction Name
     L1-101-EntranceExit_Srf_1,  !- Building Surface Name
-    ,  !- Outside Boundary Condition Object
-    ,  !- View Factor to Ground
-    ,  !- Shading Control Name
-    ,  !- Frame and Divider Name
-    1,  !- Multiplier
-    4,  !- Number of Vertices
-    53.716394256592,  !- Vertex 1 X-coordinate {m}
-    25.877519607544,  !- Vertex 1 Y-coordinate {m}
-    1.981200000000,  !- Vertex 1 Z-coordinate {m}
-    53.716394256592,  !- Vertex 2 X-coordinate {m}
-    25.877519607544,  !- Vertex 2 Y-coordinate {m}
-    0.000000000000,  !- Vertex 2 Z-coordinate {m}
-    56.383394256592,  !- Vertex 3 X-coordinate {m}
-    25.877519607544,  !- Vertex 3 Y-coordinate {m}
-    0.000000000000,  !- Vertex 3 Z-coordinate {m}
-    56.383394256592,  !- Vertex 4 X-coordinate {m}
-    25.877519607544,  !- Vertex 4 Y-coordinate {m}
-    1.981200000000;  !- Vertex 4 Z-coordinate {m}
+    ,                        !- Outside Boundary Condition Object
+    ,                        !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1,                       !- Multiplier
+    4,                       !- Number of Vertices
+    53.716394256592, 25.877519607544, 1.981200000000,
+                                        !- X,Y,Z  1 {m}
+    53.716394256592, 25.877519607544, 0.000000000000,
+                                        !- X,Y,Z  2 {m}
+    56.383394256592, 25.877519607544, 0.000000000000,
+                                        !- X,Y,Z  3 {m}
+    56.383394256592, 25.877519607544, 1.981200000000;
+                                        !- X,Y,Z  4 {m}
 
-  FenestrationSurface:Detailed,
-    L1_Windows2,  !- Name
-    Window,  !- Surface Type
-    Glass,  !- Construction Name
+FenestrationSurface:Detailed,
+    L1_Windows2,             !- Name
+    Window,                  !- Surface Type
+    Glass,                   !- Construction Name
     ,  !- Building Surface Name
-    ,  !- Outside Boundary Condition Object
-    ,  !- View Factor to Ground
-    ,  !- Shading Control Name
-    ,  !- Frame and Divider Name
-    1,  !- Multiplier
-    4,  !- Number of Vertices
-    57.058559417725,  !- Vertex 1 X-coordinate {m}
-    25.877519607544,  !- Vertex 1 Y-coordinate {m}
-    1.981200000000,  !- Vertex 1 Z-coordinate {m}
-    57.058559417725,  !- Vertex 2 X-coordinate {m}
-    25.877519607544,  !- Vertex 2 Y-coordinate {m}
-    0.000000000000,  !- Vertex 2 Z-coordinate {m}
-    67.193159417725,  !- Vertex 3 X-coordinate {m}
-    25.877519607544,  !- Vertex 3 Y-coordinate {m}
-    0.000000000000,  !- Vertex 3 Z-coordinate {m}
-    67.193159417725,  !- Vertex 4 X-coordinate {m}
-    25.877519607544,  !- Vertex 4 Y-coordinate {m}
-    1.981200000000;  !- Vertex 4 Z-coordinate {m}
+    ,                        !- Outside Boundary Condition Object
+    ,                        !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1,                       !- Multiplier
+    4,                       !- Number of Vertices
+    57.058559417725, 25.877519607544, 1.981200000000,
+                                        !- X,Y,Z  1 {m}
+    57.058559417725, 25.877519607544, 0.000000000000,
+                                        !- X,Y,Z  2 {m}
+    67.193159417725, 25.877519607544, 0.000000000000,
+                                        !- X,Y,Z  3 {m}
+    67.193159417725, 25.877519607544, 1.981200000000;
+                                        !- X,Y,Z  4 {m}
 
-  FenestrationSurface:Detailed,
-    L1_Windows3,  !- Name
-    Window,  !- Surface Type
-    Glass,  !- Construction Name
-    ,  !- Building Surface Name
-    ,  !- Outside Boundary Condition Object
-    ,  !- View Factor to Ground
-    ,  !- Shading Control Name
-    ,  !- Frame and Divider Name
-    1,  !- Multiplier
-    4,  !- Number of Vertices
-    69.189598083496,  !- Vertex 1 X-coordinate {m}
-    25.877519607544,  !- Vertex 1 Y-coordinate {m}
-    1.981200000000,  !- Vertex 1 Z-coordinate {m}
-    69.189598083496,  !- Vertex 2 X-coordinate {m}
-    25.877519607544,  !- Vertex 2 Y-coordinate {m}
-    0.000000000000,  !- Vertex 2 Z-coordinate {m}
-    71.094598083496,  !- Vertex 3 X-coordinate {m}
-    25.877519607544,  !- Vertex 3 Y-coordinate {m}
-    0.000000000000,  !- Vertex 3 Z-coordinate {m}
-    71.094598083496,  !- Vertex 4 X-coordinate {m}
-    25.877519607544,  !- Vertex 4 Y-coordinate {m}
-    1.981200000000;  !- Vertex 4 Z-coordinate {m}
+FenestrationSurface:Detailed,
+    L1_Windows3,             !- Name
+    Window,                  !- Surface Type
+    Glass,                   !- Construction Name
+    ,       !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    ,                        !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1,                       !- Multiplier
+    4,                       !- Number of Vertices
+    69.189598083496, 25.877519607544, 1.981200000000,
+                                        !- X,Y,Z  1 {m}
+    69.189598083496, 25.877519607544, 0.000000000000,
+                                        !- X,Y,Z  2 {m}
+    71.094598083496, 25.877519607544, 0.000000000000,
+                                        !- X,Y,Z  3 {m}
+    71.094598083496, 25.877519607544, 1.981200000000;
+                                        !- X,Y,Z  4 {m}
 
-  FenestrationSurface:Detailed,
-    Skylight 1,  !- Name
-    Window,  !- Surface Type
-    Glass,  !- Construction Name
-    L1S2-AislesEast_Srf_8,  !- Building Surface Name
-    ,  !- Outside Boundary Condition Object
-    ,  !- View Factor to Ground
-    ,  !- Shading Control Name
-    ,  !- Frame and Divider Name
-    1,  !- Multiplier
-    4,  !- Number of Vertices
-    53.608454684190,  !- Vertex 1 X-coordinate {m}
-    33.192720211792,  !- Vertex 1 Y-coordinate {m}
-    4.969134907328,  !- Vertex 1 Z-coordinate {m}
-    53.004718780518,  !- Vertex 2 X-coordinate {m}
-    33.192720211792,  !- Vertex 2 Y-coordinate {m}
-    4.884783744812,  !- Vertex 2 Z-coordinate {m}
-    53.004718780518,  !- Vertex 3 X-coordinate {m}
-    32.583120211792,  !- Vertex 3 Y-coordinate {m}
-    4.884783744812,  !- Vertex 3 Z-coordinate {m}
-    53.608454684190,  !- Vertex 4 X-coordinate {m}
-    32.583120211792,  !- Vertex 4 Y-coordinate {m}
-    4.969134907328;  !- Vertex 4 Z-coordinate {m}
+FenestrationSurface:Detailed,
+    Skylight 1,              !- Name
+    Window,                  !- Surface Type
+    Glass,                   !- Construction Name
+    L1S2-AislesEast_Srf_8,   !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    ,                        !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1,                       !- Multiplier
+    4,                       !- Number of Vertices
+    53.608454684190, 33.192720211792, 4.969134907328,
+                                        !- X,Y,Z  1 {m}
+    53.004718780518, 33.192720211792, 4.884783744812,
+                                        !- X,Y,Z  2 {m}
+    53.004718780518, 32.583120211792, 4.884783744812,
+                                        !- X,Y,Z  3 {m}
+    53.608454684190, 32.583120211792, 4.969134907328;
+                                        !- X,Y,Z  4 {m}
 
-  FenestrationSurface:Detailed,
-    Skylight 2,  !- Name
-    Window,  !- Surface Type
-    Glass,  !- Construction Name
-    L1S2-AislesEast_Srf_8,  !- Building Surface Name
-    ,  !- Outside Boundary Condition Object
-    ,  !- View Factor to Ground
-    ,  !- Shading Control Name
-    ,  !- Frame and Divider Name
-    1,  !- Multiplier
-    4,  !- Number of Vertices
-    53.608454684190,  !- Vertex 1 X-coordinate {m}
-    39.593520211792,  !- Vertex 1 Y-coordinate {m}
-    4.969134907328,  !- Vertex 1 Z-coordinate {m}
-    53.004718780518,  !- Vertex 2 X-coordinate {m}
-    39.593520211792,  !- Vertex 2 Y-coordinate {m}
-    4.884783744812,  !- Vertex 2 Z-coordinate {m}
-    53.004718780518,  !- Vertex 3 X-coordinate {m}
-    38.983920211792,  !- Vertex 3 Y-coordinate {m}
-    4.884783744812,  !- Vertex 3 Z-coordinate {m}
-    53.608454684190,  !- Vertex 4 X-coordinate {m}
-    38.983920211792,  !- Vertex 4 Y-coordinate {m}
-    4.969134907328;  !- Vertex 4 Z-coordinate {m}
+FenestrationSurface:Detailed,
+    Skylight 2,              !- Name
+    Window,                  !- Surface Type
+    Glass,                   !- Construction Name
+    L1S2-AislesEast_Srf_8,   !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    ,                        !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1,                       !- Multiplier
+    4,                       !- Number of Vertices
+    53.608454684190, 39.593520211792, 4.969134907328,
+                                        !- X,Y,Z  1 {m}
+    53.004718780518, 39.593520211792, 4.884783744812,
+                                        !- X,Y,Z  2 {m}
+    53.004718780518, 38.983920211792, 4.884783744812,
+                                        !- X,Y,Z  3 {m}
+    53.608454684190, 38.983920211792, 4.969134907328;
+                                        !- X,Y,Z  4 {m}
 
-  FenestrationSurface:Detailed,
-    Skylight 3,  !- Name
-    Window,  !- Surface Type
-    Glass,  !- Construction Name
-    L1S2-AislesEast_Srf_8,  !- Building Surface Name
-    ,  !- Outside Boundary Condition Object
-    ,  !- View Factor to Ground
-    ,  !- Shading Control Name
-    ,  !- Frame and Divider Name
-    1,  !- Multiplier
-    4,  !- Number of Vertices
-    53.608454684190,  !- Vertex 1 X-coordinate {m}
-    45.994320211792,  !- Vertex 1 Y-coordinate {m}
-    4.969134907328,  !- Vertex 1 Z-coordinate {m}
-    53.004718780518,  !- Vertex 2 X-coordinate {m}
-    45.994320211792,  !- Vertex 2 Y-coordinate {m}
-    4.884783744812,  !- Vertex 2 Z-coordinate {m}
-    53.004718780518,  !- Vertex 3 X-coordinate {m}
-    45.384720211792,  !- Vertex 3 Y-coordinate {m}
-    4.884783744812,  !- Vertex 3 Z-coordinate {m}
-    53.608454684190,  !- Vertex 4 X-coordinate {m}
-    45.384720211792,  !- Vertex 4 Y-coordinate {m}
-    4.969134907328;  !- Vertex 4 Z-coordinate {m}
+FenestrationSurface:Detailed,
+    Skylight 3,              !- Name
+    Window,                  !- Surface Type
+    Glass,                   !- Construction Name
+    L1S2-AislesEast_Srf_8,   !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    ,                        !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1,                       !- Multiplier
+    4,                       !- Number of Vertices
+    53.608454684190, 45.994320211792, 4.969134907328,
+                                        !- X,Y,Z  1 {m}
+    53.004718780518, 45.994320211792, 4.884783744812,
+                                        !- X,Y,Z  2 {m}
+    53.004718780518, 45.384720211792, 4.884783744812,
+                                        !- X,Y,Z  3 {m}
+    53.608454684190, 45.384720211792, 4.969134907328;
+                                        !- X,Y,Z  4 {m}
 
-  FenestrationSurface:Detailed,
-    Skylight 4,  !- Name
-    Window,  !- Surface Type
-    Glass,  !- Construction Name
-    L1S2-AislesEast_Srf_7,  !- Building Surface Name
-    ,  !- Outside Boundary Condition Object
-    ,  !- View Factor to Ground
-    ,  !- Shading Control Name
-    ,  !- Frame and Divider Name
-    1,  !- Multiplier
-    4,  !- Number of Vertices
-    64.380555672522,  !- Vertex 1 X-coordinate {m}
-    45.780958736813,  !- Vertex 1 Y-coordinate {m}
-    4.955940337184,  !- Vertex 1 Z-coordinate {m}
-    64.984293139541,  !- Vertex 2 X-coordinate {m}
-    45.780958735754,  !- Vertex 2 Y-coordinate {m}
-    4.871600364939,  !- Vertex 2 Z-coordinate {m}
-    64.984293139541,  !- Vertex 3 X-coordinate {m}
-    46.390558735754,  !- Vertex 3 Y-coordinate {m}
-    4.871600357290,  !- Vertex 3 Z-coordinate {m}
-    64.380555672522,  !- Vertex 4 X-coordinate {m}
-    46.390558736813,  !- Vertex 4 Y-coordinate {m}
-    4.955940329534;  !- Vertex 4 Z-coordinate {m}
+FenestrationSurface:Detailed,
+    Skylight 4,              !- Name
+    Window,                  !- Surface Type
+    Glass,                   !- Construction Name
+    L1S2-AislesEast_Srf_7,   !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    ,                        !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1,                       !- Multiplier
+    4,                       !- Number of Vertices
+    64.380555672522, 45.780958736813, 4.955940337184,
+                                        !- X,Y,Z  1 {m}
+    64.984293139541, 45.780958735754, 4.871600364939,
+                                        !- X,Y,Z  2 {m}
+    64.984293139541, 46.390558735754, 4.871600357290,
+                                        !- X,Y,Z  3 {m}
+    64.380555672522, 46.390558736813, 4.955940329534;
+                                        !- X,Y,Z  4 {m}
 
-  FenestrationSurface:Detailed,
-    Skylight 5,  !- Name
-    Window,  !- Surface Type
-    Glass,  !- Construction Name
-    L1S2-AislesEast_Srf_7,  !- Building Surface Name
-    ,  !- Outside Boundary Condition Object
-    ,  !- View Factor to Ground
-    ,  !- Shading Control Name
-    ,  !- Frame and Divider Name
-    1,  !- Multiplier
-    4,  !- Number of Vertices
-    64.380555672522,  !- Vertex 1 X-coordinate {m}
-    39.380158736813,  !- Vertex 1 Y-coordinate {m}
-    4.955940417508,  !- Vertex 1 Z-coordinate {m}
-    64.984293139541,  !- Vertex 2 X-coordinate {m}
-    39.380158735754,  !- Vertex 2 Y-coordinate {m}
-    4.871600445263,  !- Vertex 2 Z-coordinate {m}
-    64.984293139541,  !- Vertex 3 X-coordinate {m}
-    39.989758735754,  !- Vertex 3 Y-coordinate {m}
-    4.871600437613,  !- Vertex 3 Z-coordinate {m}
-    64.380555672522,  !- Vertex 4 X-coordinate {m}
-    39.989758736813,  !- Vertex 4 Y-coordinate {m}
-    4.955940409858;  !- Vertex 4 Z-coordinate {m}
+FenestrationSurface:Detailed,
+    Skylight 5,              !- Name
+    Window,                  !- Surface Type
+    Glass,                   !- Construction Name
+    L1S2-AislesEast_Srf_7,   !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    ,                        !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1,                       !- Multiplier
+    4,                       !- Number of Vertices
+    64.380555672522, 39.380158736813, 4.955940417508,
+                                        !- X,Y,Z  1 {m}
+    64.984293139541, 39.380158735754, 4.871600445263,
+                                        !- X,Y,Z  2 {m}
+    64.984293139541, 39.989758735754, 4.871600437613,
+                                        !- X,Y,Z  3 {m}
+    64.380555672522, 39.989758736813, 4.955940409858;
+                                        !- X,Y,Z  4 {m}
 
-  FenestrationSurface:Detailed,
-    Skylight 6,  !- Name
-    Window,  !- Surface Type
-    Glass,  !- Construction Name
-    L1S2-AislesEast_Srf_7,  !- Building Surface Name
-    ,  !- Outside Boundary Condition Object
-    ,  !- View Factor to Ground
-    ,  !- Shading Control Name
-    ,  !- Frame and Divider Name
-    1,  !- Multiplier
-    4,  !- Number of Vertices
-    64.380555672522,  !- Vertex 1 X-coordinate {m}
-    32.979358736813,  !- Vertex 1 Y-coordinate {m}
-    4.955940497831,  !- Vertex 1 Z-coordinate {m}
-    64.984293139541,  !- Vertex 2 X-coordinate {m}
-    32.979358735754,  !- Vertex 2 Y-coordinate {m}
-    4.871600525586,  !- Vertex 2 Z-coordinate {m}
-    64.984293139541,  !- Vertex 3 X-coordinate {m}
-    33.588958735754,  !- Vertex 3 Y-coordinate {m}
-    4.871600517937,  !- Vertex 3 Z-coordinate {m}
-    64.380555672522,  !- Vertex 4 X-coordinate {m}
-    33.588958736813,  !- Vertex 4 Y-coordinate {m}
-    4.955940490181;  !- Vertex 4 Z-coordinate {m}
+FenestrationSurface:Detailed,
+    Skylight 6,              !- Name
+    Window,                  !- Surface Type
+    Glass,                   !- Construction Name
+    L1S2-AislesEast_Srf_7,   !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    ,                        !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1,                       !- Multiplier
+    4,                       !- Number of Vertices
+    64.380555672522, 32.979358736813, 4.955940497831,
+                                        !- X,Y,Z  1 {m}
+    64.984293139541, 32.979358735754, 4.871600525586,
+                                        !- X,Y,Z  2 {m}
+    64.984293139541, 33.588958735754, 4.871600517937,
+                                        !- X,Y,Z  3 {m}
+    64.380555672522, 33.588958736813, 4.955940490181;
+                                        !- X,Y,Z  4 {m}
 
 
 !-   ===========  ALL OBJECTS IN CLASS: SHADING:BUILDING:DETAILED ===========
@@ -26268,6 +26121,58 @@ Shading:Building:Detailed,
     67.446853637695, 25.877519607544, 2.088809967041;
                                         !- X,Y,Z  4 {m}
 
+Shading:Building:Detailed,
+    Overhang_Door_1,         !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    56.793838500977, 25.877519607544, 2.088809967041,
+                                        !- X,Y,Z  1 {m}
+    56.793838500977, 23.874208450317, 2.088809967041,
+                                        !- X,Y,Z  2 {m}
+    54.105430603027, 23.874208450317, 2.088809967041,
+                                        !- X,Y,Z  3 {m}
+    54.105430603027, 25.877519607544, 2.088809967041;
+                                        !- X,Y,Z  4 {m}
+
+Shading:Building:Detailed,
+    Overhang_Door_2,         !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    69.155952453613, 25.877519607544, 2.088809967041,
+                                        !- X,Y,Z  1 {m}
+    69.155952453613, 23.874208450317, 2.088809967041,
+                                        !- X,Y,Z  2 {m}
+    67.446853637695, 23.874208450317, 2.088809967041,
+                                        !- X,Y,Z  3 {m}
+    67.446853637695, 25.877519607544, 2.088809967041;
+                                        !- X,Y,Z  4 {m}
+
+Shading:Building:Detailed,
+    Overhang_1,              !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    58.946918487549, 23.878839492798, 5.715000152588,
+                                        !- X,Y,Z  1 {m}
+    38.221920013428, 23.878410339356, 2.819400072098,
+                                        !- X,Y,Z  2 {m}
+    38.221920013428, 25.877519607544, 2.819400072098,
+                                        !- X,Y,Z  3 {m}
+    58.946918487549, 25.877519607544, 5.715000152588;
+                                        !- X,Y,Z  4 {m}
+
+Shading:Building:Detailed,
+    Overhang_2,              !- Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    58.946918487549, 25.877519607544, 5.715000152588,
+                                        !- X,Y,Z  1 {m}
+    79.674720764160, 25.877519607544, 2.819400072098,
+                                        !- X,Y,Z  2 {m}
+    79.674720764160, 23.881706237793, 2.819400072098,
+                                        !- X,Y,Z  3 {m}
+    58.946918487549, 23.878839492798, 5.715000152588;
+                                        !- X,Y,Z  4 {m}
+
 
 !-   ===========  ALL OBJECTS IN CLASS: PEOPLE ===========
 
@@ -26474,7 +26379,7 @@ People,
 
 Lights,
     E1-A - Coffee-Bakery,    !- Name
-    L1S1-Coffee Thermal Zone,             !- Zone or ZoneList Name
+    L1S1-Coffee Thermal Zone,!- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -26489,7 +26394,7 @@ Lights,
 
 Lights,
     E1-B - Coffee-Bakery,    !- Name
-    L1S1-Coffee Thermal Zone,             !- Zone or ZoneList Name
+    L1S1-Coffee Thermal Zone,!- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -26504,7 +26409,7 @@ Lights,
 
 Lights,
     E1-C - Coffee-Bakery,    !- Name
-    L1S1-Coffee Thermal Zone,             !- Zone or ZoneList Name
+    L1S1-Coffee Thermal Zone,!- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -26519,7 +26424,7 @@ Lights,
 
 Lights,
     E1-D - Coffee-Bakery,    !- Name
-    L1S1-Coffee Thermal Zone,             !- Zone or ZoneList Name
+    L1S1-Coffee Thermal Zone,!- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -26534,7 +26439,7 @@ Lights,
 
 Lights,
     E1-E - Coffee-Bakery,    !- Name
-    L1S1-Coffee Thermal Zone,             !- Zone or ZoneList Name
+    L1S1-Coffee Thermal Zone,!- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -26549,7 +26454,7 @@ Lights,
 
 Lights,
     E1-F - Coffee-Bakery,    !- Name
-    L1S1-Coffee Thermal Zone,             !- Zone or ZoneList Name
+    L1S1-Coffee Thermal Zone,!- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -26564,7 +26469,7 @@ Lights,
 
 Lights,
     E1-G - Coffee-Bakery,    !- Name
-    L1S1-Coffee Thermal Zone,             !- Zone or ZoneList Name
+    L1S1-Coffee Thermal Zone,!- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -26579,7 +26484,7 @@ Lights,
 
 Lights,
     E1-H - Coffee-Bakery,    !- Name
-    L1S1-Coffee Thermal Zone,             !- Zone or ZoneList Name
+    L1S1-Coffee Thermal Zone,!- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -26594,7 +26499,7 @@ Lights,
 
 Lights,
     E1-I - Coffee-Bakery,    !- Name
-    L1S1-Coffee Thermal Zone,             !- Zone or ZoneList Name
+    L1S1-Coffee Thermal Zone,!- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -26608,8 +26513,8 @@ Lights,
     No;                      !- Return Air Fraction Calculated from Plenum Temperature
 
 Lights,
-    E1-J - Coffee-Bakery ,    !- Name
-    L1S1-CoffeeThermal Zone,             !- Zone or ZoneList Name
+    E1-J - Coffee-Bakery ,   !- Name
+    L1S1-Coffee Thermal Zone,!- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -26624,7 +26529,7 @@ Lights,
 
 Lights,
     E1-K - Coffee-Bakery,    !- Name
-    L1S1-Coffee Thermal Zone,             !- Zone or ZoneList Name
+    L1S1-Coffee Thermal Zone,!- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -26639,7 +26544,7 @@ Lights,
 
 Lights,
     F-A - Coffee-Bakery,     !- Name
-    L1S2-Bakery Thermal Zone,             !- Zone or ZoneList Name
+    L1S2-Bakery Thermal Zone,!- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -26654,7 +26559,7 @@ Lights,
 
 Lights,
     A3-A - Prepared Foods,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -26669,7 +26574,7 @@ Lights,
 
 Lights,
     A3-B - Prepared Foods,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -26684,7 +26589,7 @@ Lights,
 
 Lights,
     A3-C - Prepared Foods,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -26699,7 +26604,7 @@ Lights,
 
 Lights,
     F-A - Prepared Foods,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -26714,7 +26619,7 @@ Lights,
 
 Lights,
     F-B - Prepared Foods,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -26729,7 +26634,7 @@ Lights,
 
 Lights,
     F-C - Prepared Foods,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -26744,7 +26649,7 @@ Lights,
 
 Lights,
     E1-A - Specialty,        !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -26759,7 +26664,7 @@ Lights,
 
 Lights,
     E1-B - Specialty,        !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -26774,7 +26679,7 @@ Lights,
 
 Lights,
     E1-C - Specialty,        !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -26789,7 +26694,7 @@ Lights,
 
 Lights,
     E1-D - Specialty,        !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -26804,7 +26709,7 @@ Lights,
 
 Lights,
     E1-E - Specialty,        !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -26819,7 +26724,7 @@ Lights,
 
 Lights,
     J-A - Specialty,         !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -26834,7 +26739,7 @@ Lights,
 
 Lights,
     J-B - Specialty,         !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -26849,7 +26754,7 @@ Lights,
 
 Lights,
     J-C - Specialty,         !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -26864,7 +26769,7 @@ Lights,
 
 Lights,
     J-D - Specialty,         !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -26879,7 +26784,7 @@ Lights,
 
 Lights,
     J-E - Specialty,         !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -26894,7 +26799,7 @@ Lights,
 
 Lights,
     J-F - Specialty,         !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -26909,7 +26814,7 @@ Lights,
 
 Lights,
     J-G - Specialty,         !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -26924,7 +26829,7 @@ Lights,
 
 Lights,
     J-H - Specialty,         !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -26939,7 +26844,7 @@ Lights,
 
 Lights,
     J-I - Specialty,         !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -26954,7 +26859,7 @@ Lights,
 
 Lights,
     J-J - Specialty,         !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -26969,7 +26874,7 @@ Lights,
 
 Lights,
     J-K - Specialty,         !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -26984,7 +26889,7 @@ Lights,
 
 Lights,
     J-L - Specialty,         !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -26999,7 +26904,7 @@ Lights,
 
 Lights,
     J-M - Specialty,         !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -27014,7 +26919,7 @@ Lights,
 
 Lights,
     E-A - Specialty,         !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -27029,7 +26934,7 @@ Lights,
 
 Lights,
     E-B - Specialty,         !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -27044,7 +26949,7 @@ Lights,
 
 Lights,
     B3-A - Specialty,        !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27059,7 +26964,7 @@ Lights,
 
 Lights,
     B3-B - Specialty,        !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27074,7 +26979,7 @@ Lights,
 
 Lights,
     B3-C - Specialty,        !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27089,7 +26994,7 @@ Lights,
 
 Lights,
     B3-D - Specialty,        !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27104,7 +27009,7 @@ Lights,
 
 Lights,
     B3-E - Specialty,        !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27119,7 +27024,7 @@ Lights,
 
 Lights,
     B3-F - Specialty,        !- Name
-    L1S1-SpecialtyService Thermal Zone,   !- Zone or ZoneList Name
+    L1S1-SpecialtyService Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27134,7 +27039,7 @@ Lights,
 
 Lights,
     F-A - Specialty,         !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27149,7 +27054,7 @@ Lights,
 
 Lights,
     F-B - Specialty,         !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27164,7 +27069,7 @@ Lights,
 
 Lights,
     A3-A - Specialty,        !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -27179,7 +27084,7 @@ Lights,
 
 Lights,
     A3-B - Specialty,        !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -27194,7 +27099,7 @@ Lights,
 
 Lights,
     A3-C - Specialty,        !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -27359,7 +27264,7 @@ Lights,
 
 Lights,
     L-A - Checkout,          !- Name
-    L1S1-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S1-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -27374,7 +27279,7 @@ Lights,
 
 Lights,
     L-B - Checkout,          !- Name
-    L1S1-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S1-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -27389,7 +27294,7 @@ Lights,
 
 Lights,
     L-C - Checkout,          !- Name
-    L1S1-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S1-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -27404,7 +27309,7 @@ Lights,
 
 Lights,
     L-D - Checkout,          !- Name
-    L1S1-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S1-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -27419,7 +27324,7 @@ Lights,
 
 Lights,
     L-E - Checkout,          !- Name
-    L1S1-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S1-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -27434,7 +27339,7 @@ Lights,
 
 Lights,
     L-F - Checkout,          !- Name
-    L1S1-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S1-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -27449,7 +27354,7 @@ Lights,
 
 Lights,
     F-A - Checkout,          !- Name
-    L1S2-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S2-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27464,7 +27369,7 @@ Lights,
 
 Lights,
     F-B - Checkout,          !- Name
-    L1S2-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S2-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27479,7 +27384,7 @@ Lights,
 
 Lights,
     F-C - Checkout,          !- Name
-    L1S2-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S2-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27494,7 +27399,7 @@ Lights,
 
 Lights,
     F-D - Checkout,          !- Name
-    L1S2-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S2-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27509,7 +27414,7 @@ Lights,
 
 Lights,
     F-E - Checkout,          !- Name
-    L1S2-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S2-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27524,7 +27429,7 @@ Lights,
 
 Lights,
     F-F - Checkout,          !- Name
-    L1S2-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S2-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27539,7 +27444,7 @@ Lights,
 
 Lights,
     M2-A - Checkout,         !- Name
-    L1S1-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S1-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     32,                      !- Lighting Level {W}
@@ -27554,7 +27459,7 @@ Lights,
 
 Lights,
     M2-B - Checkout,         !- Name
-    L1S1-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S1-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     32,                      !- Lighting Level {W}
@@ -27569,7 +27474,7 @@ Lights,
 
 Lights,
     F-A - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27584,7 +27489,7 @@ Lights,
 
 Lights,
     F-B - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27599,7 +27504,7 @@ Lights,
 
 Lights,
     F-C - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27614,7 +27519,7 @@ Lights,
 
 Lights,
     F-D - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27629,7 +27534,7 @@ Lights,
 
 Lights,
     F-E - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27644,7 +27549,7 @@ Lights,
 
 Lights,
     F-F - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27659,7 +27564,7 @@ Lights,
 
 Lights,
     F-G - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27674,7 +27579,7 @@ Lights,
 
 Lights,
     F-H - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27689,7 +27594,7 @@ Lights,
 
 Lights,
     F-I - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27704,7 +27609,7 @@ Lights,
 
 Lights,
     F-J - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -27719,7 +27624,7 @@ Lights,
 
 Lights,
     E-A - Produce,           !- Name
-    L1S1-Produce Thermal Zone,            !- Zone or ZoneList Name
+    L1S1-Produce Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -27734,7 +27639,7 @@ Lights,
 
 Lights,
     AA-A - Receiving,        !- Name
-    L1S1-Loading Thermal Zone,            !- Zone or ZoneList Name
+    L1S1-Loading Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -27749,7 +27654,7 @@ Lights,
 
 Lights,
     AA-B - Receiving,        !- Name
-    L1S1-Loading Thermal Zone,            !- Zone or ZoneList Name
+    L1S1-Loading Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -27763,8 +27668,8 @@ Lights,
     No;                      !- Return Air Fraction Calculated from Plenum Temperature
 
 Lights,
-    AA-B - Receiving,        !- Name
-    L1S1-Loading Thermal Zone,            !- Zone or ZoneList Name
+    AA-B - Receiving 2,      !- Name
+    L1S1-Loading Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -27779,7 +27684,7 @@ Lights,
 
 Lights,
     B2-A - Receiving Office, !- Name
-    L1S1-Loading Thermal Zone,            !- Zone or ZoneList Name
+    L1S1-Loading Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27808,7 +27713,7 @@ Lights,
     No;                      !- Return Air Fraction Calculated from Plenum Temperature
 
 Lights,
-    B2-B - Receiving Office, !- Name
+    B2-B - Receiving Office 2,  !- Name
     L1-102-ReceivingOffice Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
@@ -27824,7 +27729,7 @@ Lights,
 
 Lights,
     AA1-A - Receiving Corridor,  !- Name
-    L1S1-Loading Thermal Zone,            !- Zone or ZoneList Name
+    L1S1-Loading Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27839,7 +27744,7 @@ Lights,
 
 Lights,
     AA1-B - Receiving Corridor,  !- Name
-    L1S1-Loading Thermal Zone,            !- Zone or ZoneList Name
+    L1S1-Loading Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27854,7 +27759,7 @@ Lights,
 
 Lights,
     BB1-A - Produce Cooler,  !- Name
-    L1-108-ProduceCooler Thermal Zone,    !- Zone or ZoneList Name
+    L1-108-ProduceCooler Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27869,7 +27774,7 @@ Lights,
 
 Lights,
     BB1-B - Produce Cooler,  !- Name
-    L1-108-ProduceCooler Thermal Zone,    !- Zone or ZoneList Name
+    L1-108-ProduceCooler Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27884,7 +27789,7 @@ Lights,
 
 Lights,
     BB1-C - Produce Cooler,  !- Name
-    L1-108-ProduceCooler Thermal Zone,    !- Zone or ZoneList Name
+    L1-108-ProduceCooler Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27899,7 +27804,7 @@ Lights,
 
 Lights,
     BB1-D - Produce Cooler,  !- Name
-    L1-108-ProduceCooler Thermal Zone,    !- Zone or ZoneList Name
+    L1-108-ProduceCooler Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27914,7 +27819,7 @@ Lights,
 
 Lights,
     B1-A - Produce Prep,     !- Name
-    L1S1-Loading Thermal Zone,            !- Zone or ZoneList Name
+    L1S1-Loading Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27929,7 +27834,7 @@ Lights,
 
 Lights,
     B1-B - Produce Prep,     !- Name
-    L1S1-Loading Thermal Zone,            !- Zone or ZoneList Name
+    L1S1-Loading Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27944,7 +27849,7 @@ Lights,
 
 Lights,
     B1-C - Produce Prep,     !- Name
-    L1S1-Loading Thermal Zone,            !- Zone or ZoneList Name
+    L1S1-Loading Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27959,7 +27864,7 @@ Lights,
 
 Lights,
     B1-D - Produce Prep,     !- Name
-    L1S1-Loading Thermal Zone,            !- Zone or ZoneList Name
+    L1S1-Loading Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27974,7 +27879,7 @@ Lights,
 
 Lights,
     B1-E - Produce Prep,     !- Name
-    L1S1-Loading Thermal Zone,            !- Zone or ZoneList Name
+    L1S1-Loading Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -27989,7 +27894,7 @@ Lights,
 
 Lights,
     B1-F - Produce Prep,     !- Name
-    L1S1-Loading Thermal Zone,            !- Zone or ZoneList Name
+    L1S1-Loading Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28004,7 +27909,7 @@ Lights,
 
 Lights,
     B1-G - Produce Prep,     !- Name
-    L1S1-Loading Thermal Zone,            !- Zone or ZoneList Name
+    L1S1-Loading Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28019,7 +27924,7 @@ Lights,
 
 Lights,
     B1-H - Produce Prep,     !- Name
-    L1S1-Loading Thermal Zone,            !- Zone or ZoneList Name
+    L1S1-Loading Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28034,7 +27939,7 @@ Lights,
 
 Lights,
     AA1-A - Grocery Freezer, !- Name
-    L1S1-Loading Thermal Zone,            !- Zone or ZoneList Name
+    L1S1-Loading Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28049,7 +27954,7 @@ Lights,
 
 Lights,
     BB1-A - Grocery Freezer, !- Name
-    L1-111-GroceryFreezer Thermal Zone,   !- Zone or ZoneList Name
+    L1-111-GroceryFreezer Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28064,7 +27969,7 @@ Lights,
 
 Lights,
     BB1-B - Grocery Freezer, !- Name
-    L1-111-GroceryFreezer Thermal Zone,   !- Zone or ZoneList Name
+    L1-111-GroceryFreezer Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28079,7 +27984,7 @@ Lights,
 
 Lights,
     BB-A - Dairy Cooler,     !- Name
-    L1S1-DairyCooler Thermal Zone,        !- Zone or ZoneList Name
+    L1S1-DairyCooler Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -28094,7 +27999,7 @@ Lights,
 
 Lights,
     BB-B - Dairy Cooler,     !- Name
-    L1S1-DairyCooler Thermal Zone,        !- Zone or ZoneList Name
+    L1S1-DairyCooler Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -28109,7 +28014,7 @@ Lights,
 
 Lights,
     AA-A - Beer Cage,        !- Name
-    L1S1-BeerCage Thermal Zone,           !- Zone or ZoneList Name
+    L1S1-BeerCage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -28124,7 +28029,7 @@ Lights,
 
 Lights,
     AA-A - Backstock,        !- Name
-    L1S1-Backstock Thermal Zone,          !- Zone or ZoneList Name
+    L1S1-Backstock Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -28169,7 +28074,7 @@ Lights,
 
 Lights,
     B2-A - Seafood Counter,  !- Name
-    L1S1-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28184,7 +28089,7 @@ Lights,
 
 Lights,
     B2-B - Seafood Counter,  !- Name
-    L1S1-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28199,7 +28104,7 @@ Lights,
 
 Lights,
     B2-C - Seafood Counter,  !- Name
-    L1S1-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28214,7 +28119,7 @@ Lights,
 
 Lights,
     B2-D - Seafood Counter,  !- Name
-    L1S1-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28229,7 +28134,7 @@ Lights,
 
 Lights,
     E1-A - Seafood Counter,  !- Name
-    L1S1-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28244,7 +28149,7 @@ Lights,
 
 Lights,
     E1-B - Seafood Counter,  !- Name
-    L1S1-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28259,7 +28164,7 @@ Lights,
 
 Lights,
     E1-C - Seafood Counter,  !- Name
-    L1S1-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28274,7 +28179,7 @@ Lights,
 
 Lights,
     E1-D - Seafood Counter,  !- Name
-    L1S1-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28289,7 +28194,7 @@ Lights,
 
 Lights,
     E1-E - Seafood Counter,  !- Name
-    L1S1-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28304,7 +28209,7 @@ Lights,
 
 Lights,
     E1-F - Seafood Counter,  !- Name
-    L1S1-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28319,7 +28224,7 @@ Lights,
 
 Lights,
     E1-G - Seafood Counter,  !- Name
-    L1S1-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28334,7 +28239,7 @@ Lights,
 
 Lights,
     E1-H - Seafood Counter,  !- Name
-    L1S1-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28349,7 +28254,7 @@ Lights,
 
 Lights,
     E1-I - Seafood Counter,  !- Name
-    L1S1-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28439,7 +28344,7 @@ Lights,
 
 Lights,
     BB1-A - Deli Cooler,     !- Name
-    L1S1-DeliCooler Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-DeliCooler Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28454,7 +28359,7 @@ Lights,
 
 Lights,
     N-A - Mens Room,         !- Name
-    L1S1-Men Thermal Zone,                !- Zone or ZoneList Name
+    L1S1-Men Thermal Zone,   !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28468,8 +28373,8 @@ Lights,
     No;                      !- Return Air Fraction Calculated from Plenum Temperature
 
 Lights,
-    N-A - Mens Room,         !- Name
-    L1-121-Men Thermal Zone,              !- Zone or ZoneList Name
+    N-A - Mens Room 2,       !- Name
+    L1-121-Men Thermal Zone, !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28484,7 +28389,7 @@ Lights,
 
 Lights,
     E-A - Womens Room,       !- Name
-    L1S1-Women Thermal Zone,              !- Zone or ZoneList Name
+    L1S1-Women Thermal Zone, !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28499,7 +28404,7 @@ Lights,
 
 Lights,
     E-A - Mens Room,         !- Name
-    L1S1-Men Thermal Zone,                !- Zone or ZoneList Name
+    L1S1-Men Thermal Zone,   !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28514,7 +28419,7 @@ Lights,
 
 Lights,
     B3-A - Corridor,         !- Name
-    L1S1-Corridor Thermal Zone,           !- Zone or ZoneList Name
+    L1S1-Corridor Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28529,7 +28434,7 @@ Lights,
 
 Lights,
     B3-B - Corridor,         !- Name
-    L1S1-Corridor Thermal Zone,           !- Zone or ZoneList Name
+    L1S1-Corridor Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28544,7 +28449,7 @@ Lights,
 
 Lights,
     AA-A - Stairs,           !- Name
-    L1S1-Stairs Thermal Zone,             !- Zone or ZoneList Name
+    L1S1-Stairs Thermal Zone,!- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -28559,7 +28464,7 @@ Lights,
 
 Lights,
     E-A - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28574,7 +28479,7 @@ Lights,
 
 Lights,
     E-B - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28589,7 +28494,7 @@ Lights,
 
 Lights,
     E-C - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28604,7 +28509,7 @@ Lights,
 
 Lights,
     E-D - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28619,7 +28524,7 @@ Lights,
 
 Lights,
     E-E - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28634,7 +28539,7 @@ Lights,
 
 Lights,
     E-F - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28649,7 +28554,7 @@ Lights,
 
 Lights,
     E-G - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28664,7 +28569,7 @@ Lights,
 
 Lights,
     E-H - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28679,7 +28584,7 @@ Lights,
 
 Lights,
     E-I - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28694,7 +28599,7 @@ Lights,
 
 Lights,
     E-J - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28709,7 +28614,7 @@ Lights,
 
 Lights,
     E-K - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -28724,7 +28629,7 @@ Lights,
 
 Lights,
     P-A - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     32,                      !- Lighting Level {W}
@@ -28739,7 +28644,7 @@ Lights,
 
 Lights,
     P-B - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     32,                      !- Lighting Level {W}
@@ -28754,7 +28659,7 @@ Lights,
 
 Lights,
     P-C - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     32,                      !- Lighting Level {W}
@@ -28769,7 +28674,7 @@ Lights,
 
 Lights,
     P-D - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     32,                      !- Lighting Level {W}
@@ -28784,7 +28689,7 @@ Lights,
 
 Lights,
     P-E - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     32,                      !- Lighting Level {W}
@@ -28799,7 +28704,7 @@ Lights,
 
 Lights,
     P-F - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     32,                      !- Lighting Level {W}
@@ -28814,7 +28719,7 @@ Lights,
 
 Lights,
     P-G - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     32,                      !- Lighting Level {W}
@@ -28829,7 +28734,7 @@ Lights,
 
 Lights,
     P-H - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     32,                      !- Lighting Level {W}
@@ -28844,7 +28749,7 @@ Lights,
 
 Lights,
     P-I - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     32,                      !- Lighting Level {W}
@@ -28859,7 +28764,7 @@ Lights,
 
 Lights,
     P-A - Dairy,             !- Name
-    L1S1-SalesRefrigerationReachInDairy Thermal Zone,  !- Zone or ZoneList Name
+    L1S1-SalesRefrigerationReachInDairy2 Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     32,                      !- Lighting Level {W}
@@ -28874,7 +28779,7 @@ Lights,
 
 Lights,
     P-B - Dairy,             !- Name
-    L1S1-SalesRefrigerationReachInDairy Thermal Zone,  !- Zone or ZoneList Name
+    L1S1-SalesRefrigerationReachInDairy2 Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     32,                      !- Lighting Level {W}
@@ -28889,7 +28794,7 @@ Lights,
 
 Lights,
     P-C - Dairy,             !- Name
-    L1S1-SalesRefrigerationReachInDairy Thermal Zone,  !- Zone or ZoneList Name
+    L1S1-SalesRefrigerationReachInDairy2 Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     32,                      !- Lighting Level {W}
@@ -28904,7 +28809,7 @@ Lights,
 
 Lights,
     P-D - Dairy,             !- Name
-    L1S1-SalesRefrigerationReachInDairy Thermal Zone,  !- Zone or ZoneList Name
+    L1S1-SalesRefrigerationReachInDairy2 Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     32,                      !- Lighting Level {W}
@@ -28919,7 +28824,7 @@ Lights,
 
 Lights,
     P-E - Dairy,             !- Name
-    L1S1-SalesRefrigerationReachInDairy Thermal Zone,  !- Zone or ZoneList Name
+    L1S1-SalesRefrigerationReachInDairy2 Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     32,                      !- Lighting Level {W}
@@ -28934,7 +28839,7 @@ Lights,
 
 Lights,
     B3-A - Sales Aisle Bulk, !- Name
-    L1S1-SalesAisle1 Thermal Zone,        !- Zone or ZoneList Name
+    L1S1-SalesAisle1 Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28949,7 +28854,7 @@ Lights,
 
 Lights,
     B3-B - Sales Aisle Bulk, !- Name
-    L1S1-SalesAisle1 Thermal Zone,        !- Zone or ZoneList Name
+    L1S1-SalesAisle1 Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28964,7 +28869,7 @@ Lights,
 
 Lights,
     B3-A - Sales Aisle 1-2,  !- Name
-    L1S1-SalesAisle1 Thermal Zone,        !- Zone or ZoneList Name
+    L1S1-SalesAisle1 Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28979,7 +28884,7 @@ Lights,
 
 Lights,
     B3-B - Sales Aisle 1-2,  !- Name
-    L1S1-SalesAisle1 Thermal Zone,        !- Zone or ZoneList Name
+    L1S1-SalesAisle1 Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -28994,7 +28899,7 @@ Lights,
 
 Lights,
     B3-A - Sales Aisle 3-4,  !- Name
-    L1S1-SalesAisle4 Thermal Zone,        !- Zone or ZoneList Name
+    L1S1-SalesAisle4 Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -29009,7 +28914,7 @@ Lights,
 
 Lights,
     B3-B - Sales Aisle 3-4,  !- Name
-    L1S1-SalesAisle4 Thermal Zone,        !- Zone or ZoneList Name
+    L1S1-SalesAisle4 Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -29024,7 +28929,7 @@ Lights,
 
 Lights,
     B3-A - Sales Aisle 5-6,  !- Name
-    L1S1-SalesAisle4 Thermal Zone,        !- Zone or ZoneList Name
+    L1S1-SalesAisle4 Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -29039,7 +28944,7 @@ Lights,
 
 Lights,
     B3-B - Sales Aisle 5-6,  !- Name
-    L1S1-SalesAisle4 Thermal Zone,        !- Zone or ZoneList Name
+    L1S1-SalesAisle4 Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -29054,7 +28959,7 @@ Lights,
 
 Lights,
     B3-A - Sales Aisle 7-8,  !- Name
-    L1S1-SalesAisle4 Thermal Zone,        !- Zone or ZoneList Name
+    L1S1-SalesAisle4 Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -29069,7 +28974,7 @@ Lights,
 
 Lights,
     B3-B - Sales Aisle 7-8,  !- Name
-    L1S1-SalesAisle4 Thermal Zone,        !- Zone or ZoneList Name
+    L1S1-SalesAisle4 Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -29114,7 +29019,7 @@ Lights,
 
 Lights,
     A-A - Bulk Sales Aisle,  !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29129,7 +29034,7 @@ Lights,
 
 Lights,
     A-B - Bulk Sales Aisle,  !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29144,7 +29049,7 @@ Lights,
 
 Lights,
     A-C - Bulk Sales Aisle,  !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29159,7 +29064,7 @@ Lights,
 
 Lights,
     A-A - Sales Aisle 1-2,   !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29174,7 +29079,7 @@ Lights,
 
 Lights,
     A-B - Sales Aisle 1-2,   !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29189,7 +29094,7 @@ Lights,
 
 Lights,
     A-C - Sales Aisle 1-2,   !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29204,7 +29109,7 @@ Lights,
 
 Lights,
     A1-A - Sales Aisle 3-4,  !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -29219,7 +29124,7 @@ Lights,
 
 Lights,
     A-A - Sales Aisle 3-4,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29234,7 +29139,7 @@ Lights,
 
 Lights,
     A-B - Sales Aisle 3-4,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29249,7 +29154,7 @@ Lights,
 
 Lights,
     A-C - Sales Aisle 3-4,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29264,7 +29169,7 @@ Lights,
 
 Lights,
     A-D - Sales Aisle 3-4,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29279,7 +29184,7 @@ Lights,
 
 Lights,
     A-E - Sales Aisle 3-4,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29294,7 +29199,7 @@ Lights,
 
 Lights,
     A-F - Sales Aisle 3-4,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29309,7 +29214,7 @@ Lights,
 
 Lights,
     A1-A - Sales Aisle 5-6,  !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -29324,7 +29229,7 @@ Lights,
 
 Lights,
     A-A - Sales Aisle 5-6,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29339,7 +29244,7 @@ Lights,
 
 Lights,
     A-B - Sales Aisle 5-6,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29354,7 +29259,7 @@ Lights,
 
 Lights,
     A-C - Sales Aisle 5-6,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29369,7 +29274,7 @@ Lights,
 
 Lights,
     A-D - Sales Aisle 5-6,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29384,7 +29289,7 @@ Lights,
 
 Lights,
     A-E - Sales Aisle 5-6,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29399,7 +29304,7 @@ Lights,
 
 Lights,
     A-F - Sales Aisle 5-6,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29414,7 +29319,7 @@ Lights,
 
 Lights,
     A1-A - Sales Aisle 7-8,  !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -29429,7 +29334,7 @@ Lights,
 
 Lights,
     A-A - Sales Aisle 7-8,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29444,7 +29349,7 @@ Lights,
 
 Lights,
     A-B - Sales Aisle 7-8,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29459,7 +29364,7 @@ Lights,
 
 Lights,
     A-C - Sales Aisle 7-8,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29474,7 +29379,7 @@ Lights,
 
 Lights,
     A-D - Sales Aisle 7-8,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29489,7 +29394,7 @@ Lights,
 
 Lights,
     A-E - Sales Aisle 7-8,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29504,7 +29409,7 @@ Lights,
 
 Lights,
     A-F - Sales Aisle 7-8,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29519,7 +29424,7 @@ Lights,
 
 Lights,
     A1-A - Refrig Sales Aisle,  !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -29534,7 +29439,7 @@ Lights,
 
 Lights,
     A-A - Refrig Sales Aisle,!- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29549,7 +29454,7 @@ Lights,
 
 Lights,
     A-B - Refrig Sales Aisle,!- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29564,7 +29469,7 @@ Lights,
 
 Lights,
     A-C - Refrig Sales Aisle,!- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29579,7 +29484,7 @@ Lights,
 
 Lights,
     A-D - Refrig Sales Aisle,!- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29594,7 +29499,7 @@ Lights,
 
 Lights,
     A-E - Refrig Sales Aisle,!- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29609,7 +29514,7 @@ Lights,
 
 Lights,
     A-F - Refrig Sales Aisle,!- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29624,7 +29529,7 @@ Lights,
 
 Lights,
     A1-A - Sales Aisle 10,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -29639,7 +29544,7 @@ Lights,
 
 Lights,
     A-A - Sales Aisle 10,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29654,7 +29559,7 @@ Lights,
 
 Lights,
     A-B - Sales Aisle 10,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29669,7 +29574,7 @@ Lights,
 
 Lights,
     A-C - Sales Aisle 10,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29684,7 +29589,7 @@ Lights,
 
 Lights,
     A-D - Sales Aisle 10,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29699,7 +29604,7 @@ Lights,
 
 Lights,
     A-E - Sales Aisle 10,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29714,7 +29619,7 @@ Lights,
 
 Lights,
     A-F - Sales Aisle 10,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -29729,7 +29634,7 @@ Lights,
 
 Lights,
     F-A - Sales Front,       !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -29744,7 +29649,7 @@ Lights,
 
 Lights,
     F-B - Sales Front,       !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -29759,7 +29664,7 @@ Lights,
 
 Lights,
     F-C - Sales Front,       !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -29774,7 +29679,7 @@ Lights,
 
 Lights,
     F-D - Sales Front,       !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -29789,7 +29694,7 @@ Lights,
 
 Lights,
     F-E - Sales Front,       !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     70,                      !- Lighting Level {W}
@@ -29804,7 +29709,7 @@ Lights,
 
 Lights,
     W-A - Coffee Track,      !- Name
-    L1S1-Coffee Thermal Zone,             !- Zone or ZoneList Name
+    L1S1-Coffee Thermal Zone,!- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -29819,7 +29724,7 @@ Lights,
 
 Lights,
     W-B - Coffee Track,      !- Name
-    L1S1-Coffee Thermal Zone,             !- Zone or ZoneList Name
+    L1S1-Coffee Thermal Zone,!- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -29834,7 +29739,7 @@ Lights,
 
 Lights,
     W-C - Coffee Track,      !- Name
-    L1S1-Coffee Thermal Zone,             !- Zone or ZoneList Name
+    L1S1-Coffee Thermal Zone,!- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -29849,7 +29754,7 @@ Lights,
 
 Lights,
     K-A - Prepared Track,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -29864,7 +29769,7 @@ Lights,
 
 Lights,
     K-B - Prepared Track,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -29879,7 +29784,7 @@ Lights,
 
 Lights,
     K-C - Prepared Track,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -29894,7 +29799,7 @@ Lights,
 
 Lights,
     K-D - Prepared Track,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -29909,7 +29814,7 @@ Lights,
 
 Lights,
     K-E - Prepared Track,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -29924,7 +29829,7 @@ Lights,
 
 Lights,
     H-A - Prepared Track,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -29939,7 +29844,7 @@ Lights,
 
 Lights,
     H-B - Prepared Track,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -29954,7 +29859,7 @@ Lights,
 
 Lights,
     H-C - Prepared Track,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -29969,7 +29874,7 @@ Lights,
 
 Lights,
     H-D - Prepared Track,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -29984,7 +29889,7 @@ Lights,
 
 Lights,
     H-E - Prepared Track,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -29999,7 +29904,7 @@ Lights,
 
 Lights,
     H-F - Prepared Track,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30014,7 +29919,7 @@ Lights,
 
 Lights,
     H-G - Prepared Track,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30029,7 +29934,7 @@ Lights,
 
 Lights,
     H-H - Prepared Track,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30044,7 +29949,7 @@ Lights,
 
 Lights,
     H-I - Prepared Track,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30059,7 +29964,7 @@ Lights,
 
 Lights,
     H-J - Prepared Track,    !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30074,7 +29979,7 @@ Lights,
 
 Lights,
     H-A - Specialty Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30089,7 +29994,7 @@ Lights,
 
 Lights,
     H-B - Specialty Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30104,7 +30009,7 @@ Lights,
 
 Lights,
     H-C - Specialty Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30119,7 +30024,7 @@ Lights,
 
 Lights,
     H-D - Specialty Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30134,7 +30039,7 @@ Lights,
 
 Lights,
     H-E - Specialty Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30149,7 +30054,7 @@ Lights,
 
 Lights,
     H-F - Specialty Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30164,7 +30069,7 @@ Lights,
 
 Lights,
     K-A - Specialty Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30179,7 +30084,7 @@ Lights,
 
 Lights,
     K-B - Specialty Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30194,7 +30099,7 @@ Lights,
 
 Lights,
     K-C - Specialty Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30209,7 +30114,7 @@ Lights,
 
 Lights,
     K-D - Specialty Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30224,7 +30129,7 @@ Lights,
 
 Lights,
     K-E - Specialty Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30239,7 +30144,7 @@ Lights,
 
 Lights,
     K-F - Specialty Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30254,7 +30159,7 @@ Lights,
 
 Lights,
     K-G - Specialty Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30269,7 +30174,7 @@ Lights,
 
 Lights,
     K-H - Specialty Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30284,7 +30189,7 @@ Lights,
 
 Lights,
     K-I - Specialty Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30299,7 +30204,7 @@ Lights,
 
 Lights,
     K-A - Refrig Sales Track,!- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30314,7 +30219,7 @@ Lights,
 
 Lights,
     K-B - Refrig Sales Track,!- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30329,7 +30234,7 @@ Lights,
 
 Lights,
     K-C - Refrig Sales Track,!- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30344,7 +30249,7 @@ Lights,
 
 Lights,
     K-D - Refrig Sales Track,!- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30359,7 +30264,7 @@ Lights,
 
 Lights,
     K-A - Aisle 7-8 Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30374,7 +30279,7 @@ Lights,
 
 Lights,
     K-B - Aisle 7-8 Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30389,7 +30294,7 @@ Lights,
 
 Lights,
     K-A - Aisle 5-6 Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30404,7 +30309,7 @@ Lights,
 
 Lights,
     K-B - Aisle 5-6 Track,   !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30419,7 +30324,7 @@ Lights,
 
 Lights,
     K-A - Aisle 4 Track,     !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30434,7 +30339,7 @@ Lights,
 
 Lights,
     K-A - Aisle 3 Track,     !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30449,7 +30354,7 @@ Lights,
 
 Lights,
     K-A - Aisle 1-2 Track,   !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30464,7 +30369,7 @@ Lights,
 
 Lights,
     K-B - Aisle 1-2 Track,   !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30479,7 +30384,7 @@ Lights,
 
 Lights,
     H-A - Sales Front Track, !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30494,7 +30399,7 @@ Lights,
 
 Lights,
     H-B - Sales Front Track, !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30509,7 +30414,7 @@ Lights,
 
 Lights,
     H-C - Sales Front Track, !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30524,7 +30429,7 @@ Lights,
 
 Lights,
     H-D - Sales Front Track, !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30539,7 +30444,7 @@ Lights,
 
 Lights,
     H-E - Sales Front Track, !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30554,7 +30459,7 @@ Lights,
 
 Lights,
     H-F - Sales Front Track, !- Name
-    L1S2-AislesEast Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesEast Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30569,7 +30474,7 @@ Lights,
 
 Lights,
     H-A - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30584,7 +30489,7 @@ Lights,
 
 Lights,
     H-B - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30599,7 +30504,7 @@ Lights,
 
 Lights,
     H-C - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30614,7 +30519,7 @@ Lights,
 
 Lights,
     H-D - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30629,7 +30534,7 @@ Lights,
 
 Lights,
     H-E - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30644,7 +30549,7 @@ Lights,
 
 Lights,
     H-F - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30659,7 +30564,7 @@ Lights,
 
 Lights,
     H-G - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30674,7 +30579,7 @@ Lights,
 
 Lights,
     H-H - Meat-Seafood,      !- Name
-    L1S1-SalesNorth Thermal Zone,         !- Zone or ZoneList Name
+    L1S1-SalesNorth Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30689,7 +30594,7 @@ Lights,
 
 Lights,
     H-A - Checkout,          !- Name
-    L1S2-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S2-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30704,7 +30609,7 @@ Lights,
 
 Lights,
     H-B - Checkout,          !- Name
-    L1S2-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S2-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30719,7 +30624,7 @@ Lights,
 
 Lights,
     H-C - Checkout,          !- Name
-    L1S2-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S2-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30734,7 +30639,7 @@ Lights,
 
 Lights,
     H-D - Checkout,          !- Name
-    L1S2-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S2-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30749,7 +30654,7 @@ Lights,
 
 Lights,
     H-E - Checkout,          !- Name
-    L1S2-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S2-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30764,7 +30669,7 @@ Lights,
 
 Lights,
     H-F - Checkout,          !- Name
-    L1S2-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S2-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30779,7 +30684,7 @@ Lights,
 
 Lights,
     H-G - Checkout,          !- Name
-    L1S2-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S2-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30794,7 +30699,7 @@ Lights,
 
 Lights,
     H-H - Checkout,          !- Name
-    L1S2-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S2-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30809,7 +30714,7 @@ Lights,
 
 Lights,
     H-I - Checkout,          !- Name
-    L1S2-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S2-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30824,7 +30729,7 @@ Lights,
 
 Lights,
     H-J - Checkout,          !- Name
-    L1S2-Checkout Thermal Zone,           !- Zone or ZoneList Name
+    L1S2-Checkout Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30839,7 +30744,7 @@ Lights,
 
 Lights,
     H-A - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30854,7 +30759,7 @@ Lights,
 
 Lights,
     H-B - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30869,7 +30774,7 @@ Lights,
 
 Lights,
     H-C - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30884,7 +30789,7 @@ Lights,
 
 Lights,
     H-D - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30899,7 +30804,7 @@ Lights,
 
 Lights,
     H-E - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30914,7 +30819,7 @@ Lights,
 
 Lights,
     H-F - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30929,7 +30834,7 @@ Lights,
 
 Lights,
     H-G - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30944,7 +30849,7 @@ Lights,
 
 Lights,
     H-H - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30959,7 +30864,7 @@ Lights,
 
 Lights,
     H-I - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30974,7 +30879,7 @@ Lights,
 
 Lights,
     H-J - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -30989,7 +30894,7 @@ Lights,
 
 Lights,
     H-K - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31004,7 +30909,7 @@ Lights,
 
 Lights,
     H-L - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31019,7 +30924,7 @@ Lights,
 
 Lights,
     H-M - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31034,7 +30939,7 @@ Lights,
 
 Lights,
     H-N - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31049,7 +30954,7 @@ Lights,
 
 Lights,
     H-O - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31064,7 +30969,7 @@ Lights,
 
 Lights,
     H-P - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31079,7 +30984,7 @@ Lights,
 
 Lights,
     H-Q - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31094,7 +30999,7 @@ Lights,
 
 Lights,
     H-R - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31109,7 +31014,7 @@ Lights,
 
 Lights,
     H-S - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31124,7 +31029,7 @@ Lights,
 
 Lights,
     H-T - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31139,7 +31044,7 @@ Lights,
 
 Lights,
     H-U - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31154,7 +31059,7 @@ Lights,
 
 Lights,
     H-V - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31169,7 +31074,7 @@ Lights,
 
 Lights,
     J-A - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31184,7 +31089,7 @@ Lights,
 
 Lights,
     J-B - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31199,7 +31104,7 @@ Lights,
 
 Lights,
     J-C - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31214,7 +31119,7 @@ Lights,
 
 Lights,
     J-D - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31229,7 +31134,7 @@ Lights,
 
 Lights,
     J-E - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31244,7 +31149,7 @@ Lights,
 
 Lights,
     J-F - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31259,7 +31164,7 @@ Lights,
 
 Lights,
     J-G - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31274,7 +31179,7 @@ Lights,
 
 Lights,
     J-H - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31289,7 +31194,7 @@ Lights,
 
 Lights,
     J-I - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31304,7 +31209,7 @@ Lights,
 
 Lights,
     J-J - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31319,7 +31224,7 @@ Lights,
 
 Lights,
     J-K - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31334,7 +31239,7 @@ Lights,
 
 Lights,
     J-L - Produce,           !- Name
-    L1S2-AislesWest Thermal Zone,         !- Zone or ZoneList Name
+    L1S2-AislesWest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31349,7 +31254,7 @@ Lights,
 
 Lights,
     W-A - Seafood Surface,   !- Name
-    L1S2-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31364,7 +31269,7 @@ Lights,
 
 Lights,
     W-B - Seafood Surface,   !- Name
-    L1S2-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31379,7 +31284,7 @@ Lights,
 
 Lights,
     W-C - Seafood Surface,   !- Name
-    L1S2-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31394,7 +31299,7 @@ Lights,
 
 Lights,
     W-D - Seafood Surface,   !- Name
-    L1S2-SeafoodSurface Thermal Zone,     !- Zone or ZoneList Name
+    L1S1-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     39,                      !- Lighting Level {W}
@@ -31409,7 +31314,7 @@ Lights,
 
 Lights,
     Retro1-A - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -31424,7 +31329,7 @@ Lights,
 
 Lights,
     Retro1-B - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -31439,7 +31344,7 @@ Lights,
 
 Lights,
     Retro1-C - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -31454,7 +31359,7 @@ Lights,
 
 Lights,
     Retro1-D - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -31469,7 +31374,7 @@ Lights,
 
 Lights,
     Retro1-E - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -31483,8 +31388,8 @@ Lights,
     No;                      !- Return Air Fraction Calculated from Plenum Temperature
 
 Lights,
-    Retro1-E - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    Retro1-E - ExgStorage 2, !- Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -31499,7 +31404,7 @@ Lights,
 
 Lights,
     Retro2-A - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31514,7 +31419,7 @@ Lights,
 
 Lights,
     Retro2-B - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31529,7 +31434,7 @@ Lights,
 
 Lights,
     Retro2-C - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31544,7 +31449,7 @@ Lights,
 
 Lights,
     Retro2-D - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31559,7 +31464,7 @@ Lights,
 
 Lights,
     Retro2-E - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31574,7 +31479,7 @@ Lights,
 
 Lights,
     Retro2-F - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31589,7 +31494,7 @@ Lights,
 
 Lights,
     Retro2-G - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31604,7 +31509,7 @@ Lights,
 
 Lights,
     Retro3-A - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31619,7 +31524,7 @@ Lights,
 
 Lights,
     Retro3-B - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31634,7 +31539,7 @@ Lights,
 
 Lights,
     Retro6-A - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -31649,7 +31554,7 @@ Lights,
 
 Lights,
     Retro6-B - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -31664,7 +31569,7 @@ Lights,
 
 Lights,
     Retro6-C - ExgStorage,   !- Name
-    M-201-ExgStorage Thermal Zone,        !- Zone or ZoneList Name
+    M-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -31679,7 +31584,7 @@ Lights,
 
 Lights,
     Retro3-A - Cash Room,    !- Name
-    M-153-CashRoom Thermal Zone,          !- Zone or ZoneList Name
+    M-153-CashRoom Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31694,7 +31599,7 @@ Lights,
 
 Lights,
     Retro3-B - Cash Room,    !- Name
-    M-153-CashRoom Thermal Zone,          !- Zone or ZoneList Name
+    M-153-CashRoom Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31709,7 +31614,7 @@ Lights,
 
 Lights,
     Retro3-A - ExgOffices,   !- Name
-    M-154-ExgOffice Thermal Zone,         !- Zone or ZoneList Name
+    M-154-ExgOffice Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31724,7 +31629,7 @@ Lights,
 
 Lights,
     Retro3-B - ExgOffices,   !- Name
-    M-154-ExgOffice Thermal Zone,         !- Zone or ZoneList Name
+    M-154-ExgOffice Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31739,7 +31644,7 @@ Lights,
 
 Lights,
     Retro5-A - ExgOffices,   !- Name
-    M-155-ExgOffice Thermal Zone,         !- Zone or ZoneList Name
+    M-155-ExgOffice Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     96,                      !- Lighting Level {W}
@@ -31754,7 +31659,7 @@ Lights,
 
 Lights,
     Retro3-C - ExgOffices,   !- Name
-    M-156-StlOffice Thermal Zone,         !- Zone or ZoneList Name
+    M-156-StlOffice Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31769,7 +31674,7 @@ Lights,
 
 Lights,
     Retro3-D - ExgOffices,   !- Name
-    M-156-StlOffice Thermal Zone,         !- Zone or ZoneList Name
+    M-156-StlOffice Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31784,7 +31689,7 @@ Lights,
 
 Lights,
     Retro3-E - ExgOffices,   !- Name
-    M-156-StlOffice Thermal Zone,         !- Zone or ZoneList Name
+    M-156-StlOffice Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31799,7 +31704,7 @@ Lights,
 
 Lights,
     Retro3-F - ExgOffices,   !- Name
-    M-156-StlOffice Thermal Zone,         !- Zone or ZoneList Name
+    M-156-StlOffice Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31814,7 +31719,7 @@ Lights,
 
 Lights,
     Retro3-A - Break Room,   !- Name
-    M-158-BreakRoom Thermal Zone,         !- Zone or ZoneList Name
+    M-158-BreakRoom Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31829,7 +31734,7 @@ Lights,
 
 Lights,
     Retro6-A - ExgVest,      !- Name
-    M-159-ExgVest Thermal Zone,           !- Zone or ZoneList Name
+    M-159-ExgVest Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -31844,7 +31749,7 @@ Lights,
 
 Lights,
     Retro6-A - ExgMens,      !- Name
-    M-161-Men Thermal Zone,               !- Zone or ZoneList Name
+    M-161-Men Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -31859,7 +31764,7 @@ Lights,
 
 Lights,
     Retro3-A - ExgMens,      !- Name
-    M-161-Men Thermal Zone,               !- Zone or ZoneList Name
+    M-161-Men Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31874,7 +31779,7 @@ Lights,
 
 Lights,
     Retro6-A - ExgWomens,    !- Name
-    M-ExgWomen Thermal Zone,              !- Zone or ZoneList Name
+    M-ExgWomen Thermal Zone, !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -31889,7 +31794,7 @@ Lights,
 
 Lights,
     Retro3-A - ExgWomens,    !- Name
-    M-ExgWomen Thermal Zone,              !- Zone or ZoneList Name
+    M-ExgWomen Thermal Zone, !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31904,7 +31809,7 @@ Lights,
 
 Lights,
     Retro2-A - MDF,          !- Name
-    M-152-MDF Thermal Zone,               !- Zone or ZoneList Name
+    M-152-MDF Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31918,8 +31823,8 @@ Lights,
     No;                      !- Return Air Fraction Calculated from Plenum Temperature
 
 Lights,
-    Retro2-A - MDF,          !- Name
-    M-152-MDF Thermal Zone,               !- Zone or ZoneList Name
+    Retro2-A - MDF 2,        !- Name
+    M-152-MDF Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31934,7 +31839,7 @@ Lights,
 
 Lights,
     Retro1-A - Meat Prep,    !- Name
-    M-163-MeatPrep Thermal Zone,          !- Zone or ZoneList Name
+    M-163-MeatPrep Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -31949,7 +31854,7 @@ Lights,
 
 Lights,
     Retro1-B - Meat Prep,    !- Name
-    M-163-MeatPrep Thermal Zone,          !- Zone or ZoneList Name
+    M-163-MeatPrep Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -31964,7 +31869,7 @@ Lights,
 
 Lights,
     Retro2-A - Meat Prep,    !- Name
-    M-163-MeatPrep Thermal Zone,          !- Zone or ZoneList Name
+    M-163-MeatPrep Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -31979,7 +31884,7 @@ Lights,
 
 Lights,
     AA-A - Meat Prep,        !- Name
-    M-163-MeatPrep Thermal Zone,          !- Zone or ZoneList Name
+    M-163-MeatPrep Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -31994,7 +31899,7 @@ Lights,
 
 Lights,
     BB-A - Meat Cooler,      !- Name
-    M-164-MeatCooler Thermal Zone,        !- Zone or ZoneList Name
+    M-164-MeatCooler Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -32009,7 +31914,7 @@ Lights,
 
 Lights,
     BB-B - Meat Cooler,      !- Name
-    M-164-MeatCooler Thermal Zone,        !- Zone or ZoneList Name
+    M-164-MeatCooler Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -32024,7 +31929,7 @@ Lights,
 
 Lights,
     BB-C - Meat Cooler,      !- Name
-    M-164-MeatCooler Thermal Zone,        !- Zone or ZoneList Name
+    M-164-MeatCooler Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -32039,7 +31944,7 @@ Lights,
 
 Lights,
     Retro1-A - Prep Room,    !- Name
-    M-162-PrepRoom Thermal Zone,          !- Zone or ZoneList Name
+    M-162-PrepRoom Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -32054,7 +31959,7 @@ Lights,
 
 Lights,
     Retro2-A - Prep Room,    !- Name
-    M-163-PrepRoom Thermal Zone,          !- Zone or ZoneList Name
+    M-162-PrepRoom Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -32069,7 +31974,7 @@ Lights,
 
 Lights,
     BB1-A - BakeryFreezer,   !- Name
-    M-BakeryFreezer Thermal Zone,         !- Zone or ZoneList Name
+    M-BakeryFreezer Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -32084,7 +31989,7 @@ Lights,
 
 Lights,
     Retro2-A - Stairs,       !- Name
-    M-123-Stairs Thermal Zone,            !- Zone or ZoneList Name
+    M-123-Stairs Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -32099,7 +32004,7 @@ Lights,
 
 Lights,
     Retro2-A - Stairs1,      !- Name
-    L2-201-Stairs1 Thermal Zone,          !- Zone or ZoneList Name
+    L2-201-Stairs1 Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -32114,7 +32019,7 @@ Lights,
 
 Lights,
     Retro1-A - Corridor,     !- Name
-    L2-201-Corridor Thermal Zone,         !- Zone or ZoneList Name
+    L2-201-Corridor Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -32129,7 +32034,7 @@ Lights,
 
 Lights,
     Retro2-A - Storage,      !- Name
-    L2-201-Storage Thermal Zone,          !- Zone or ZoneList Name
+    L2-201-Storage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     64,                      !- Lighting Level {W}
@@ -32144,7 +32049,7 @@ Lights,
 
 Lights,
     Retro1-A - Storage,      !- Name
-    L2-201-Storage Thermal Zone,          !- Zone or ZoneList Name
+    L2-201-Storage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -32159,7 +32064,7 @@ Lights,
 
 Lights,
     Retro1-A - Walkins,      !- Name
-    L2-201-Walkins Thermal Zone,          !- Zone or ZoneList Name
+    L2-201-Walkins Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -32174,7 +32079,7 @@ Lights,
 
 Lights,
     Retro1-B - Walkins,      !- Name
-    L2-201-Walkins Thermal Zone,          !- Zone or ZoneList Name
+    L2-201-Walkins Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -32189,7 +32094,7 @@ Lights,
 
 Lights,
     Retro1-C - Walkins,      !- Name
-    L2-201-Walkins Thermal Zone,          !- Zone or ZoneList Name
+    L2-201-Walkins Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     128,                     !- Lighting Level {W}
@@ -32204,7 +32109,7 @@ Lights,
 
 Lights,
     Retro6-A - Storage,      !- Name
-    L2-201-ExgStorage Thermal Zone,       !- Zone or ZoneList Name
+    L2-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
@@ -32219,7 +32124,7 @@ Lights,
 
 Lights,
     Retro6-B - Storage,      !- Name
-    L2-201-ExgStorage Thermal Zone,       !- Zone or ZoneList Name
+    L2-201-ExgStorage Thermal Zone,  !- Zone or ZoneList Name
     Lighting_Ambient,        !- Schedule Name
     LightingLevel,           !- Design Level Calculation Method
     42,                      !- Lighting Level {W}
