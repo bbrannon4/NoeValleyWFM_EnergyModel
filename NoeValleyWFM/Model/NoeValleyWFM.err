@@ -1,0 +1,163 @@
+Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2016.10.14 13:36,IDD_Version 8.6.0
+   ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
+   **   ~~~   ** ..Location object=1E1ABA
+   **   ~~~   ** ..Weather File Location=San Francisco Intl Ap CA USA TMY3 WMO#=724940
+   **   ~~~   ** ..due to location differences, Latitude difference=[37.62] degrees, Longitude difference=[122.40] degrees.
+   **   ~~~   ** ..Time Zone difference=[8.0] hour(s), Elevation difference=[200.00] percent, [2.00] meters.
+   ** Warning ** GetHTSurfaceData: Surfaces with interface to Ground found but no "Ground Temperatures" were input.
+   **   ~~~   ** Found first in surface=L1-101-ENTRANCEEXIT_SRF_0
+   **   ~~~   ** Defaults, constant throughout the year of (18.0) will be used.
+   ** Warning ** CheckUsedConstructions: There are 4 nominally unused constructions in input.
+   **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
+   ** Warning ** DetermineShadowingCombinations: There are 57 surfaces which are receiving surfaces and are non-convex.
+   **   ~~~   ** ...Shadowing values may be inaccurate. Check .shd report file for more surface shading details
+   **   ~~~   ** ...Add Output:Diagnostics,DisplayExtraWarnings; to see individual warnings for each surface.
+   ** Severe  ** DetermineShadowingCombinations: There are 25 surfaces which are casting surfaces and are non-convex.
+   **   ~~~   ** ...Shadowing values may be inaccurate. Check .shd report file for more surface shading details
+   **   ~~~   ** ...Add Output:Diagnostics,DisplayExtraWarnings; to see individual severes for each surface.
+   ** Warning ** DeterminePolygonOverlap: Too many figures [>3000]  detected in an overlap calculation. Use Output:Diagnostics,DisplayExtraWarnings; for more details.
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.649E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 06:20 - 06:21
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =5.188E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 08:20 - 08:21
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.315E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 09:20 - 09:21
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =4.997E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 21:20 - 21:21
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =5.033E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 22:20 - 22:21
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.810E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 22:30 - 22:31
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.878E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 22:40 - 22:41
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.095E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 22:50 - 22:51
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.650E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/02 06:20 - 06:21
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =5.185E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/02 08:20 - 08:21
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.321E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/02 09:20 - 09:21
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =4.994E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/02 21:20 - 21:21
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =5.019E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/02 22:20 - 22:21
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.791E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/02 22:30 - 22:31
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.843E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/02 22:40 - 22:41
+   ** Warning ** More than 4% of time (1.9 hours) uncomfortable in one or more zones 
+   **   ~~~   ** Based on ASHRAE 55-2004 graph (Section 5.2.1.1)
+   **   ~~~   ** During Environment [01/01 - 01/02]: SIMULATION
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-ENTRANCEEXIT THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESAISLE1 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESAISLE10 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESAISLE2 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESAISLE3 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESAISLE4 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESAISLE5 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESAISLE6 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESAISLE7 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESAISLE8 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESAISLE9 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESAISLEBULK THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESCIRCULATION1 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESCIRCULATION10 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESCIRCULATION2 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESCIRCULATION3 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESCIRCULATION4 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESCIRCULATION5 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESCIRCULATION6 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESCIRCULATION7 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESCIRCULATION8 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESCIRCULATION9 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESCIRCULATIONMEATSEAFOOD THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONAISLE1 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONAISLE2 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONAISLE3 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONAISLE4 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONAISLE5 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONAISLE6 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONAISLE7 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONENDCAP1 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONENDCAP2 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONENDCAP3 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONREACHINBEER THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONREACHINBEVERAGES THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONREACHINCHEES THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONREACHINDAIRY1 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONREACHINDAIRY2 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONREACHINDAIRY3 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONREACHINMEATSUBSTITUTES THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESREFRIGERATIONREACHINPREPARED THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-101-SALESWINE THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-102-CHECKOUT1 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-102-CHECKOUT2 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-102-CHECKOUT3 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-102-CHECKOUT4 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-102-EXIT THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-102-RECEIVINGOFFICE THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-102-SELFCHECKOUT THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-103-FLORAL THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-104-PRODUCE THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-104-PRODUCECOOLERS1 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-104-PRODUCECOOLERS2 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-104-PRODUCECOOLERS3 THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-106-RECEIVING THERMAL ZONE
+   **   ~~~   ** 31.3 hours were uncomfortable in zone: L1-108-PRODUCECOOLER THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-109-CORRIDOR THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-110-PRODUCEPREP THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-112-DAIRYCOOLER THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-113-BEERCAGE THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-114-BACKSTOCK THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-115-MEATSEAFOODCOOLER THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-116-MEATSERVICE THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-117-SEAFOODSURFACE THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-118-PREPAREDFOODSPREP THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-119-DELICOOLER THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-124-SPECIALTYSERVICE THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-126-BAKERYSERVICE THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L1-127-COFFEE THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: L2-201-EXGSTORAGE THERMAL ZONE
+   **   ~~~   ** 25.8 hours were uncomfortable in zone: M-153-CASHROOM THERMAL ZONE
+   **   ~~~   ** 27.2 hours were uncomfortable in zone: M-154-EXGOFFICE THERMAL ZONE
+   **   ~~~   ** 27.2 hours were uncomfortable in zone: M-155-EXGOFFICE THERMAL ZONE
+   **   ~~~   ** 27.8 hours were uncomfortable in zone: M-156-STLOFFICE THERMAL ZONE
+   **   ~~~   ** 30.0 hours were uncomfortable in zone: M-157-EXGOFFICE THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: M-158-BREAKROOM THERMAL ZONE
+   **   ~~~   ** 27.8 hours were uncomfortable in zone: M-162-PREPROOM THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: M-163-MEATPREP THERMAL ZONE
+   **   ~~~   ** 32.0 hours were uncomfortable in zone: M-164-MEATCOOLER THERMAL ZONE
+   **   ~~~   ** 27.5 hours were uncomfortable in zone: M-201-EXGSTORAGE THERMAL ZONE
+   ************* Simulation Error Summary *************
+   ************* There are 5 unused schedules in input.
+   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
+   *************
+   ************* ===== Recurring Error Summary =====
+   ************* The following recurring error messages occurred.
+   *************
+   *************  ** Warning ** Inside surface heat balance convergence problem continues
+   *************  **   ~~~   **   This error occurred 1 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=2.173854E-003 [C]  Min=2.173854E-003 [C]
+   *************
+   *************
+   ************* ===== Final Error Summary =====
+   ************* The following error categories occurred.  Consider correcting or noting.
+   ************* Nominally Unused Constructions
+   ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause
+   ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm
+   ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 78 Warning; 25 Severe Errors; Elapsed Time=00hr 01min 15.43sec
