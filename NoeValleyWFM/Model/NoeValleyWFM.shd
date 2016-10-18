@@ -252,7 +252,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=SHDSRF_2_0_0ABA8F36-BDA8-4D16-8D77-F71BAEFFA87A_0 is used as Receiving Surface in calculations and is convex.
-Number of general casting surfaces=46
+Number of general casting surfaces=48
 ..Surface=SHDSRF_0_1_25CD6946-3B73-454B-B006-F32DF2BA2361_0
 ..Surface=SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
 ..Surface=Mir-SHDSRF_0_4_9CB1BA02-091D-4806-84B9-6197DE226494_0
@@ -282,7 +282,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=SHDSRF_3_0_3811AEFF-3ADA-41CF-B549-8533029945C4_0 is used as Receiving Surface in calculations and is convex.
-Number of general casting surfaces=52
+Number of general casting surfaces=53
 ..Surface=SHDSRF_0_1_25CD6946-3B73-454B-B006-F32DF2BA2361_0
 ..Surface=SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
 ..Surface=Mir-SHDSRF_0_3_333F4C93-0168-4B1D-B116-3A4016CAD0C0_0
@@ -432,7 +432,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=OVERHANG_1 is used as Receiving Surface in calculations and is convex.
-Number of general casting surfaces=52
+Number of general casting surfaces=53
 ..Surface=SHDSRF_0_1_25CD6946-3B73-454B-B006-F32DF2BA2361_0
 ..Surface=SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
 ..Surface=Mir-SHDSRF_0_3_333F4C93-0168-4B1D-B116-3A4016CAD0C0_0
@@ -462,7 +462,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=OVERHANG_2 is used as Receiving Surface in calculations and is convex.
-Number of general casting surfaces=46
+Number of general casting surfaces=48
 ..Surface=SHDSRF_0_1_25CD6946-3B73-454B-B006-F32DF2BA2361_0
 ..Surface=SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
 ..Surface=Mir-SHDSRF_0_4_9CB1BA02-091D-4806-84B9-6197DE226494_0
@@ -5306,7 +5306,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=L1S1-DELICOOLER_SRF_6 is used as Receiving Surface in calculations and is convex.
-Number of general casting surfaces=46
+Number of general casting surfaces=47
 ..Surface=SHDSRF_0_1_25CD6946-3B73-454B-B006-F32DF2BA2361_0
 ..Surface=Mir-SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
 ..Surface=Mir-SHDSRF_0_3_333F4C93-0168-4B1D-B116-3A4016CAD0C0_0
@@ -5418,7 +5418,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=L1S1-LOADING_SRF_11 is used as Receiving Surface in calculations and is non-convex.
-Number of general casting surfaces=69
+Number of general casting surfaces=70
 ..Surface=SHDSRF_0_1_25CD6946-3B73-454B-B006-F32DF2BA2361_0
 ..Surface=SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
 ..Surface=Mir-SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
@@ -6995,21 +6995,22 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=L1S2-AISLESEAST_SRF_5 is used as Receiving Surface in calculations and is convex.
-Number of general casting surfaces=9
+Number of general casting surfaces=12
 ..Surface=SHDSRF_2_0_0ABA8F36-BDA8-4D16-8D77-F71BAEFFA87A_0
 ..Surface=SHDSRF_3_0_3811AEFF-3ADA-41CF-B549-8533029945C4_0
 ..Surface=OVERHANG_1
 ..Surface=OVERHANG_2
 ..Surface=L1S2-AISLESWEST_SRF_11
+..Surface=L1S2-AISLESWEST_SRF_12
 ..Surface=L1S2-BAKERY_SRF_8
 ..Surface=L1S2-CHECKOUT_SRF_11
 ..Surface=L1S2-LOADINGBOH_SRF_5
-..Surface=L1S2-REACHINPREPARED_SRF_3
+..Surface=L1S2-LOADINGBOH_SRF_6
 Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=L1S2-AISLESEAST_SRF_6 is used as Receiving Surface in calculations and is convex.
-Number of general casting surfaces=23
+Number of general casting surfaces=24
 ..Surface=SHDSRF_1_1_662AE12E-7210-40FE-9D5B-8DA330F1CFC2_0
 ..Surface=SHDSRF_1_2_B5F19BC4-56EA-495A-B5B6-FE55D88A9138_0
 ..Surface=Mir-SHDSRF_1_2_B5F19BC4-56EA-495A-B5B6-FE55D88A9138_0
@@ -7019,7 +7020,7 @@ Number of general casting surfaces=23
 ..Surface=SHDSRF_3_0_3811AEFF-3ADA-41CF-B549-8533029945C4_0
 ..Surface=OVERHANG_1
 ..Surface=L1S2-LOADINGBOH_SRF_5
-..Surface=L2-201-CORRIDOR_SRF_2
+..Surface=L1S2-LOADINGBOH_SRF_6
 Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
@@ -7039,7 +7040,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=L1S2-AISLESEAST_SRF_7 is used as Receiving Surface in calculations and is non-convex.
-Number of general casting surfaces=38
+Number of general casting surfaces=41
 ..Surface=SHDSRF_0_1_25CD6946-3B73-454B-B006-F32DF2BA2361_0
 ..Surface=SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
 ..Surface=Mir-SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
@@ -7179,7 +7180,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=L1S2-AISLESWEST_SRF_9 is used as Receiving Surface in calculations and is convex.
-Number of general casting surfaces=18
+Number of general casting surfaces=20
 ..Surface=SHDSRF_1_1_662AE12E-7210-40FE-9D5B-8DA330F1CFC2_0
 ..Surface=SHDSRF_1_2_B5F19BC4-56EA-495A-B5B6-FE55D88A9138_0
 ..Surface=Mir-SHDSRF_1_2_B5F19BC4-56EA-495A-B5B6-FE55D88A9138_0
@@ -7188,8 +7189,8 @@ Number of general casting surfaces=18
 ..Surface=Mir-SHDSRF_1_5_01E48C73-9E74-4C87-9301-8EE9B3361F06_0
 ..Surface=SHDSRF_3_0_3811AEFF-3ADA-41CF-B549-8533029945C4_0
 ..Surface=OVERHANG_1
-..Surface=L2-201-CORRIDOR_SRF_2
-..Surface=L2-201-CORRIDOR_SRF_0
+..Surface=L1S2-AISLESWEST_SRF_12
+..Surface=L1S2-LOADINGBOH_SRF_6
 Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
@@ -7209,7 +7210,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=L1S2-AISLESWEST_SRF_12 is used as Receiving Surface in calculations and is non-convex.
-Number of general casting surfaces=32
+Number of general casting surfaces=42
 ..Surface=SHDSRF_0_1_25CD6946-3B73-454B-B006-F32DF2BA2361_0
 ..Surface=SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
 ..Surface=Mir-SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
@@ -7238,7 +7239,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=L1S2-BAKERY_SRF_2 is used as Receiving Surface in calculations and is convex.
-Number of general casting surfaces=44
+Number of general casting surfaces=46
 ..Surface=SHDSRF_0_1_25CD6946-3B73-454B-B006-F32DF2BA2361_0
 ..Surface=SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
 ..Surface=Mir-SHDSRF_0_3_333F4C93-0168-4B1D-B116-3A4016CAD0C0_0
@@ -7318,7 +7319,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=L1S2-CHECKOUT_SRF_4 is used as Receiving Surface in calculations and is convex.
-Number of general casting surfaces=22
+Number of general casting surfaces=23
 ..Surface=SHDSRF_1_1_662AE12E-7210-40FE-9D5B-8DA330F1CFC2_0
 ..Surface=SHDSRF_1_2_B5F19BC4-56EA-495A-B5B6-FE55D88A9138_0
 ..Surface=Mir-SHDSRF_1_3_DEAFC0DB-1F8D-4665-85E2-932DC4F22A3A_0
@@ -7327,8 +7328,8 @@ Number of general casting surfaces=22
 ..Surface=SHDSRF_3_0_3811AEFF-3ADA-41CF-B549-8533029945C4_0
 ..Surface=OVERHANG_1
 ..Surface=L1S2-LOADINGBOH_SRF_5
+..Surface=L1S2-LOADINGBOH_SRF_6
 ..Surface=L2-201-CORRIDOR_SRF_2
-..Surface=L2-201-CORRIDOR_SRF_0
 Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
@@ -7363,7 +7364,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=L1S2-CHECKOUT_SRF_9 is used as Receiving Surface in calculations and is convex.
-Number of general casting surfaces=45
+Number of general casting surfaces=49
 ..Surface=SHDSRF_0_1_25CD6946-3B73-454B-B006-F32DF2BA2361_0
 ..Surface=SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
 ..Surface=Mir-SHDSRF_0_3_333F4C93-0168-4B1D-B116-3A4016CAD0C0_0
@@ -7398,7 +7399,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=L1S2-CHECKOUT_SRF_11 is used as Receiving Surface in calculations and is non-convex.
-Number of general casting surfaces=37
+Number of general casting surfaces=39
 ..Surface=SHDSRF_0_1_25CD6946-3B73-454B-B006-F32DF2BA2361_0
 ..Surface=SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
 ..Surface=Mir-SHDSRF_0_4_9CB1BA02-091D-4806-84B9-6197DE226494_0
@@ -7447,7 +7448,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=L1S2-LOADINGBOH_SRF_5 is used as Receiving Surface in calculations and is convex.
-Number of general casting surfaces=42
+Number of general casting surfaces=44
 ..Surface=SHDSRF_0_1_25CD6946-3B73-454B-B006-F32DF2BA2361_0
 ..Surface=SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
 ..Surface=Mir-SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
@@ -7462,7 +7463,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=L1S2-LOADINGBOH_SRF_0 is used as Receiving Surface in calculations and is non-convex.
-Number of general casting surfaces=57
+Number of general casting surfaces=58
 ..Surface=SHDSRF_0_1_25CD6946-3B73-454B-B006-F32DF2BA2361_0
 ..Surface=SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
 ..Surface=Mir-SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
@@ -7477,7 +7478,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=L1S2-LOADINGBOH_SRF_6 is used as Receiving Surface in calculations and is non-convex.
-Number of general casting surfaces=33
+Number of general casting surfaces=44
 ..Surface=SHDSRF_0_1_25CD6946-3B73-454B-B006-F32DF2BA2361_0
 ..Surface=SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
 ..Surface=Mir-SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
@@ -7522,7 +7523,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=L1S2-REACHINPREPARED_SRF_4 is used as Receiving Surface in calculations and is convex.
-Number of general casting surfaces=37
+Number of general casting surfaces=44
 ..Surface=SHDSRF_0_1_25CD6946-3B73-454B-B006-F32DF2BA2361_0
 ..Surface=SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
 ..Surface=Mir-SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
@@ -7547,7 +7548,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=L1S2-SHAFT_SRF_3 is used as Receiving Surface in calculations and is convex.
-Number of general casting surfaces=17
+Number of general casting surfaces=19
 ..Surface=SHDSRF_1_1_662AE12E-7210-40FE-9D5B-8DA330F1CFC2_0
 ..Surface=SHDSRF_1_2_B5F19BC4-56EA-495A-B5B6-FE55D88A9138_0
 ..Surface=Mir-SHDSRF_1_3_DEAFC0DB-1F8D-4665-85E2-932DC4F22A3A_0
@@ -7555,9 +7556,9 @@ Number of general casting surfaces=17
 ..Surface=Mir-SHDSRF_1_5_01E48C73-9E74-4C87-9301-8EE9B3361F06_0
 ..Surface=SHDSRF_3_0_3811AEFF-3ADA-41CF-B549-8533029945C4_0
 ..Surface=OVERHANG_1
+..Surface=L1S2-AISLESWEST_SRF_12
+..Surface=L1S2-LOADINGBOH_SRF_6
 ..Surface=L2-201-CORRIDOR_SRF_2
-..Surface=L2-201-CORRIDOR_SRF_0
-..Surface=L2-201-STAIRS1_SRF_2
 Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
@@ -9250,7 +9251,7 @@ Number of back surfaces=0
 Number of receiving sub surfaces=0
 ==================================
 Surface=M-201-EXGSTORAGE_SRF_0 is used as Receiving Surface in calculations and is non-convex.
-Number of general casting surfaces=55
+Number of general casting surfaces=56
 ..Surface=SHDSRF_0_1_25CD6946-3B73-454B-B006-F32DF2BA2361_0
 ..Surface=Mir-SHDSRF_0_2_6FFCF9BA-3C2A-4A29-83E1-9AF43B9DE787_0
 ..Surface=Mir-SHDSRF_0_3_333F4C93-0168-4B1D-B116-3A4016CAD0C0_0
