@@ -5853,58 +5853,30 @@
   OnMeter=Cooling:EnergyTransfer [J]
   OnMeter=Cooling:EnergyTransfer:Zone:M-EXGWOMEN THERMAL ZONE [J]
 
- Meters for 6886,_DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Heating Energy [J]
-  OnMeter=EnergyTransfer:Facility [J]
-  OnMeter=EnergyTransfer:Building [J]
-  OnMeter=EnergyTransfer:Zone:_DUP_DUP_DUP_DUP THERMAL ZONE [J]
-  OnMeter=Heating:EnergyTransfer [J]
-  OnMeter=Heating:EnergyTransfer:Zone:_DUP_DUP_DUP_DUP THERMAL ZONE [J]
-
- Meters for 6907,_DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Cooling Energy [J]
-  OnMeter=EnergyTransfer:Facility [J]
-  OnMeter=EnergyTransfer:Building [J]
-  OnMeter=EnergyTransfer:Zone:_DUP_DUP_DUP_DUP THERMAL ZONE [J]
-  OnMeter=Cooling:EnergyTransfer [J]
-  OnMeter=Cooling:EnergyTransfer:Zone:_DUP_DUP_DUP_DUP THERMAL ZONE [J]
-
- Meters for 6918,_DUP_DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Heating Energy [J]
-  OnMeter=EnergyTransfer:Facility [J]
-  OnMeter=EnergyTransfer:Building [J]
-  OnMeter=EnergyTransfer:Zone:_DUP_DUP_DUP_DUP_DUP THERMAL ZONE [J]
-  OnMeter=Heating:EnergyTransfer [J]
-  OnMeter=Heating:EnergyTransfer:Zone:_DUP_DUP_DUP_DUP_DUP THERMAL ZONE [J]
-
- Meters for 6939,_DUP_DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Cooling Energy [J]
-  OnMeter=EnergyTransfer:Facility [J]
-  OnMeter=EnergyTransfer:Building [J]
-  OnMeter=EnergyTransfer:Zone:_DUP_DUP_DUP_DUP_DUP THERMAL ZONE [J]
-  OnMeter=Cooling:EnergyTransfer [J]
-  OnMeter=Cooling:EnergyTransfer:Zone:_DUP_DUP_DUP_DUP_DUP THERMAL ZONE [J]
-
- Meters for 6950,Whole Building:Facility Total Purchased Electric Energy [J]
+ Meters for 6886,Whole Building:Facility Total Purchased Electric Energy [J]
   OnMeter=ElectricityPurchased:Facility [J]
   OnMeter=ElectricityPurchased:Plant [J]
   OnMeter=Cogeneration:ElectricityPurchased [J]
 
- Meters for 6981,Whole Building:Facility Total Surplus Electric Energy [J]
+ Meters for 6917,Whole Building:Facility Total Surplus Electric Energy [J]
   OnMeter=ElectricitySurplusSold:Facility [J]
   OnMeter=ElectricitySurplusSold:Plant [J]
   OnMeter=Cogeneration:ElectricitySurplusSold [J]
 
- Meters for 7012,Whole Building:Facility Net Purchased Electric Energy [J]
+ Meters for 6948,Whole Building:Facility Net Purchased Electric Energy [J]
   OnMeter=ElectricityNet:Facility [J]
   OnMeter=ElectricityNet:Plant [J]
   OnMeter=Cogeneration:ElectricityNet [J]
 
- Meters for 7043,Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass [kg]
+ Meters for 6979,Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass [kg]
   OnMeter=Carbon Equivalent:Facility [kg]
   OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
 
- Meters for 7064,Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass [kg]
+ Meters for 7000,Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass [kg]
   OnMeter=Carbon Equivalent:Facility [kg]
   OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
 
- Meters for 7065,Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass [kg]
+ Meters for 7001,Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass [kg]
   OnMeter=Carbon Equivalent:Facility [kg]
   OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
 
@@ -9505,10 +9477,6 @@
   M-BAKERYFREEZER THERMAL ZONE:Zone Air System Sensible Cooling Energy
   M-EXGWOMEN THERMAL ZONE:Zone Air System Sensible Heating Energy
   M-EXGWOMEN THERMAL ZONE:Zone Air System Sensible Cooling Energy
-  _DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Heating Energy
-  _DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Cooling Energy
-  _DUP_DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Heating Energy
-  _DUP_DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Cooling Energy
 
  For Meter=EnergyTransfer:Building [J], ResourceType=EnergyTransfer, Group=Building, contents are:
   L1-101-ENTRANCEEXIT THERMAL ZONE:Zone Air System Sensible Heating Energy
@@ -9787,10 +9755,6 @@
   M-BAKERYFREEZER THERMAL ZONE:Zone Air System Sensible Cooling Energy
   M-EXGWOMEN THERMAL ZONE:Zone Air System Sensible Heating Energy
   M-EXGWOMEN THERMAL ZONE:Zone Air System Sensible Cooling Energy
-  _DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Heating Energy
-  _DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Cooling Energy
-  _DUP_DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Heating Energy
-  _DUP_DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Cooling Energy
 
  For Meter=EnergyTransfer:Zone:L1-101-ENTRANCEEXIT THERMAL ZONE [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
   L1-101-ENTRANCEEXIT THERMAL ZONE:Zone Air System Sensible Heating Energy
@@ -9935,8 +9899,6 @@
   M-201-EXGSTORAGE THERMAL ZONE:Zone Air System Sensible Heating Energy
   M-BAKERYFREEZER THERMAL ZONE:Zone Air System Sensible Heating Energy
   M-EXGWOMEN THERMAL ZONE:Zone Air System Sensible Heating Energy
-  _DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Heating Energy
-  _DUP_DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Heating Energy
 
  For Meter=Heating:EnergyTransfer:Zone:L1-101-ENTRANCEEXIT THERMAL ZONE [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
   L1-101-ENTRANCEEXIT THERMAL ZONE:Zone Air System Sensible Heating Energy
@@ -10080,8 +10042,6 @@
   M-201-EXGSTORAGE THERMAL ZONE:Zone Air System Sensible Cooling Energy
   M-BAKERYFREEZER THERMAL ZONE:Zone Air System Sensible Cooling Energy
   M-EXGWOMEN THERMAL ZONE:Zone Air System Sensible Cooling Energy
-  _DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Cooling Energy
-  _DUP_DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Cooling Energy
 
  For Meter=Cooling:EnergyTransfer:Zone:L1-101-ENTRANCEEXIT THERMAL ZONE [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
   L1-101-ENTRANCEEXIT THERMAL ZONE:Zone Air System Sensible Cooling Energy
@@ -11455,26 +11415,6 @@
 
  For Meter=Cooling:EnergyTransfer:Zone:M-EXGWOMEN THERMAL ZONE [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
   M-EXGWOMEN THERMAL ZONE:Zone Air System Sensible Cooling Energy
-
- For Meter=EnergyTransfer:Zone:_DUP_DUP_DUP_DUP THERMAL ZONE [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
-  _DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Heating Energy
-  _DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Cooling Energy
-
- For Meter=Heating:EnergyTransfer:Zone:_DUP_DUP_DUP_DUP THERMAL ZONE [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
-  _DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Heating Energy
-
- For Meter=Cooling:EnergyTransfer:Zone:_DUP_DUP_DUP_DUP THERMAL ZONE [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
-  _DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Cooling Energy
-
- For Meter=EnergyTransfer:Zone:_DUP_DUP_DUP_DUP_DUP THERMAL ZONE [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
-  _DUP_DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Heating Energy
-  _DUP_DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Cooling Energy
-
- For Meter=Heating:EnergyTransfer:Zone:_DUP_DUP_DUP_DUP_DUP THERMAL ZONE [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
-  _DUP_DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Heating Energy
-
- For Meter=Cooling:EnergyTransfer:Zone:_DUP_DUP_DUP_DUP_DUP THERMAL ZONE [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
-  _DUP_DUP_DUP_DUP_DUP THERMAL ZONE:Zone Air System Sensible Cooling Energy
 
  For Meter=ElectricityPurchased:Facility [J], ResourceType=ElectricityPurchased, contents are:
   Whole Building:Facility Total Purchased Electric Energy

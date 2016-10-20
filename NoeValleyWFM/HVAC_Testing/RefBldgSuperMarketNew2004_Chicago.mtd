@@ -1,0 +1,862 @@
+
+ Meters for 9,EXTERIOR FACADE LIGHTING:Exterior Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=ExteriorLights:Electricity [J]
+  OnMeter=Exterior Facade Lighting:ExteriorLights:Electricity [J]
+
+ Meters for 40,BAKERY_LIGHTS:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:BAKERY [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:BAKERY [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 91,DELI_LIGHTS:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:DELI [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:DELI [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 112,DRYSTORAGE_LIGHTS:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:DRYSTORAGE [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:DRYSTORAGE [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 133,OFFICE_LIGHTS:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:OFFICE [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:OFFICE [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 154,PRODUCE_LIGHTS:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:PRODUCE [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:PRODUCE [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 175,SALES_LIGHTS:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:SALES [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:SALES [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 196,BAKERY_MISCPLUG_EQUIP:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:BAKERY [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:BAKERY [J]
+  OnMeter=MiscPlug:InteriorEquipment:Electricity [J]
+
+ Meters for 227,DELI_MISCPLUG_EQUIP:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:DELI [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:DELI [J]
+  OnMeter=MiscPlug:InteriorEquipment:Electricity [J]
+
+ Meters for 238,DRYSTORAGE_MISCPLUG_EQUIP:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:DRYSTORAGE [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:DRYSTORAGE [J]
+  OnMeter=MiscPlug:InteriorEquipment:Electricity [J]
+
+ Meters for 249,OFFICE_MISCPLUG_EQUIP:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:OFFICE [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:OFFICE [J]
+  OnMeter=MiscPlug:InteriorEquipment:Electricity [J]
+
+ Meters for 260,PRODUCE_MISCPLUG_EQUIP:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:PRODUCE [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:PRODUCE [J]
+  OnMeter=MiscPlug:InteriorEquipment:Electricity [J]
+
+ Meters for 271,SALES_MISCPLUG_EQUIP:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:SALES [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:SALES [J]
+  OnMeter=MiscPlug:InteriorEquipment:Electricity [J]
+
+ Meters for 282,DELI_EXHAUST_FAN:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:DELI [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:DELI [J]
+  OnMeter=ExhaustFans:InteriorEquipment:Electricity [J]
+
+ Meters for 293,BAKERY_MISCGAS_EQUIP:Gas Equipment Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:Building [J]
+  OnMeter=Gas:Zone:BAKERY [J]
+  OnMeter=InteriorEquipment:Gas [J]
+  OnMeter=InteriorEquipment:Gas:Zone:BAKERY [J]
+  OnMeter=MiscGas:InteriorEquipment:Gas [J]
+
+ Meters for 354,DELI_MISCGAS_EQUIP:Gas Equipment Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:Building [J]
+  OnMeter=Gas:Zone:DELI [J]
+  OnMeter=InteriorEquipment:Gas [J]
+  OnMeter=InteriorEquipment:Gas:Zone:DELI [J]
+  OnMeter=MiscGas:InteriorEquipment:Gas [J]
+
+ Meters for 381,BAKERY:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:BAKERY [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:BAKERY [J]
+
+ Meters for 432,BAKERY:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:BAKERY [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:BAKERY [J]
+
+ Meters for 454,DELI:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:DELI [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:DELI [J]
+
+ Meters for 475,DELI:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:DELI [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:DELI [J]
+
+ Meters for 487,DRYSTORAGE:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:DRYSTORAGE [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:DRYSTORAGE [J]
+
+ Meters for 508,DRYSTORAGE:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:DRYSTORAGE [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:DRYSTORAGE [J]
+
+ Meters for 520,OFFICE:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:OFFICE [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:OFFICE [J]
+
+ Meters for 541,OFFICE:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:OFFICE [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:OFFICE [J]
+
+ Meters for 553,PRODUCE:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:PRODUCE [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:PRODUCE [J]
+
+ Meters for 574,PRODUCE:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:PRODUCE [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:PRODUCE [J]
+
+ Meters for 586,SALES:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:SALES [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:SALES [J]
+
+ Meters for 607,SALES:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:SALES [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:SALES [J]
+
+ Meters for 619,Whole Building:Facility Total Purchased Electric Energy [J]
+  OnMeter=ElectricityPurchased:Facility [J]
+  OnMeter=ElectricityPurchased:Plant [J]
+  OnMeter=Cogeneration:ElectricityPurchased [J]
+
+ Meters for 650,Whole Building:Facility Total Surplus Electric Energy [J]
+  OnMeter=ElectricitySurplusSold:Facility [J]
+  OnMeter=ElectricitySurplusSold:Plant [J]
+  OnMeter=Cogeneration:ElectricitySurplusSold [J]
+
+ Meters for 681,Whole Building:Facility Net Purchased Electric Energy [J]
+  OnMeter=ElectricityNet:Facility [J]
+  OnMeter=ElectricityNet:Plant [J]
+  OnMeter=Cogeneration:ElectricityNet [J]
+
+ Meters for 712,Site:Environmental Impact Electricity Source Energy [J]
+  OnMeter=Source:Facility [J]
+  OnMeter=ElectricEmissions:Source [J]
+
+ Meters for 733,Site:Environmental Impact Electricity CO2 Emissions Mass [kg]
+  OnMeter=CO2:Facility [kg]
+  OnMeter=ElectricEmissions:CO2 [kg]
+
+ Meters for 754,Site:Environmental Impact Electricity CO Emissions Mass [kg]
+  OnMeter=CO:Facility [kg]
+  OnMeter=ElectricEmissions:CO [kg]
+
+ Meters for 775,Site:Environmental Impact Electricity CH4 Emissions Mass [kg]
+  OnMeter=CH4:Facility [kg]
+  OnMeter=ElectricEmissions:CH4 [kg]
+
+ Meters for 796,Site:Environmental Impact Electricity NOx Emissions Mass [kg]
+  OnMeter=NOx:Facility [kg]
+  OnMeter=ElectricEmissions:NOx [kg]
+
+ Meters for 817,Site:Environmental Impact Electricity N2O Emissions Mass [kg]
+  OnMeter=N2O:Facility [kg]
+  OnMeter=ElectricEmissions:N2O [kg]
+
+ Meters for 838,Site:Environmental Impact Electricity SO2 Emissions Mass [kg]
+  OnMeter=SO2:Facility [kg]
+  OnMeter=ElectricEmissions:SO2 [kg]
+
+ Meters for 859,Site:Environmental Impact Electricity PM Emissions Mass [kg]
+  OnMeter=PM:Facility [kg]
+  OnMeter=ElectricEmissions:PM [kg]
+
+ Meters for 880,Site:Environmental Impact Electricity PM10 Emissions Mass [kg]
+  OnMeter=PM10:Facility [kg]
+  OnMeter=ElectricEmissions:PM10 [kg]
+
+ Meters for 901,Site:Environmental Impact Electricity PM2.5 Emissions Mass [kg]
+  OnMeter=PM2.5:Facility [kg]
+  OnMeter=ElectricEmissions:PM2.5 [kg]
+
+ Meters for 922,Site:Environmental Impact Electricity NH3 Emissions Mass [kg]
+  OnMeter=NH3:Facility [kg]
+  OnMeter=ElectricEmissions:NH3 [kg]
+
+ Meters for 943,Site:Environmental Impact Electricity NMVOC Emissions Mass [kg]
+  OnMeter=NMVOC:Facility [kg]
+  OnMeter=ElectricEmissions:NMVOC [kg]
+
+ Meters for 964,Site:Environmental Impact Electricity Hg Emissions Mass [kg]
+  OnMeter=Hg:Facility [kg]
+  OnMeter=ElectricEmissions:Hg [kg]
+
+ Meters for 985,Site:Environmental Impact Electricity Pb Emissions Mass [kg]
+  OnMeter=Pb:Facility [kg]
+  OnMeter=ElectricEmissions:Pb [kg]
+
+ Meters for 1006,Site:Environmental Impact Electricity Water Consumption Volume [L]
+  OnMeter=WaterEnvironmentalFactors:Facility [L]
+  OnMeter=ElectricEmissions:WaterEnvironmentalFactors [L]
+
+ Meters for 1027,Site:Environmental Impact Electricity Nuclear High Level Waste Mass [kg]
+  OnMeter=Nuclear High:Facility [kg]
+  OnMeter=ElectricEmissions:Nuclear High [kg]
+
+ Meters for 1048,Site:Environmental Impact Electricity Nuclear Low Level Waste Volume [m3]
+  OnMeter=Nuclear Low:Facility [m3]
+  OnMeter=ElectricEmissions:Nuclear Low [m3]
+
+ Meters for 1069,Site:Environmental Impact Purchased Electricity Source Energy [J]
+  OnMeter=Source:Facility [J]
+  OnMeter=PurchasedElectricEmissions:Source [J]
+
+ Meters for 1080,Site:Environmental Impact Surplus Sold Electricity Source [J]
+  OnMeter=Source:Facility [J]
+  OnMeter=SoldElectricEmissions:Source [J]
+
+ Meters for 1091,Site:Environmental Impact Natural Gas Source Energy [J]
+  OnMeter=Source:Facility [J]
+  OnMeter=NaturalGasEmissions:Source [J]
+
+ Meters for 1102,Site:Environmental Impact Natural Gas CO2 Emissions Mass [kg]
+  OnMeter=CO2:Facility [kg]
+  OnMeter=NaturalGasEmissions:CO2 [kg]
+
+ Meters for 1113,Site:Environmental Impact Natural Gas CO Emissions Mass [kg]
+  OnMeter=CO:Facility [kg]
+  OnMeter=NaturalGasEmissions:CO [kg]
+
+ Meters for 1124,Site:Environmental Impact Natural Gas CH4 Emissions Mass [kg]
+  OnMeter=CH4:Facility [kg]
+  OnMeter=NaturalGasEmissions:CH4 [kg]
+
+ Meters for 1135,Site:Environmental Impact Natural Gas NOx Emissions Mass [kg]
+  OnMeter=NOx:Facility [kg]
+  OnMeter=NaturalGasEmissions:NOx [kg]
+
+ Meters for 1146,Site:Environmental Impact Natural Gas N2O Emissions Mass [kg]
+  OnMeter=N2O:Facility [kg]
+  OnMeter=NaturalGasEmissions:N2O [kg]
+
+ Meters for 1157,Site:Environmental Impact Natural Gas SO2 Emissions Mass [kg]
+  OnMeter=SO2:Facility [kg]
+  OnMeter=NaturalGasEmissions:SO2 [kg]
+
+ Meters for 1168,Site:Environmental Impact Natural Gas PM Emissions Mass [kg]
+  OnMeter=PM:Facility [kg]
+  OnMeter=NaturalGasEmissions:PM [kg]
+
+ Meters for 1179,Site:Environmental Impact Natural Gas PM10 Emissions Mass [kg]
+  OnMeter=PM10:Facility [kg]
+  OnMeter=NaturalGasEmissions:PM10 [kg]
+
+ Meters for 1190,Site:Environmental Impact Natural Gas PM2.5 Emissions Mass [kg]
+  OnMeter=PM2.5:Facility [kg]
+  OnMeter=NaturalGasEmissions:PM2.5 [kg]
+
+ Meters for 1201,Site:Environmental Impact Natural Gas NH3 Emissions Mass [kg]
+  OnMeter=NH3:Facility [kg]
+  OnMeter=NaturalGasEmissions:NH3 [kg]
+
+ Meters for 1212,Site:Environmental Impact Natural Gas NMVOC Emissions Mass [kg]
+  OnMeter=NMVOC:Facility [kg]
+  OnMeter=NaturalGasEmissions:NMVOC [kg]
+
+ Meters for 1223,Site:Environmental Impact Natural Gas Hg Emissions Mass [kg]
+  OnMeter=Hg:Facility [kg]
+  OnMeter=NaturalGasEmissions:Hg [kg]
+
+ Meters for 1234,Site:Environmental Impact Natural Gas Pb Emissions Mass [kg]
+  OnMeter=Pb:Facility [kg]
+  OnMeter=NaturalGasEmissions:Pb [kg]
+
+ Meters for 1245,Site:Environmental Impact Natural Gas Water Consumption Volume [L]
+  OnMeter=WaterEnvironmentalFactors:Facility [L]
+  OnMeter=NaturalGasEmissions:WaterEnvironmentalFactors [L]
+
+ Meters for 1256,Site:Environmental Impact Natural Gas Nuclear High Level Waste Mass [kg]
+  OnMeter=Nuclear High:Facility [kg]
+  OnMeter=NaturalGasEmissions:Nuclear High [kg]
+
+ Meters for 1267,Site:Environmental Impact Natural Gas Nuclear Low Level Waste Volume [m3]
+  OnMeter=Nuclear Low:Facility [m3]
+  OnMeter=NaturalGasEmissions:Nuclear Low [m3]
+
+ Meters for 1278,Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ Meters for 1299,Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ Meters for 1300,Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ For Meter=Electricity:Facility [J], ResourceType=Electricity, contents are:
+  EXTERIOR FACADE LIGHTING:Exterior Lights Electric Energy
+  BAKERY_LIGHTS:Lights Electric Energy
+  DELI_LIGHTS:Lights Electric Energy
+  DRYSTORAGE_LIGHTS:Lights Electric Energy
+  OFFICE_LIGHTS:Lights Electric Energy
+  PRODUCE_LIGHTS:Lights Electric Energy
+  SALES_LIGHTS:Lights Electric Energy
+  BAKERY_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  DELI_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  DRYSTORAGE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  OFFICE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  PRODUCE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  SALES_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  DELI_EXHAUST_FAN:Electric Equipment Electric Energy
+
+ For Meter=ExteriorLights:Electricity [J], ResourceType=Electricity, EndUse=ExteriorLights, contents are:
+  EXTERIOR FACADE LIGHTING:Exterior Lights Electric Energy
+
+ For Meter=Exterior Facade Lighting:ExteriorLights:Electricity [J], ResourceType=Electricity, EndUse=ExteriorLights, contents are:
+  EXTERIOR FACADE LIGHTING:Exterior Lights Electric Energy
+
+ For Meter=Electricity:Building [J], ResourceType=Electricity, Group=Building, contents are:
+  BAKERY_LIGHTS:Lights Electric Energy
+  DELI_LIGHTS:Lights Electric Energy
+  DRYSTORAGE_LIGHTS:Lights Electric Energy
+  OFFICE_LIGHTS:Lights Electric Energy
+  PRODUCE_LIGHTS:Lights Electric Energy
+  SALES_LIGHTS:Lights Electric Energy
+  BAKERY_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  DELI_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  DRYSTORAGE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  OFFICE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  PRODUCE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  SALES_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  DELI_EXHAUST_FAN:Electric Equipment Electric Energy
+
+ For Meter=Electricity:Zone:BAKERY [J], ResourceType=Electricity, Group=Zone, contents are:
+  BAKERY_LIGHTS:Lights Electric Energy
+  BAKERY_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity [J], ResourceType=Electricity, EndUse=InteriorLights, contents are:
+  BAKERY_LIGHTS:Lights Electric Energy
+  DELI_LIGHTS:Lights Electric Energy
+  DRYSTORAGE_LIGHTS:Lights Electric Energy
+  OFFICE_LIGHTS:Lights Electric Energy
+  PRODUCE_LIGHTS:Lights Electric Energy
+  SALES_LIGHTS:Lights Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:BAKERY [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  BAKERY_LIGHTS:Lights Electric Energy
+
+ For Meter=General:InteriorLights:Electricity [J], ResourceType=Electricity, EndUse=InteriorLights, contents are:
+  BAKERY_LIGHTS:Lights Electric Energy
+  DELI_LIGHTS:Lights Electric Energy
+  DRYSTORAGE_LIGHTS:Lights Electric Energy
+  OFFICE_LIGHTS:Lights Electric Energy
+  PRODUCE_LIGHTS:Lights Electric Energy
+  SALES_LIGHTS:Lights Electric Energy
+
+ For Meter=Electricity:Zone:DELI [J], ResourceType=Electricity, Group=Zone, contents are:
+  DELI_LIGHTS:Lights Electric Energy
+  DELI_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  DELI_EXHAUST_FAN:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:DELI [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  DELI_LIGHTS:Lights Electric Energy
+
+ For Meter=Electricity:Zone:DRYSTORAGE [J], ResourceType=Electricity, Group=Zone, contents are:
+  DRYSTORAGE_LIGHTS:Lights Electric Energy
+  DRYSTORAGE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:DRYSTORAGE [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  DRYSTORAGE_LIGHTS:Lights Electric Energy
+
+ For Meter=Electricity:Zone:OFFICE [J], ResourceType=Electricity, Group=Zone, contents are:
+  OFFICE_LIGHTS:Lights Electric Energy
+  OFFICE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:OFFICE [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  OFFICE_LIGHTS:Lights Electric Energy
+
+ For Meter=Electricity:Zone:PRODUCE [J], ResourceType=Electricity, Group=Zone, contents are:
+  PRODUCE_LIGHTS:Lights Electric Energy
+  PRODUCE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:PRODUCE [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  PRODUCE_LIGHTS:Lights Electric Energy
+
+ For Meter=Electricity:Zone:SALES [J], ResourceType=Electricity, Group=Zone, contents are:
+  SALES_LIGHTS:Lights Electric Energy
+  SALES_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:SALES [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  SALES_LIGHTS:Lights Electric Energy
+
+ For Meter=InteriorEquipment:Electricity [J], ResourceType=Electricity, EndUse=InteriorEquipment, contents are:
+  BAKERY_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  DELI_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  DRYSTORAGE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  OFFICE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  PRODUCE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  SALES_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  DELI_EXHAUST_FAN:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:BAKERY [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  BAKERY_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=MiscPlug:InteriorEquipment:Electricity [J], ResourceType=Electricity, EndUse=InteriorEquipment, contents are:
+  BAKERY_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  DELI_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  DRYSTORAGE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  OFFICE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  PRODUCE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  SALES_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:DELI [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  DELI_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  DELI_EXHAUST_FAN:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:DRYSTORAGE [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  DRYSTORAGE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:OFFICE [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  OFFICE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:PRODUCE [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  PRODUCE_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:SALES [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  SALES_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=ExhaustFans:InteriorEquipment:Electricity [J], ResourceType=Electricity, EndUse=InteriorEquipment, contents are:
+  DELI_EXHAUST_FAN:Electric Equipment Electric Energy
+
+ For Meter=Gas:Facility [J], ResourceType=Gas, contents are:
+  BAKERY_MISCGAS_EQUIP:Gas Equipment Gas Energy
+  DELI_MISCGAS_EQUIP:Gas Equipment Gas Energy
+
+ For Meter=Gas:Building [J], ResourceType=Gas, Group=Building, contents are:
+  BAKERY_MISCGAS_EQUIP:Gas Equipment Gas Energy
+  DELI_MISCGAS_EQUIP:Gas Equipment Gas Energy
+
+ For Meter=Gas:Zone:BAKERY [J], ResourceType=Gas, Group=Zone, contents are:
+  BAKERY_MISCGAS_EQUIP:Gas Equipment Gas Energy
+
+ For Meter=InteriorEquipment:Gas [J], ResourceType=Gas, EndUse=InteriorEquipment, contents are:
+  BAKERY_MISCGAS_EQUIP:Gas Equipment Gas Energy
+  DELI_MISCGAS_EQUIP:Gas Equipment Gas Energy
+
+ For Meter=InteriorEquipment:Gas:Zone:BAKERY [J], ResourceType=Gas, EndUse=InteriorEquipment, Group=Zone, contents are:
+  BAKERY_MISCGAS_EQUIP:Gas Equipment Gas Energy
+
+ For Meter=MiscGas:InteriorEquipment:Gas [J], ResourceType=Gas, EndUse=InteriorEquipment, contents are:
+  BAKERY_MISCGAS_EQUIP:Gas Equipment Gas Energy
+  DELI_MISCGAS_EQUIP:Gas Equipment Gas Energy
+
+ For Meter=Gas:Zone:DELI [J], ResourceType=Gas, Group=Zone, contents are:
+  DELI_MISCGAS_EQUIP:Gas Equipment Gas Energy
+
+ For Meter=InteriorEquipment:Gas:Zone:DELI [J], ResourceType=Gas, EndUse=InteriorEquipment, Group=Zone, contents are:
+  DELI_MISCGAS_EQUIP:Gas Equipment Gas Energy
+
+ For Meter=EnergyTransfer:Facility [J], ResourceType=EnergyTransfer, contents are:
+  BAKERY:Zone Air System Sensible Heating Energy
+  BAKERY:Zone Air System Sensible Cooling Energy
+  DELI:Zone Air System Sensible Heating Energy
+  DELI:Zone Air System Sensible Cooling Energy
+  DRYSTORAGE:Zone Air System Sensible Heating Energy
+  DRYSTORAGE:Zone Air System Sensible Cooling Energy
+  OFFICE:Zone Air System Sensible Heating Energy
+  OFFICE:Zone Air System Sensible Cooling Energy
+  PRODUCE:Zone Air System Sensible Heating Energy
+  PRODUCE:Zone Air System Sensible Cooling Energy
+  SALES:Zone Air System Sensible Heating Energy
+  SALES:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Building [J], ResourceType=EnergyTransfer, Group=Building, contents are:
+  BAKERY:Zone Air System Sensible Heating Energy
+  BAKERY:Zone Air System Sensible Cooling Energy
+  DELI:Zone Air System Sensible Heating Energy
+  DELI:Zone Air System Sensible Cooling Energy
+  DRYSTORAGE:Zone Air System Sensible Heating Energy
+  DRYSTORAGE:Zone Air System Sensible Cooling Energy
+  OFFICE:Zone Air System Sensible Heating Energy
+  OFFICE:Zone Air System Sensible Cooling Energy
+  PRODUCE:Zone Air System Sensible Heating Energy
+  PRODUCE:Zone Air System Sensible Cooling Energy
+  SALES:Zone Air System Sensible Heating Energy
+  SALES:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:BAKERY [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  BAKERY:Zone Air System Sensible Heating Energy
+  BAKERY:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Heating, contents are:
+  BAKERY:Zone Air System Sensible Heating Energy
+  DELI:Zone Air System Sensible Heating Energy
+  DRYSTORAGE:Zone Air System Sensible Heating Energy
+  OFFICE:Zone Air System Sensible Heating Energy
+  PRODUCE:Zone Air System Sensible Heating Energy
+  SALES:Zone Air System Sensible Heating Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:BAKERY [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  BAKERY:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Cooling, contents are:
+  BAKERY:Zone Air System Sensible Cooling Energy
+  DELI:Zone Air System Sensible Cooling Energy
+  DRYSTORAGE:Zone Air System Sensible Cooling Energy
+  OFFICE:Zone Air System Sensible Cooling Energy
+  PRODUCE:Zone Air System Sensible Cooling Energy
+  SALES:Zone Air System Sensible Cooling Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:BAKERY [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  BAKERY:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:DELI [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  DELI:Zone Air System Sensible Heating Energy
+  DELI:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:DELI [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  DELI:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:DELI [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  DELI:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:DRYSTORAGE [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  DRYSTORAGE:Zone Air System Sensible Heating Energy
+  DRYSTORAGE:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:DRYSTORAGE [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  DRYSTORAGE:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:DRYSTORAGE [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  DRYSTORAGE:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:OFFICE [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  OFFICE:Zone Air System Sensible Heating Energy
+  OFFICE:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:OFFICE [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  OFFICE:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:OFFICE [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  OFFICE:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:PRODUCE [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  PRODUCE:Zone Air System Sensible Heating Energy
+  PRODUCE:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:PRODUCE [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  PRODUCE:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:PRODUCE [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  PRODUCE:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:SALES [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  SALES:Zone Air System Sensible Heating Energy
+  SALES:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:SALES [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  SALES:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:SALES [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  SALES:Zone Air System Sensible Cooling Energy
+
+ For Meter=ElectricityPurchased:Facility [J], ResourceType=ElectricityPurchased, contents are:
+  Whole Building:Facility Total Purchased Electric Energy
+
+ For Meter=ElectricityPurchased:Plant [J], ResourceType=ElectricityPurchased, Group=Plant, contents are:
+  Whole Building:Facility Total Purchased Electric Energy
+
+ For Meter=Cogeneration:ElectricityPurchased [J], ResourceType=ElectricityPurchased, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Purchased Electric Energy
+
+ For Meter=ElectricitySurplusSold:Facility [J], ResourceType=ElectricitySurplusSold, contents are:
+  Whole Building:Facility Total Surplus Electric Energy
+
+ For Meter=ElectricitySurplusSold:Plant [J], ResourceType=ElectricitySurplusSold, Group=Plant, contents are:
+  Whole Building:Facility Total Surplus Electric Energy
+
+ For Meter=Cogeneration:ElectricitySurplusSold [J], ResourceType=ElectricitySurplusSold, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Surplus Electric Energy
+
+ For Meter=ElectricityNet:Facility [J], ResourceType=ElectricityNet, contents are:
+  Whole Building:Facility Net Purchased Electric Energy
+
+ For Meter=ElectricityNet:Plant [J], ResourceType=ElectricityNet, Group=Plant, contents are:
+  Whole Building:Facility Net Purchased Electric Energy
+
+ For Meter=Cogeneration:ElectricityNet [J], ResourceType=ElectricityNet, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Net Purchased Electric Energy
+
+ For Meter=Source:Facility [J], ResourceType=Source, contents are:
+  Site:Environmental Impact Electricity Source Energy
+  Site:Environmental Impact Purchased Electricity Source Energy
+  Site:Environmental Impact Surplus Sold Electricity Source
+  Site:Environmental Impact Natural Gas Source Energy
+
+ For Meter=ElectricEmissions:Source [J], ResourceType=Source, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity Source Energy
+
+ For Meter=CO2:Facility [kg], ResourceType=CO2, contents are:
+  Site:Environmental Impact Electricity CO2 Emissions Mass
+  Site:Environmental Impact Natural Gas CO2 Emissions Mass
+
+ For Meter=ElectricEmissions:CO2 [kg], ResourceType=CO2, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity CO2 Emissions Mass
+
+ For Meter=CO:Facility [kg], ResourceType=CO, contents are:
+  Site:Environmental Impact Electricity CO Emissions Mass
+  Site:Environmental Impact Natural Gas CO Emissions Mass
+
+ For Meter=ElectricEmissions:CO [kg], ResourceType=CO, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity CO Emissions Mass
+
+ For Meter=CH4:Facility [kg], ResourceType=CH4, contents are:
+  Site:Environmental Impact Electricity CH4 Emissions Mass
+  Site:Environmental Impact Natural Gas CH4 Emissions Mass
+
+ For Meter=ElectricEmissions:CH4 [kg], ResourceType=CH4, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity CH4 Emissions Mass
+
+ For Meter=NOx:Facility [kg], ResourceType=NOx, contents are:
+  Site:Environmental Impact Electricity NOx Emissions Mass
+  Site:Environmental Impact Natural Gas NOx Emissions Mass
+
+ For Meter=ElectricEmissions:NOx [kg], ResourceType=NOx, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity NOx Emissions Mass
+
+ For Meter=N2O:Facility [kg], ResourceType=N2O, contents are:
+  Site:Environmental Impact Electricity N2O Emissions Mass
+  Site:Environmental Impact Natural Gas N2O Emissions Mass
+
+ For Meter=ElectricEmissions:N2O [kg], ResourceType=N2O, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity N2O Emissions Mass
+
+ For Meter=SO2:Facility [kg], ResourceType=SO2, contents are:
+  Site:Environmental Impact Electricity SO2 Emissions Mass
+  Site:Environmental Impact Natural Gas SO2 Emissions Mass
+
+ For Meter=ElectricEmissions:SO2 [kg], ResourceType=SO2, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity SO2 Emissions Mass
+
+ For Meter=PM:Facility [kg], ResourceType=PM, contents are:
+  Site:Environmental Impact Electricity PM Emissions Mass
+  Site:Environmental Impact Natural Gas PM Emissions Mass
+
+ For Meter=ElectricEmissions:PM [kg], ResourceType=PM, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity PM Emissions Mass
+
+ For Meter=PM10:Facility [kg], ResourceType=PM10, contents are:
+  Site:Environmental Impact Electricity PM10 Emissions Mass
+  Site:Environmental Impact Natural Gas PM10 Emissions Mass
+
+ For Meter=ElectricEmissions:PM10 [kg], ResourceType=PM10, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity PM10 Emissions Mass
+
+ For Meter=PM2.5:Facility [kg], ResourceType=PM2.5, contents are:
+  Site:Environmental Impact Electricity PM2.5 Emissions Mass
+  Site:Environmental Impact Natural Gas PM2.5 Emissions Mass
+
+ For Meter=ElectricEmissions:PM2.5 [kg], ResourceType=PM2.5, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity PM2.5 Emissions Mass
+
+ For Meter=NH3:Facility [kg], ResourceType=NH3, contents are:
+  Site:Environmental Impact Electricity NH3 Emissions Mass
+  Site:Environmental Impact Natural Gas NH3 Emissions Mass
+
+ For Meter=ElectricEmissions:NH3 [kg], ResourceType=NH3, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity NH3 Emissions Mass
+
+ For Meter=NMVOC:Facility [kg], ResourceType=NMVOC, contents are:
+  Site:Environmental Impact Electricity NMVOC Emissions Mass
+  Site:Environmental Impact Natural Gas NMVOC Emissions Mass
+
+ For Meter=ElectricEmissions:NMVOC [kg], ResourceType=NMVOC, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity NMVOC Emissions Mass
+
+ For Meter=Hg:Facility [kg], ResourceType=Hg, contents are:
+  Site:Environmental Impact Electricity Hg Emissions Mass
+  Site:Environmental Impact Natural Gas Hg Emissions Mass
+
+ For Meter=ElectricEmissions:Hg [kg], ResourceType=Hg, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity Hg Emissions Mass
+
+ For Meter=Pb:Facility [kg], ResourceType=Pb, contents are:
+  Site:Environmental Impact Electricity Pb Emissions Mass
+  Site:Environmental Impact Natural Gas Pb Emissions Mass
+
+ For Meter=ElectricEmissions:Pb [kg], ResourceType=Pb, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity Pb Emissions Mass
+
+ For Meter=WaterEnvironmentalFactors:Facility [L], ResourceType=WaterEnvironmentalFactors, contents are:
+  Site:Environmental Impact Electricity Water Consumption Volume
+  Site:Environmental Impact Natural Gas Water Consumption Volume
+
+ For Meter=ElectricEmissions:WaterEnvironmentalFactors [L], ResourceType=WaterEnvironmentalFactors, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity Water Consumption Volume
+
+ For Meter=Nuclear High:Facility [kg], ResourceType=Nuclear High, contents are:
+  Site:Environmental Impact Electricity Nuclear High Level Waste Mass
+  Site:Environmental Impact Natural Gas Nuclear High Level Waste Mass
+
+ For Meter=ElectricEmissions:Nuclear High [kg], ResourceType=Nuclear High, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity Nuclear High Level Waste Mass
+
+ For Meter=Nuclear Low:Facility [m3], ResourceType=Nuclear Low, contents are:
+  Site:Environmental Impact Electricity Nuclear Low Level Waste Volume
+  Site:Environmental Impact Natural Gas Nuclear Low Level Waste Volume
+
+ For Meter=ElectricEmissions:Nuclear Low [m3], ResourceType=Nuclear Low, EndUse=ElectricEmissions, contents are:
+  Site:Environmental Impact Electricity Nuclear Low Level Waste Volume
+
+ For Meter=PurchasedElectricEmissions:Source [J], ResourceType=Source, EndUse=PurchasedElectricEmissions, contents are:
+  Site:Environmental Impact Purchased Electricity Source Energy
+
+ For Meter=SoldElectricEmissions:Source [J], ResourceType=Source, EndUse=SoldElectricEmissions, contents are:
+  Site:Environmental Impact Surplus Sold Electricity Source
+
+ For Meter=NaturalGasEmissions:Source [J], ResourceType=Source, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas Source Energy
+
+ For Meter=NaturalGasEmissions:CO2 [kg], ResourceType=CO2, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas CO2 Emissions Mass
+
+ For Meter=NaturalGasEmissions:CO [kg], ResourceType=CO, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas CO Emissions Mass
+
+ For Meter=NaturalGasEmissions:CH4 [kg], ResourceType=CH4, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas CH4 Emissions Mass
+
+ For Meter=NaturalGasEmissions:NOx [kg], ResourceType=NOx, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas NOx Emissions Mass
+
+ For Meter=NaturalGasEmissions:N2O [kg], ResourceType=N2O, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas N2O Emissions Mass
+
+ For Meter=NaturalGasEmissions:SO2 [kg], ResourceType=SO2, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas SO2 Emissions Mass
+
+ For Meter=NaturalGasEmissions:PM [kg], ResourceType=PM, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas PM Emissions Mass
+
+ For Meter=NaturalGasEmissions:PM10 [kg], ResourceType=PM10, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas PM10 Emissions Mass
+
+ For Meter=NaturalGasEmissions:PM2.5 [kg], ResourceType=PM2.5, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas PM2.5 Emissions Mass
+
+ For Meter=NaturalGasEmissions:NH3 [kg], ResourceType=NH3, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas NH3 Emissions Mass
+
+ For Meter=NaturalGasEmissions:NMVOC [kg], ResourceType=NMVOC, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas NMVOC Emissions Mass
+
+ For Meter=NaturalGasEmissions:Hg [kg], ResourceType=Hg, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas Hg Emissions Mass
+
+ For Meter=NaturalGasEmissions:Pb [kg], ResourceType=Pb, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas Pb Emissions Mass
+
+ For Meter=NaturalGasEmissions:WaterEnvironmentalFactors [L], ResourceType=WaterEnvironmentalFactors, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas Water Consumption Volume
+
+ For Meter=NaturalGasEmissions:Nuclear High [kg], ResourceType=Nuclear High, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas Nuclear High Level Waste Mass
+
+ For Meter=NaturalGasEmissions:Nuclear Low [m3], ResourceType=Nuclear Low, EndUse=NaturalGasEmissions, contents are:
+  Site:Environmental Impact Natural Gas Nuclear Low Level Waste Volume
+
+ For Meter=Carbon Equivalent:Facility [kg], ResourceType=Carbon Equivalent, contents are:
+  Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass
+
+ For Meter=CarbonEquivalentEmissions:Carbon Equivalent [kg], ResourceType=Carbon Equivalent, EndUse=CarbonEquivalentEmissions, contents are:
+  Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass

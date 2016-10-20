@@ -2209,6 +2209,20 @@ Zone,
     0,                       !- Y Origin {m}
     0;                       !- Z Origin {m}
 
+Zone,
+    _Dup_Dup_Dup_Dup Thermal Zone,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0,                       !- X Origin {m}
+    0,                       !- Y Origin {m}
+    0;                       !- Z Origin {m}
+
+Zone,
+    _Dup_Dup_Dup_Dup_Dup Thermal Zone,  !- Name
+    0,                       !- Direction of Relative North {deg}
+    0,                       !- X Origin {m}
+    0,                       !- Y Origin {m}
+    0;                       !- Z Origin {m}
+
 
 !-   ===========  ALL OBJECTS IN CLASS: ZONELIST ===========
 
