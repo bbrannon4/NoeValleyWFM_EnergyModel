@@ -1,0 +1,3554 @@
+!-Generator IDFEditor 1.48
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+
+BuildingSurface:Detailed,
+    M-123-Stairs_Srf_0,      !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-123-Stairs Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    79.675,                  !- Vertex 1 X-coordinate {m}
+    61.783,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    79.675,                  !- Vertex 2 X-coordinate {m}
+    55.565,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    78.231,                  !- Vertex 3 X-coordinate {m}
+    55.565,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    78.231,                  !- Vertex 4 X-coordinate {m}
+    61.783,                  !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-123-Stairs_Srf_1,      !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-123-Stairs Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-163-MeatPrep_Srf_6,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    78.231,                  !- Vertex 1 X-coordinate {m}
+    61.783,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    78.231,                  !- Vertex 2 X-coordinate {m}
+    61.783,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    78.231,                  !- Vertex 3 X-coordinate {m}
+    55.565,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    78.231,                  !- Vertex 4 X-coordinate {m}
+    55.565,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-123-Stairs_Srf_2,      !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-123-Stairs Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    79.675,                  !- Vertex 1 X-coordinate {m}
+    61.783,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    79.675,                  !- Vertex 2 X-coordinate {m}
+    61.783,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    78.231,                  !- Vertex 3 X-coordinate {m}
+    61.783,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    78.231,                  !- Vertex 4 X-coordinate {m}
+    61.783,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-123-Stairs_Srf_3,      !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-123-Stairs Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    79.675,                  !- Vertex 1 X-coordinate {m}
+    55.565,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    79.675,                  !- Vertex 2 X-coordinate {m}
+    55.565,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    79.675,                  !- Vertex 3 X-coordinate {m}
+    61.783,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    79.675,                  !- Vertex 4 X-coordinate {m}
+    61.783,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-123-Stairs_Srf_4,      !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-123-Stairs Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-164-MeatCooler_Srf_1,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    78.231,                  !- Vertex 1 X-coordinate {m}
+    55.565,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    78.231,                  !- Vertex 2 X-coordinate {m}
+    55.565,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    79.675,                  !- Vertex 3 X-coordinate {m}
+    55.565,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    79.675,                  !- Vertex 4 X-coordinate {m}
+    55.565,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-123-Stairs_Srf_5,      !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-123-Stairs Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    79.675,                  !- Vertex 1 X-coordinate {m}
+    55.565,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    79.675,                  !- Vertex 2 X-coordinate {m}
+    61.783,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    78.231,                  !- Vertex 3 X-coordinate {m}
+    61.783,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    78.231,                  !- Vertex 4 X-coordinate {m}
+    55.565,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-151-Stairs1_Srf_0,     !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-151-Stairs1 Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    41.118,                  !- Vertex 1 X-coordinate {m}
+    55.077,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    41.118,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    38.222,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    38.222,                  !- Vertex 4 X-coordinate {m}
+    55.077,                  !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-151-Stairs1_Srf_1,     !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-151-Stairs1 Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-201-ExgStorage_Srf_17, !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    41.118,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    41.118,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    41.118,                  !- Vertex 3 X-coordinate {m}
+    55.077,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    41.118,                  !- Vertex 4 X-coordinate {m}
+    55.077,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-151-Stairs1_Srf_2,     !- Name
+    Wall,                    !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-151-Stairs1 Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    41.118,                  !- Vertex 1 X-coordinate {m}
+    50.9630000000366,        !- Vertex 1 Y-coordinate {m}
+    3.22408629224517,        !- Vertex 1 Z-coordinate {m}
+    38.2219864563553,        !- Vertex 2 X-coordinate {m}
+    50.9629999997066,        !- Vertex 2 Y-coordinate {m}
+    2.81909684839684,        !- Vertex 2 Z-coordinate {m}
+    38.222,                  !- Vertex 3 X-coordinate {m}
+    50.9629999997065,        !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    41.118,                  !- Vertex 4 X-coordinate {m}
+    50.9630000000001,        !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-151-Stairs1_Srf_2 1,   !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-151-Stairs1 Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    38.222,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    38.2219864563553,        !- Vertex 2 X-coordinate {m}
+    50.9629999994131,        !- Vertex 2 Y-coordinate {m}
+    2.81909684839684,        !- Vertex 2 Z-coordinate {m}
+    41.118,                  !- Vertex 3 X-coordinate {m}
+    50.9630000000367,        !- Vertex 3 Y-coordinate {m}
+    3.22408629224517,        !- Vertex 3 Z-coordinate {m}
+    41.118,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-151-Stairs1_Srf_3,     !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-151-Stairs1 Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    38.222,                  !- Vertex 1 X-coordinate {m}
+    55.077,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    38.222,                  !- Vertex 2 X-coordinate {m}
+    55.077,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    38.222,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    38.222,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-151-Stairs1_Srf_4,     !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-151-Stairs1 Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-201-ExgStorage_Srf_18, !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    41.118,                  !- Vertex 1 X-coordinate {m}
+    55.077,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    41.118,                  !- Vertex 2 X-coordinate {m}
+    55.077,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    38.222,                  !- Vertex 3 X-coordinate {m}
+    55.077,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    38.222,                  !- Vertex 4 X-coordinate {m}
+    55.077,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-151-Stairs1_Srf_5,     !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-151-Stairs1 Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    L2-201-Stairs1_Srf_0,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    41.118,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    41.118,                  !- Vertex 2 X-coordinate {m}
+    55.077,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    38.222,                  !- Vertex 3 X-coordinate {m}
+    55.077,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    38.222,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-152-MDF_Srf_0,         !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-152-MDF Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    50.079,                  !- Vertex 1 X-coordinate {m}
+    61.783,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    50.079,                  !- Vertex 2 X-coordinate {m}
+    58.095,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    46.651,                  !- Vertex 3 X-coordinate {m}
+    58.095,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    46.651,                  !- Vertex 4 X-coordinate {m}
+    61.783,                  !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-152-MDF_Srf_1,         !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-152-MDF Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    50.079,                  !- Vertex 1 X-coordinate {m}
+    61.783,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    50.079,                  !- Vertex 2 X-coordinate {m}
+    61.783,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    46.651,                  !- Vertex 3 X-coordinate {m}
+    61.783,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    46.651,                  !- Vertex 4 X-coordinate {m}
+    61.783,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-152-MDF_Srf_2,         !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-152-MDF Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-201-ExgStorage_Srf_3,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    50.079,                  !- Vertex 1 X-coordinate {m}
+    58.095,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    50.079,                  !- Vertex 2 X-coordinate {m}
+    58.095,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    50.079,                  !- Vertex 3 X-coordinate {m}
+    61.783,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    50.079,                  !- Vertex 4 X-coordinate {m}
+    61.783,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-152-MDF_Srf_3,         !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-152-MDF Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-201-ExgStorage_Srf_2,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    46.651,                  !- Vertex 1 X-coordinate {m}
+    58.095,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    46.651,                  !- Vertex 2 X-coordinate {m}
+    58.095,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    50.079,                  !- Vertex 3 X-coordinate {m}
+    58.095,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    50.079,                  !- Vertex 4 X-coordinate {m}
+    58.095,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-152-MDF_Srf_4,         !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-152-MDF Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-201-ExgStorage_Srf_1,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    46.651,                  !- Vertex 1 X-coordinate {m}
+    61.783,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    46.651,                  !- Vertex 2 X-coordinate {m}
+    61.783,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    46.651,                  !- Vertex 3 X-coordinate {m}
+    58.095,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    46.651,                  !- Vertex 4 X-coordinate {m}
+    58.095,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-152-MDF_Srf_5,         !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-152-MDF Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    50.079,                  !- Vertex 1 X-coordinate {m}
+    58.095,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    50.079,                  !- Vertex 2 X-coordinate {m}
+    61.783,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    46.651,                  !- Vertex 3 X-coordinate {m}
+    61.783,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    46.651,                  !- Vertex 4 X-coordinate {m}
+    58.095,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-153-CashRoom_Srf_0,    !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-153-CashRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    45.041,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    45.041,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    42.552,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    42.552,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-153-CashRoom_Srf_1,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-153-CashRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-201-ExgStorage_Srf_15, !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    42.552,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    42.552,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    42.552,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    42.552,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-153-CashRoom_Srf_2,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-153-CashRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-201-ExgStorage_Srf_14, !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    45.041,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    45.041,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    42.552,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    42.552,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-153-CashRoom_Srf_3,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-153-CashRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-154-ExgOffice_Srf_3,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    45.041,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    45.041,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    45.041,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    45.041,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-153-CashRoom_Srf_4,    !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-153-CashRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    42.552,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    42.552,                  !- Vertex 2 X-coordinate {m}
+    50.9630000002001,        !- Vertex 2 Y-coordinate {m}
+    3.42462225443118,        !- Vertex 2 Z-coordinate {m}
+    45.041,                  !- Vertex 3 X-coordinate {m}
+    50.9629999997657,        !- Vertex 3 Y-coordinate {m}
+    3.77254736771614,        !- Vertex 3 Z-coordinate {m}
+    45.041,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-153-CashRoom_Srf_4 1,  !- Name
+    Wall,                    !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-153-CashRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    45.041,                  !- Vertex 1 X-coordinate {m}
+    50.9629999998446,        !- Vertex 1 Y-coordinate {m}
+    3.77254736771614,        !- Vertex 1 Z-coordinate {m}
+    42.552,                  !- Vertex 2 X-coordinate {m}
+    50.9630000000758,        !- Vertex 2 Y-coordinate {m}
+    3.42462225443118,        !- Vertex 2 Z-coordinate {m}
+    42.552,                  !- Vertex 3 X-coordinate {m}
+    50.9630000001243,        !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    45.041,                  !- Vertex 4 X-coordinate {m}
+    50.962999999921,         !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-153-CashRoom_Srf_5,    !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-153-CashRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    45.041,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    45.041,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    42.552,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    42.552,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-154-ExgOffice_Srf_0,   !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-154-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    47.163,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    47.163,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    45.041,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    45.041,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-154-ExgOffice_Srf_1,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-154-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-155-ExgOffice_Srf_3,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    47.163,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    47.163,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    47.163,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    47.163,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-154-ExgOffice_Srf_2,   !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-154-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    45.041,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    45.041,                  !- Vertex 2 X-coordinate {m}
+    50.9630000000491,        !- Vertex 2 Y-coordinate {m}
+    3.77251584850261,        !- Vertex 2 Z-coordinate {m}
+    47.163,                  !- Vertex 3 X-coordinate {m}
+    50.962999999405,         !- Vertex 3 Y-coordinate {m}
+    4.06900636382761,        !- Vertex 3 Z-coordinate {m}
+    47.163,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-154-ExgOffice_Srf_2 1, !- Name
+    Wall,                    !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-154-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    47.163,                  !- Vertex 1 X-coordinate {m}
+    50.9629999995263,        !- Vertex 1 Y-coordinate {m}
+    4.06900636382761,        !- Vertex 1 Z-coordinate {m}
+    45.041,                  !- Vertex 2 X-coordinate {m}
+    50.9629999998901,        !- Vertex 2 Y-coordinate {m}
+    3.77251584850261,        !- Vertex 2 Z-coordinate {m}
+    45.041,                  !- Vertex 3 X-coordinate {m}
+    50.963000000159,         !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    47.163,                  !- Vertex 4 X-coordinate {m}
+    50.9629999998787,        !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-154-ExgOffice_Srf_3,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-154-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-153-CashRoom_Srf_3,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    45.041,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    45.041,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    45.041,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    45.041,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-154-ExgOffice_Srf_4,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-154-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-201-ExgStorage_Srf_13, !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    47.163,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    47.163,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    45.041,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    45.041,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-154-ExgOffice_Srf_5,   !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-154-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    47.163,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    47.163,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    45.041,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    45.041,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-155-ExgOffice_Srf_0,   !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-155-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    49.468,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    49.468,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    47.163,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    47.163,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-155-ExgOffice_Srf_1,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-155-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-156-StlOffice_Srf_3,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    49.468,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    49.468,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    49.468,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    49.468,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-155-ExgOffice_Srf_2,   !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-155-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    47.163,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    47.163,                  !- Vertex 2 X-coordinate {m}
+    50.962999999405,         !- Vertex 2 Y-coordinate {m}
+    4.06900636382761,        !- Vertex 2 Z-coordinate {m}
+    49.468,                  !- Vertex 3 X-coordinate {m}
+    50.9629999990131,        !- Vertex 3 Y-coordinate {m}
+    4.39103180493833,        !- Vertex 3 Z-coordinate {m}
+    49.468,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-155-ExgOffice_Srf_2 1, !- Name
+    Wall,                    !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-155-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    49.468,                  !- Vertex 1 X-coordinate {m}
+    50.9629999990593,        !- Vertex 1 Y-coordinate {m}
+    4.39103180493833,        !- Vertex 1 Z-coordinate {m}
+    47.163,                  !- Vertex 2 X-coordinate {m}
+    50.9629999993469,        !- Vertex 2 Y-coordinate {m}
+    4.06900636382761,        !- Vertex 2 Z-coordinate {m}
+    47.163,                  !- Vertex 3 X-coordinate {m}
+    50.9630000000581,        !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    49.468,                  !- Vertex 4 X-coordinate {m}
+    50.9629999999538,        !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-155-ExgOffice_Srf_3,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-155-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-154-ExgOffice_Srf_1,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    47.163,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    47.163,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    47.163,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    47.163,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-155-ExgOffice_Srf_4,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-155-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-201-ExgStorage_Srf_12, !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    49.468,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    49.468,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    47.163,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    47.163,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-155-ExgOffice_Srf_5,   !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-155-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    49.468,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    49.468,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    47.163,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    47.163,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-156-StlOffice_Srf_0,   !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-156-StlOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    54.481,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    54.481,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    49.468,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    49.468,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-156-StlOffice_Srf_1,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-156-StlOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-157-ExgOffice_Srf_3,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    54.481,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    54.481,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    54.481,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    54.481,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-156-StlOffice_Srf_2,   !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-156-StlOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    49.468,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    49.468,                  !- Vertex 2 X-coordinate {m}
+    50.9629999990131,        !- Vertex 2 Y-coordinate {m}
+    4.39103180493833,        !- Vertex 2 Z-coordinate {m}
+    54.481,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    5.09117300572198,        !- Vertex 3 Z-coordinate {m}
+    54.481,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-156-StlOffice_Srf_2 1, !- Name
+    Wall,                    !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-156-StlOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    54.481,                  !- Vertex 1 X-coordinate {m}
+    50.9629999997691,        !- Vertex 1 Y-coordinate {m}
+    5.09117300572198,        !- Vertex 1 Z-coordinate {m}
+    49.468,                  !- Vertex 2 X-coordinate {m}
+    50.9629999993468,        !- Vertex 2 Y-coordinate {m}
+    4.39103180493833,        !- Vertex 2 Z-coordinate {m}
+    49.468,                  !- Vertex 3 X-coordinate {m}
+    50.9629999996663,        !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    54.481,                  !- Vertex 4 X-coordinate {m}
+    50.9630000002309,        !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-156-StlOffice_Srf_3,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-156-StlOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-155-ExgOffice_Srf_1,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    49.468,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    49.468,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    49.468,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    49.468,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-156-StlOffice_Srf_4,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-156-StlOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-201-ExgStorage_Srf_11, !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    54.481,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    54.481,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    49.468,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    49.468,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-156-StlOffice_Srf_5,   !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-156-StlOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    54.481,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    54.481,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    49.468,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    49.468,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-157-ExgOffice_Srf_0,   !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-157-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    58.47,                   !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    58.47,                   !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    54.481,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    54.481,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-157-ExgOffice_Srf_1,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-157-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-158-BreakRoom_Srf_3,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    58.47,                   !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    58.47,                   !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    58.47,                   !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    58.47,                   !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-157-ExgOffice_Srf_2,   !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-157-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    54.481,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    54.481,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    5.09117300572198,        !- Vertex 2 Z-coordinate {m}
+    58.47,                   !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    5.64837091888253,        !- Vertex 3 Z-coordinate {m}
+    58.47,                   !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-157-ExgOffice_Srf_2 1, !- Name
+    Wall,                    !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-157-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    58.47,                   !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.64837091888253,        !- Vertex 1 Z-coordinate {m}
+    54.481,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    5.09117300572198,        !- Vertex 2 Z-coordinate {m}
+    54.481,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    58.47,                   !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-157-ExgOffice_Srf_3,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-157-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-156-StlOffice_Srf_1,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    54.481,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    54.481,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    54.481,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    54.481,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-157-ExgOffice_Srf_4,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-157-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-201-ExgStorage_Srf_10, !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    58.47,                   !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    58.47,                   !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    54.481,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    54.481,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-157-ExgOffice_Srf_5,   !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-157-ExgOffice Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    58.47,                   !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    58.47,                   !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    54.481,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    54.481,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-158-BreakRoom_Srf_0,   !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-158-BreakRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    62.092,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    62.092,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    58.47,                   !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    58.47,                   !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-158-BreakRoom_Srf_1,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-158-BreakRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-ExgWomen_Srf_4,        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    62.092,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    62.092,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    62.092,                  !- Vertex 3 X-coordinate {m}
+    52.829,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    62.092,                  !- Vertex 4 X-coordinate {m}
+    52.829,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-158-BreakRoom_Srf_2,   !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-158-BreakRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    58.47,                   !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    58.47,                   !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    5.64837091888253,        !- Vertex 2 Z-coordinate {m}
+    58.947,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    5.715;                   !- Vertex 3 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-158-BreakRoom_Srf_2 1, !- Name
+    Wall,                    !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-158-BreakRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    58.947,                  !- Vertex 1 X-coordinate {m}
+    50.9629999999783,        !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    58.47,                   !- Vertex 2 X-coordinate {m}
+    50.9629999999881,        !- Vertex 2 Y-coordinate {m}
+    5.64837091888253,        !- Vertex 2 Z-coordinate {m}
+    58.47,                   !- Vertex 3 X-coordinate {m}
+    50.9630000000307,        !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    62.092,                  !- Vertex 4 X-coordinate {m}
+    50.9629999999636,        !- Vertex 4 Y-coordinate {m}
+    2.819,                   !- Vertex 4 Z-coordinate {m}
+    62.092,                  !- Vertex 5 X-coordinate {m}
+    50.9629999999267,        !- Vertex 5 Y-coordinate {m}
+    5.27574574191439;        !- Vertex 5 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-158-BreakRoom_Srf_2 2, !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-158-BreakRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    58.947,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    62.092,                  !- Vertex 2 X-coordinate {m}
+    50.9629999998874,        !- Vertex 2 Y-coordinate {m}
+    5.27574574191439,        !- Vertex 2 Z-coordinate {m}
+    62.092,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    5.715;                   !- Vertex 3 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-158-BreakRoom_Srf_3,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-158-BreakRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-157-ExgOffice_Srf_1,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    58.47,                   !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    58.47,                   !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    58.47,                   !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    58.47,                   !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-158-BreakRoom_Srf_4,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-158-BreakRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-201-ExgStorage_Srf_9,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    62.092,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    62.092,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    58.47,                   !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    58.47,                   !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-158-BreakRoom_Srf_5,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-158-BreakRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-159-ExgVest_Srf_2,     !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    62.092,                  !- Vertex 1 X-coordinate {m}
+    52.829,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    62.092,                  !- Vertex 2 X-coordinate {m}
+    52.829,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    62.092,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    62.092,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-158-BreakRoom_Srf_6,   !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-158-BreakRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    62.092,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    62.092,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    58.47,                   !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    58.47,                   !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-159-ExgVest_Srf_0,     !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-159-ExgVest Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    63.836,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    63.836,                  !- Vertex 2 X-coordinate {m}
+    52.829,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    62.092,                  !- Vertex 3 X-coordinate {m}
+    52.829,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    62.092,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-159-ExgVest_Srf_1,     !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-159-ExgVest Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    62.092,                  !- Vertex 1 X-coordinate {m}
+    52.829,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    62.092,                  !- Vertex 2 X-coordinate {m}
+    52.829,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    63.836,                  !- Vertex 3 X-coordinate {m}
+    52.829,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    63.836,                  !- Vertex 4 X-coordinate {m}
+    52.829,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-159-ExgVest_Srf_2,     !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-159-ExgVest Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-158-BreakRoom_Srf_5,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    62.092,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    62.092,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    62.092,                  !- Vertex 3 X-coordinate {m}
+    52.829,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    62.092,                  !- Vertex 4 X-coordinate {m}
+    52.829,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-159-ExgVest_Srf_3,     !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-159-ExgVest Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    63.836,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    63.836,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    62.092,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    62.092,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-159-ExgVest_Srf_4,     !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-159-ExgVest Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-161-Men_Srf_1,         !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    63.836,                  !- Vertex 1 X-coordinate {m}
+    52.829,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    63.836,                  !- Vertex 2 X-coordinate {m}
+    52.829,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    63.836,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    63.836,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-159-ExgVest_Srf_5,     !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-159-ExgVest Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    63.836,                  !- Vertex 1 X-coordinate {m}
+    52.829,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    63.836,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    62.092,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    62.092,                  !- Vertex 4 X-coordinate {m}
+    52.829,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-161-Men_Srf_0,         !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-161-Men Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    66.751,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    66.751,                  !- Vertex 2 X-coordinate {m}
+    52.829,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    63.836,                  !- Vertex 3 X-coordinate {m}
+    52.829,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    63.836,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-161-Men_Srf_1,         !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-161-Men Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-159-ExgVest_Srf_4,     !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    63.836,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    63.836,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    63.836,                  !- Vertex 3 X-coordinate {m}
+    52.829,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    63.836,                  !- Vertex 4 X-coordinate {m}
+    52.829,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-161-Men_Srf_2,         !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-161-Men Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    66.751,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    66.751,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    63.836,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    63.836,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-161-Men_Srf_3,         !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-161-Men Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-162-PrepRoom_Srf_6,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    66.751,                  !- Vertex 1 X-coordinate {m}
+    52.829,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    66.751,                  !- Vertex 2 X-coordinate {m}
+    52.829,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    66.751,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    66.751,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-161-Men_Srf_4,         !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-161-Men Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    63.836,                  !- Vertex 1 X-coordinate {m}
+    52.829,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    63.836,                  !- Vertex 2 X-coordinate {m}
+    52.829,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    66.751,                  !- Vertex 3 X-coordinate {m}
+    52.829,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    66.751,                  !- Vertex 4 X-coordinate {m}
+    52.829,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-161-Men_Srf_5,         !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-161-Men Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    66.751,                  !- Vertex 1 X-coordinate {m}
+    52.829,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    66.751,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    63.836,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    63.836,                  !- Vertex 4 X-coordinate {m}
+    52.829,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-162-PrepRoom_Srf_0,    !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-162-PrepRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    70.163,                  !- Vertex 1 X-coordinate {m}
+    59.293,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    71.415,                  !- Vertex 2 X-coordinate {m}
+    58.034,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    71.415,                  !- Vertex 3 X-coordinate {m}
+    55.565,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    71.888,                  !- Vertex 4 X-coordinate {m}
+    55.565,                  !- Vertex 4 Y-coordinate {m}
+    2.819,                   !- Vertex 4 Z-coordinate {m}
+    71.888,                  !- Vertex 5 X-coordinate {m}
+    54.704,                  !- Vertex 5 Y-coordinate {m}
+    2.819,                   !- Vertex 5 Z-coordinate {m}
+    69.952,                  !- Vertex 6 X-coordinate {m}
+    54.704,                  !- Vertex 6 Y-coordinate {m}
+    2.819,                   !- Vertex 6 Z-coordinate {m}
+    69.952,                  !- Vertex 7 X-coordinate {m}
+    50.963,                  !- Vertex 7 Y-coordinate {m}
+    2.819,                   !- Vertex 7 Z-coordinate {m}
+    66.751,                  !- Vertex 8 X-coordinate {m}
+    50.963,                  !- Vertex 8 Y-coordinate {m}
+    2.819,                   !- Vertex 8 Z-coordinate {m}
+    66.751,                  !- Vertex 9 X-coordinate {m}
+    55.9,                    !- Vertex 9 Y-coordinate {m}
+    2.819;                   !- Vertex 9 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-162-PrepRoom_Srf_1,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-162-PrepRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-164-MeatCooler_Srf_5,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    71.888,                  !- Vertex 1 X-coordinate {m}
+    54.704,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    71.888,                  !- Vertex 2 X-coordinate {m}
+    54.704,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    71.888,                  !- Vertex 3 X-coordinate {m}
+    55.565,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    71.888,                  !- Vertex 4 X-coordinate {m}
+    55.565,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-162-PrepRoom_Srf_10,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-162-PrepRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-163-MeatPrep_Srf_2,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    71.415,                  !- Vertex 1 X-coordinate {m}
+    55.565,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    71.415,                  !- Vertex 2 X-coordinate {m}
+    55.565,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    71.415,                  !- Vertex 3 X-coordinate {m}
+    58.034,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    71.415,                  !- Vertex 4 X-coordinate {m}
+    58.034,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-162-PrepRoom_Srf_11,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-162-PrepRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-163-MeatPrep_Srf_1,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    71.888,                  !- Vertex 1 X-coordinate {m}
+    55.565,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    71.888,                  !- Vertex 2 X-coordinate {m}
+    55.565,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    71.415,                  !- Vertex 3 X-coordinate {m}
+    55.565,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    71.415,                  !- Vertex 4 X-coordinate {m}
+    55.565,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-162-PrepRoom_Srf_12,   !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-162-PrepRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    69.952,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    69.952,                  !- Vertex 2 X-coordinate {m}
+    54.704,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    71.888,                  !- Vertex 3 X-coordinate {m}
+    54.704,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    71.888,                  !- Vertex 4 X-coordinate {m}
+    55.565,                  !- Vertex 4 Y-coordinate {m}
+    5.715,                   !- Vertex 4 Z-coordinate {m}
+    71.415,                  !- Vertex 5 X-coordinate {m}
+    55.565,                  !- Vertex 5 Y-coordinate {m}
+    5.715,                   !- Vertex 5 Z-coordinate {m}
+    71.415,                  !- Vertex 6 X-coordinate {m}
+    58.034,                  !- Vertex 6 Y-coordinate {m}
+    5.715,                   !- Vertex 6 Z-coordinate {m}
+    70.163,                  !- Vertex 7 X-coordinate {m}
+    59.293,                  !- Vertex 7 Y-coordinate {m}
+    5.715,                   !- Vertex 7 Z-coordinate {m}
+    66.751,                  !- Vertex 8 X-coordinate {m}
+    55.9,                    !- Vertex 8 Y-coordinate {m}
+    5.715,                   !- Vertex 8 Z-coordinate {m}
+    66.751,                  !- Vertex 9 X-coordinate {m}
+    50.963,                  !- Vertex 9 Y-coordinate {m}
+    5.715;                   !- Vertex 9 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-162-PrepRoom_Srf_2,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-162-PrepRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-BakeryFreezer_Srf_4,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    69.952,                  !- Vertex 1 X-coordinate {m}
+    54.704,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    69.952,                  !- Vertex 2 X-coordinate {m}
+    54.704,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    71.888,                  !- Vertex 3 X-coordinate {m}
+    54.704,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    71.888,                  !- Vertex 4 X-coordinate {m}
+    54.704,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-162-PrepRoom_Srf_3,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-162-PrepRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-BakeryFreezer_Srf_3,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    69.952,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    69.952,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    69.952,                  !- Vertex 3 X-coordinate {m}
+    54.704,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    69.952,                  !- Vertex 4 X-coordinate {m}
+    54.704,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-162-PrepRoom_Srf_4,    !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-162-PrepRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    66.751,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    66.751,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    4.62494698904592,        !- Vertex 2 Z-coordinate {m}
+    69.952,                  !- Vertex 3 X-coordinate {m}
+    50.9630000001505,        !- Vertex 3 Y-coordinate {m}
+    4.17778794410526,        !- Vertex 3 Z-coordinate {m}
+    69.952,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-162-PrepRoom_Srf_4 1,  !- Name
+    Wall,                    !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-162-PrepRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    66.751,                  !- Vertex 1 X-coordinate {m}
+    50.9630000000362,        !- Vertex 1 Y-coordinate {m}
+    4.62494698904592,        !- Vertex 1 Z-coordinate {m}
+    66.751,                  !- Vertex 2 X-coordinate {m}
+    50.9629999999638,        !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    69.952,                  !- Vertex 3 X-coordinate {m}
+    50.9630000000481,        !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    69.952,                  !- Vertex 4 X-coordinate {m}
+    50.9630000001025,        !- Vertex 4 Y-coordinate {m}
+    4.17778794410526;        !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-162-PrepRoom_Srf_5,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-162-PrepRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-ExgWomen_Srf_2,        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    66.751,                  !- Vertex 1 X-coordinate {m}
+    52.829,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    66.751,                  !- Vertex 2 X-coordinate {m}
+    52.829,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    66.751,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    66.751,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-162-PrepRoom_Srf_6,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-162-PrepRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-161-Men_Srf_3,         !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    66.751,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    66.751,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    66.751,                  !- Vertex 3 X-coordinate {m}
+    52.829,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    66.751,                  !- Vertex 4 X-coordinate {m}
+    52.829,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-162-PrepRoom_Srf_7,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-162-PrepRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-201-ExgStorage_Srf_7,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    66.751,                  !- Vertex 1 X-coordinate {m}
+    55.9,                    !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    66.751,                  !- Vertex 2 X-coordinate {m}
+    55.9,                    !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    66.751,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    66.751,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-162-PrepRoom_Srf_8,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-162-PrepRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-201-ExgStorage_Srf_6,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    70.163,                  !- Vertex 1 X-coordinate {m}
+    59.293,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    70.163,                  !- Vertex 2 X-coordinate {m}
+    59.293,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    66.751,                  !- Vertex 3 X-coordinate {m}
+    55.9,                    !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    66.751,                  !- Vertex 4 X-coordinate {m}
+    55.9,                    !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-162-PrepRoom_Srf_9,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-162-PrepRoom Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-163-MeatPrep_Srf_3,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    71.415,                  !- Vertex 1 X-coordinate {m}
+    58.034,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    71.415,                  !- Vertex 2 X-coordinate {m}
+    58.034,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    70.163,                  !- Vertex 3 X-coordinate {m}
+    59.293,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    70.163,                  !- Vertex 4 X-coordinate {m}
+    59.293,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-163-MeatPrep_Srf_0,    !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-163-MeatPrep Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    78.231,                  !- Vertex 1 X-coordinate {m}
+    61.783,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    78.231,                  !- Vertex 2 X-coordinate {m}
+    55.565,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    71.415,                  !- Vertex 3 X-coordinate {m}
+    55.565,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    71.415,                  !- Vertex 4 X-coordinate {m}
+    58.034,                  !- Vertex 4 Y-coordinate {m}
+    2.819,                   !- Vertex 4 Z-coordinate {m}
+    70.163,                  !- Vertex 5 X-coordinate {m}
+    59.293,                  !- Vertex 5 Y-coordinate {m}
+    2.819,                   !- Vertex 5 Z-coordinate {m}
+    72.667,                  !- Vertex 6 X-coordinate {m}
+    61.783,                  !- Vertex 6 Y-coordinate {m}
+    2.819;                   !- Vertex 6 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-163-MeatPrep_Srf_1,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-163-MeatPrep Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-162-PrepRoom_Srf_11,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    71.415,                  !- Vertex 1 X-coordinate {m}
+    55.565,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    71.415,                  !- Vertex 2 X-coordinate {m}
+    55.565,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    71.888,                  !- Vertex 3 X-coordinate {m}
+    55.565,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    71.888,                  !- Vertex 4 X-coordinate {m}
+    55.565,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-163-MeatPrep_Srf_2,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-163-MeatPrep Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-162-PrepRoom_Srf_10,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    71.415,                  !- Vertex 1 X-coordinate {m}
+    58.034,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    71.415,                  !- Vertex 2 X-coordinate {m}
+    58.034,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    71.415,                  !- Vertex 3 X-coordinate {m}
+    55.565,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    71.415,                  !- Vertex 4 X-coordinate {m}
+    55.565,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-163-MeatPrep_Srf_3,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-163-MeatPrep Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-162-PrepRoom_Srf_9,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    70.163,                  !- Vertex 1 X-coordinate {m}
+    59.293,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    70.163,                  !- Vertex 2 X-coordinate {m}
+    59.293,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    71.415,                  !- Vertex 3 X-coordinate {m}
+    58.034,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    71.415,                  !- Vertex 4 X-coordinate {m}
+    58.034,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-163-MeatPrep_Srf_4,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-163-MeatPrep Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-201-ExgStorage_Srf_5,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    72.667,                  !- Vertex 1 X-coordinate {m}
+    61.783,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    72.667,                  !- Vertex 2 X-coordinate {m}
+    61.783,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    70.163,                  !- Vertex 3 X-coordinate {m}
+    59.293,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    70.163,                  !- Vertex 4 X-coordinate {m}
+    59.293,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-163-MeatPrep_Srf_5,    !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-163-MeatPrep Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    78.231,                  !- Vertex 1 X-coordinate {m}
+    61.783,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    78.231,                  !- Vertex 2 X-coordinate {m}
+    61.783,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    72.667,                  !- Vertex 3 X-coordinate {m}
+    61.783,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    72.667,                  !- Vertex 4 X-coordinate {m}
+    61.783,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-163-MeatPrep_Srf_6,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-163-MeatPrep Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-123-Stairs_Srf_1,      !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    78.231,                  !- Vertex 1 X-coordinate {m}
+    55.565,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    78.231,                  !- Vertex 2 X-coordinate {m}
+    55.565,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    78.231,                  !- Vertex 3 X-coordinate {m}
+    61.783,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    78.231,                  !- Vertex 4 X-coordinate {m}
+    61.783,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-163-MeatPrep_Srf_7,    !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-163-MeatPrep Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-164-MeatCooler_Srf_6,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    71.888,                  !- Vertex 1 X-coordinate {m}
+    55.565,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    71.888,                  !- Vertex 2 X-coordinate {m}
+    55.565,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    78.231,                  !- Vertex 3 X-coordinate {m}
+    55.565,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    78.231,                  !- Vertex 4 X-coordinate {m}
+    55.565,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-163-MeatPrep_Srf_8,    !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-163-MeatPrep Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    78.231,                  !- Vertex 1 X-coordinate {m}
+    55.565,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    78.231,                  !- Vertex 2 X-coordinate {m}
+    61.783,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    72.667,                  !- Vertex 3 X-coordinate {m}
+    61.783,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    70.163,                  !- Vertex 4 X-coordinate {m}
+    59.293,                  !- Vertex 4 Y-coordinate {m}
+    5.715,                   !- Vertex 4 Z-coordinate {m}
+    71.415,                  !- Vertex 5 X-coordinate {m}
+    58.034,                  !- Vertex 5 Y-coordinate {m}
+    5.715,                   !- Vertex 5 Z-coordinate {m}
+    71.415,                  !- Vertex 6 X-coordinate {m}
+    55.565,                  !- Vertex 6 Y-coordinate {m}
+    5.715;                   !- Vertex 6 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-164-MeatCooler_Srf_0,  !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-164-MeatCooler Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    79.675,                  !- Vertex 1 X-coordinate {m}
+    55.565,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    79.675,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    71.888,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    71.888,                  !- Vertex 4 X-coordinate {m}
+    55.565,                  !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-164-MeatCooler_Srf_1,  !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-164-MeatCooler Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-123-Stairs_Srf_4,      !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    79.675,                  !- Vertex 1 X-coordinate {m}
+    55.565,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    79.675,                  !- Vertex 2 X-coordinate {m}
+    55.565,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    78.231,                  !- Vertex 3 X-coordinate {m}
+    55.565,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    78.231,                  !- Vertex 4 X-coordinate {m}
+    55.565,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-164-MeatCooler_Srf_2,  !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-164-MeatCooler Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    79.675,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    79.675,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    79.675,                  !- Vertex 3 X-coordinate {m}
+    55.565,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    79.675,                  !- Vertex 4 X-coordinate {m}
+    55.565,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-164-MeatCooler_Srf_3,  !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-164-MeatCooler Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    71.888,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    71.888,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    3.90741722004654,        !- Vertex 2 Z-coordinate {m}
+    79.675,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    79.675,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-164-MeatCooler_Srf_3 1,!- Name
+    Wall,                    !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-164-MeatCooler Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    71.888,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    3.90741722004654,        !- Vertex 1 Z-coordinate {m}
+    71.888,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    79.675,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819;                   !- Vertex 3 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-164-MeatCooler_Srf_4,  !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-164-MeatCooler Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-BakeryFreezer_Srf_1,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    71.888,                  !- Vertex 1 X-coordinate {m}
+    54.704,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    71.888,                  !- Vertex 2 X-coordinate {m}
+    54.704,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    71.888,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    71.888,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-164-MeatCooler_Srf_5,  !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-164-MeatCooler Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-162-PrepRoom_Srf_1,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    71.888,                  !- Vertex 1 X-coordinate {m}
+    55.565,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    71.888,                  !- Vertex 2 X-coordinate {m}
+    55.565,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    71.888,                  !- Vertex 3 X-coordinate {m}
+    54.704,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    71.888,                  !- Vertex 4 X-coordinate {m}
+    54.704,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-164-MeatCooler_Srf_6,  !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-164-MeatCooler Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-163-MeatPrep_Srf_7,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    78.231,                  !- Vertex 1 X-coordinate {m}
+    55.565,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    78.231,                  !- Vertex 2 X-coordinate {m}
+    55.565,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    71.888,                  !- Vertex 3 X-coordinate {m}
+    55.565,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    71.888,                  !- Vertex 4 X-coordinate {m}
+    55.565,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-164-MeatCooler_Srf_7,  !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-164-MeatCooler Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    79.675,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    79.675,                  !- Vertex 2 X-coordinate {m}
+    55.565,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    71.888,                  !- Vertex 3 X-coordinate {m}
+    55.565,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    71.888,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_0,  !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    72.667,                  !- Vertex 1 X-coordinate {m}
+    61.783,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    66.751,                  !- Vertex 2 X-coordinate {m}
+    55.9,                    !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    66.751,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    42.552,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    2.819,                   !- Vertex 4 Z-coordinate {m}
+    42.552,                  !- Vertex 5 X-coordinate {m}
+    50.963,                  !- Vertex 5 Y-coordinate {m}
+    2.819,                   !- Vertex 5 Z-coordinate {m}
+    41.118,                  !- Vertex 6 X-coordinate {m}
+    50.963,                  !- Vertex 6 Y-coordinate {m}
+    2.819,                   !- Vertex 6 Z-coordinate {m}
+    41.118,                  !- Vertex 7 X-coordinate {m}
+    55.077,                  !- Vertex 7 Y-coordinate {m}
+    2.819,                   !- Vertex 7 Z-coordinate {m}
+    38.222,                  !- Vertex 8 X-coordinate {m}
+    55.077,                  !- Vertex 8 Y-coordinate {m}
+    2.819,                   !- Vertex 8 Z-coordinate {m}
+    38.222,                  !- Vertex 9 X-coordinate {m}
+    61.783,                  !- Vertex 9 Y-coordinate {m}
+    2.819,                   !- Vertex 9 Z-coordinate {m}
+    46.651,                  !- Vertex 10 X-coordinate {m}
+    61.783,                  !- Vertex 10 Y-coordinate {m}
+    2.819,                   !- Vertex 10 Z-coordinate {m}
+    46.651,                  !- Vertex 11 X-coordinate {m}
+    58.095,                  !- Vertex 11 Y-coordinate {m}
+    2.819,                   !- Vertex 11 Z-coordinate {m}
+    50.079,                  !- Vertex 12 X-coordinate {m}
+    58.095,                  !- Vertex 12 Y-coordinate {m}
+    2.819,                   !- Vertex 12 Z-coordinate {m}
+    50.079,                  !- Vertex 13 X-coordinate {m}
+    61.783,                  !- Vertex 13 Y-coordinate {m}
+    2.819;                   !- Vertex 13 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_1,  !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-152-MDF_Srf_4,         !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    46.651,                  !- Vertex 1 X-coordinate {m}
+    58.095,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    46.651,                  !- Vertex 2 X-coordinate {m}
+    58.095,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    46.651,                  !- Vertex 3 X-coordinate {m}
+    61.783,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    46.651,                  !- Vertex 4 X-coordinate {m}
+    61.783,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_10, !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-157-ExgOffice_Srf_4,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    54.481,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    54.481,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    58.47,                   !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    58.47,                   !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_11, !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-156-StlOffice_Srf_4,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    49.468,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    49.468,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    54.481,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    54.481,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_12, !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-155-ExgOffice_Srf_4,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    47.163,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    47.163,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    49.468,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    49.468,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_13, !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-154-ExgOffice_Srf_4,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    45.041,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    45.041,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    47.163,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    47.163,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_14, !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-153-CashRoom_Srf_2,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    42.552,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    42.552,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    45.041,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    45.041,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_15, !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-153-CashRoom_Srf_1,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    42.552,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    42.552,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    42.552,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    42.552,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_16, !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    41.118,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    41.118,                  !- Vertex 2 X-coordinate {m}
+    50.9630000000367,        !- Vertex 2 Y-coordinate {m}
+    3.22408629224517,        !- Vertex 2 Z-coordinate {m}
+    42.552,                  !- Vertex 3 X-coordinate {m}
+    50.9630000002001,        !- Vertex 3 Y-coordinate {m}
+    3.42462225443118,        !- Vertex 3 Z-coordinate {m}
+    42.552,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_16 1,  !- Name
+    Wall,                    !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    42.552,                  !- Vertex 1 X-coordinate {m}
+    50.9630000001777,        !- Vertex 1 Y-coordinate {m}
+    3.42462225443118,        !- Vertex 1 Z-coordinate {m}
+    41.118,                  !- Vertex 2 X-coordinate {m}
+    50.9630000000703,        !- Vertex 2 Y-coordinate {m}
+    3.22408629224517,        !- Vertex 2 Z-coordinate {m}
+    41.118,                  !- Vertex 3 X-coordinate {m}
+    50.9629999999664,        !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    42.552,                  !- Vertex 4 X-coordinate {m}
+    50.9630000000224,        !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_17, !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-151-Stairs1_Srf_1,     !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    41.118,                  !- Vertex 1 X-coordinate {m}
+    55.077,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    41.118,                  !- Vertex 2 X-coordinate {m}
+    55.077,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    41.118,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    41.118,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_18, !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-151-Stairs1_Srf_4,     !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    38.222,                  !- Vertex 1 X-coordinate {m}
+    55.077,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    38.222,                  !- Vertex 2 X-coordinate {m}
+    55.077,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    41.118,                  !- Vertex 3 X-coordinate {m}
+    55.077,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    41.118,                  !- Vertex 4 X-coordinate {m}
+    55.077,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_19, !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    38.222,                  !- Vertex 1 X-coordinate {m}
+    61.783,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    38.222,                  !- Vertex 2 X-coordinate {m}
+    61.783,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    38.222,                  !- Vertex 3 X-coordinate {m}
+    55.077,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    38.222,                  !- Vertex 4 X-coordinate {m}
+    55.077,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_2,  !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-152-MDF_Srf_3,         !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    50.079,                  !- Vertex 1 X-coordinate {m}
+    58.095,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    50.079,                  !- Vertex 2 X-coordinate {m}
+    58.095,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    46.651,                  !- Vertex 3 X-coordinate {m}
+    58.095,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    46.651,                  !- Vertex 4 X-coordinate {m}
+    58.095,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_20, !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    46.651,                  !- Vertex 1 X-coordinate {m}
+    61.783,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    46.651,                  !- Vertex 2 X-coordinate {m}
+    61.783,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    38.222,                  !- Vertex 3 X-coordinate {m}
+    61.783,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    38.222,                  !- Vertex 4 X-coordinate {m}
+    61.783,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_21, !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    42.552,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    42.552,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    66.751,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    66.751,                  !- Vertex 4 X-coordinate {m}
+    55.9,                    !- Vertex 4 Y-coordinate {m}
+    5.715,                   !- Vertex 4 Z-coordinate {m}
+    72.667,                  !- Vertex 5 X-coordinate {m}
+    61.783,                  !- Vertex 5 Y-coordinate {m}
+    5.715,                   !- Vertex 5 Z-coordinate {m}
+    50.079,                  !- Vertex 6 X-coordinate {m}
+    61.783,                  !- Vertex 6 Y-coordinate {m}
+    5.715,                   !- Vertex 6 Z-coordinate {m}
+    50.079,                  !- Vertex 7 X-coordinate {m}
+    58.095,                  !- Vertex 7 Y-coordinate {m}
+    5.715,                   !- Vertex 7 Z-coordinate {m}
+    46.651,                  !- Vertex 8 X-coordinate {m}
+    58.095,                  !- Vertex 8 Y-coordinate {m}
+    5.715,                   !- Vertex 8 Z-coordinate {m}
+    46.651,                  !- Vertex 9 X-coordinate {m}
+    61.783,                  !- Vertex 9 Y-coordinate {m}
+    5.715,                   !- Vertex 9 Z-coordinate {m}
+    38.222,                  !- Vertex 10 X-coordinate {m}
+    61.783,                  !- Vertex 10 Y-coordinate {m}
+    5.715,                   !- Vertex 10 Z-coordinate {m}
+    38.222,                  !- Vertex 11 X-coordinate {m}
+    55.077,                  !- Vertex 11 Y-coordinate {m}
+    5.715,                   !- Vertex 11 Z-coordinate {m}
+    41.118,                  !- Vertex 12 X-coordinate {m}
+    55.077,                  !- Vertex 12 Y-coordinate {m}
+    5.715,                   !- Vertex 12 Z-coordinate {m}
+    41.118,                  !- Vertex 13 X-coordinate {m}
+    50.963,                  !- Vertex 13 Y-coordinate {m}
+    5.715;                   !- Vertex 13 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_3,  !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-152-MDF_Srf_2,         !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    50.079,                  !- Vertex 1 X-coordinate {m}
+    61.783,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    50.079,                  !- Vertex 2 X-coordinate {m}
+    61.783,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    50.079,                  !- Vertex 3 X-coordinate {m}
+    58.095,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    50.079,                  !- Vertex 4 X-coordinate {m}
+    58.095,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_4,  !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    72.667,                  !- Vertex 1 X-coordinate {m}
+    61.783,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    72.667,                  !- Vertex 2 X-coordinate {m}
+    61.783,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    50.079,                  !- Vertex 3 X-coordinate {m}
+    61.783,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    50.079,                  !- Vertex 4 X-coordinate {m}
+    61.783,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_5,  !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-163-MeatPrep_Srf_4,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    70.163,                  !- Vertex 1 X-coordinate {m}
+    59.293,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    70.163,                  !- Vertex 2 X-coordinate {m}
+    59.293,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    72.667,                  !- Vertex 3 X-coordinate {m}
+    61.783,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    72.667,                  !- Vertex 4 X-coordinate {m}
+    61.783,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_6,  !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-162-PrepRoom_Srf_8,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    66.751,                  !- Vertex 1 X-coordinate {m}
+    55.9,                    !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    66.751,                  !- Vertex 2 X-coordinate {m}
+    55.9,                    !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    70.163,                  !- Vertex 3 X-coordinate {m}
+    59.293,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    70.163,                  !- Vertex 4 X-coordinate {m}
+    59.293,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_7,  !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-162-PrepRoom_Srf_7,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    66.751,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    66.751,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    66.751,                  !- Vertex 3 X-coordinate {m}
+    55.9,                    !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    66.751,                  !- Vertex 4 X-coordinate {m}
+    55.9,                    !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_8,  !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    62.092,                  !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    62.092,                  !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    66.751,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    66.751,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-201-ExgStorage_Srf_9,  !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-201-ExgStorage Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-158-BreakRoom_Srf_4,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    58.47,                   !- Vertex 1 X-coordinate {m}
+    54.437,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    58.47,                   !- Vertex 2 X-coordinate {m}
+    54.437,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    62.092,                  !- Vertex 3 X-coordinate {m}
+    54.437,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    62.092,                  !- Vertex 4 X-coordinate {m}
+    54.437,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-BakeryFreezer_Srf_0,   !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-BakeryFreezer Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    71.888,                  !- Vertex 1 X-coordinate {m}
+    54.704,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    71.888,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    69.952,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    69.952,                  !- Vertex 4 X-coordinate {m}
+    54.704,                  !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-BakeryFreezer_Srf_1,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-BakeryFreezer Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-164-MeatCooler_Srf_4,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    71.888,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    71.888,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    71.888,                  !- Vertex 3 X-coordinate {m}
+    54.704,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    71.888,                  !- Vertex 4 X-coordinate {m}
+    54.704,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-BakeryFreezer_Srf_2,   !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-BakeryFreezer Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    69.952,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    69.952,                  !- Vertex 2 X-coordinate {m}
+    50.9630000001505,        !- Vertex 2 Y-coordinate {m}
+    4.17778794410526,        !- Vertex 2 Z-coordinate {m}
+    71.888,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    3.90741722004654,        !- Vertex 3 Z-coordinate {m}
+    71.888,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-BakeryFreezer_Srf_2 1, !- Name
+    Wall,                    !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-BakeryFreezer Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    69.952,                  !- Vertex 1 X-coordinate {m}
+    50.9630000001211,        !- Vertex 1 Y-coordinate {m}
+    4.17778794410526,        !- Vertex 1 Z-coordinate {m}
+    69.952,                  !- Vertex 2 X-coordinate {m}
+    50.9630000000294,        !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    71.888,                  !- Vertex 3 X-coordinate {m}
+    50.9629999999633,        !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    71.888,                  !- Vertex 4 X-coordinate {m}
+    50.9630000000367,        !- Vertex 4 Y-coordinate {m}
+    3.90741722004654;        !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-BakeryFreezer_Srf_3,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-BakeryFreezer Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-162-PrepRoom_Srf_3,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    69.952,                  !- Vertex 1 X-coordinate {m}
+    54.704,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    69.952,                  !- Vertex 2 X-coordinate {m}
+    54.704,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    69.952,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    69.952,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-BakeryFreezer_Srf_4,   !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-BakeryFreezer Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-162-PrepRoom_Srf_2,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    71.888,                  !- Vertex 1 X-coordinate {m}
+    54.704,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    71.888,                  !- Vertex 2 X-coordinate {m}
+    54.704,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    69.952,                  !- Vertex 3 X-coordinate {m}
+    54.704,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    69.952,                  !- Vertex 4 X-coordinate {m}
+    54.704,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-BakeryFreezer_Srf_5,   !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-BakeryFreezer Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    71.888,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    71.888,                  !- Vertex 2 X-coordinate {m}
+    54.704,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    69.952,                  !- Vertex 3 X-coordinate {m}
+    54.704,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    69.952,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-ExgWomen_Srf_0,        !- Name
+    Floor,                   !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-ExgWomen Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    66.751,                  !- Vertex 1 X-coordinate {m}
+    52.829,                  !- Vertex 1 Y-coordinate {m}
+    2.819,                   !- Vertex 1 Z-coordinate {m}
+    66.751,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    62.092,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    62.092,                  !- Vertex 4 X-coordinate {m}
+    52.829,                  !- Vertex 4 Y-coordinate {m}
+    2.819;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-ExgWomen_Srf_1,        !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-ExgWomen Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    66.751,                  !- Vertex 1 X-coordinate {m}
+    52.829,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    66.751,                  !- Vertex 2 X-coordinate {m}
+    52.829,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    62.092,                  !- Vertex 3 X-coordinate {m}
+    52.829,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    62.092,                  !- Vertex 4 X-coordinate {m}
+    52.829,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-ExgWomen_Srf_2,        !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-ExgWomen Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-162-PrepRoom_Srf_5,    !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    66.751,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    66.751,                  !- Vertex 2 X-coordinate {m}
+    50.963,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    66.751,                  !- Vertex 3 X-coordinate {m}
+    52.829,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    66.751,                  !- Vertex 4 X-coordinate {m}
+    52.829,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-ExgWomen_Srf_3,        !- Name
+    Wall,                    !- Surface Type
+    Wall_Exterior,           !- Construction Name
+    M-ExgWomen Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    62.092,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    62.092,                  !- Vertex 2 X-coordinate {m}
+    50.9629999998874,        !- Vertex 2 Y-coordinate {m}
+    5.27574574191439,        !- Vertex 2 Z-coordinate {m}
+    66.751,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    4.62494698904592,        !- Vertex 3 Z-coordinate {m}
+    66.751,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-ExgWomen_Srf_3 1,      !- Name
+    Wall,                    !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-ExgWomen Thermal Zone Thermal Zone,  !- Zone Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    62.092,                  !- Vertex 1 X-coordinate {m}
+    50.9629999999072,        !- Vertex 1 Y-coordinate {m}
+    5.27574574191439,        !- Vertex 1 Z-coordinate {m}
+    62.092,                  !- Vertex 2 X-coordinate {m}
+    50.9629999999802,        !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    66.751,                  !- Vertex 3 X-coordinate {m}
+    50.9630000000269,        !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    66.751,                  !- Vertex 4 X-coordinate {m}
+    50.9629999999731,        !- Vertex 4 Y-coordinate {m}
+    4.62494698904592;        !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-ExgWomen_Srf_4,        !- Name
+    Wall,                    !- Surface Type
+    Hole,                    !- Construction Name
+    M-ExgWomen Thermal Zone Thermal Zone,  !- Zone Name
+    Surface,                 !- Outside Boundary Condition
+    M-158-BreakRoom_Srf_1,   !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    62.092,                  !- Vertex 1 X-coordinate {m}
+    52.829,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    62.092,                  !- Vertex 2 X-coordinate {m}
+    52.829,                  !- Vertex 2 Y-coordinate {m}
+    2.819,                   !- Vertex 2 Z-coordinate {m}
+    62.092,                  !- Vertex 3 X-coordinate {m}
+    50.963,                  !- Vertex 3 Y-coordinate {m}
+    2.819,                   !- Vertex 3 Z-coordinate {m}
+    62.092,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    M-ExgWomen_Srf_5,        !- Name
+    Ceiling,                 !- Surface Type
+    Medium Partitions,       !- Construction Name
+    M-ExgWomen Thermal Zone Thermal Zone,  !- Zone Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    ,                        !- View Factor to Ground
+    ,                        !- Number of Vertices
+    66.751,                  !- Vertex 1 X-coordinate {m}
+    50.963,                  !- Vertex 1 Y-coordinate {m}
+    5.715,                   !- Vertex 1 Z-coordinate {m}
+    66.751,                  !- Vertex 2 X-coordinate {m}
+    52.829,                  !- Vertex 2 Y-coordinate {m}
+    5.715,                   !- Vertex 2 Z-coordinate {m}
+    62.092,                  !- Vertex 3 X-coordinate {m}
+    52.829,                  !- Vertex 3 Y-coordinate {m}
+    5.715,                   !- Vertex 3 Z-coordinate {m}
+    62.092,                  !- Vertex 4 X-coordinate {m}
+    50.963,                  !- Vertex 4 Y-coordinate {m}
+    5.715;                   !- Vertex 4 Z-coordinate {m}
+
