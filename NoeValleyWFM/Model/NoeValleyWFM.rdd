@@ -1,4 +1,4 @@
-! Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2016.10.19 17:39,IDD_Version 8.6.0
+! Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2016.10.21 16:12,IDD_Version 8.6.0
 ! Output:Variable Objects (applicable to this run)
 Output:Variable,*,Air System Component Model Simulation Calls,hourly; !- HVAC Sum []
 Output:Variable,*,Air System Simulation Iteration Count,hourly; !- HVAC Sum []
