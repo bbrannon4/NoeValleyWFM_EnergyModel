@@ -1,12 +1,4 @@
 Existing Model
 
 
--Lighting Schedules
-
--Check Adjacencies and shade object types
-
--Construction definitions
--Construction assignments
-
--Air Side HVAC
--Water Side HVAC
+ECMs
