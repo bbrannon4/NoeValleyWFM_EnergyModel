@@ -44109,8 +44109,7 @@ AirLoopHVAC:ZoneSplitter,
     L1S1 PreparedFoodsPrep Inlet Node,  !- Outlet 2 Node Name
     L1S1 SpecialtyService Inlet Node,  !- Outlet 3 Node Name
     L1S1 Checkout Inlet Node,!- Outlet 4 Node Name
-    L1S1 SalesSouth Inlet Node,  !- Outlet 5 Node Name
-    L1S1 Sales North Inlet Node;  !- Outlet 6 Node Name
+    L1S1 SalesSouth Inlet Node;  !- Outlet 5 Node Name
 
 AirLoopHVAC:ZoneSplitter,
     Air Loop HVAC Zone Splitter 1,  !- Name
