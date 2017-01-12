@@ -1,22 +1,10 @@
-<<<<<<< HEAD
-Thu 01/12/2017 13:21:02.23 ReadVars 
-=======
-Thu 01/12/2017 10:21:46.61 ReadVars 
->>>>>>> origin/master
+Thu 01/12/2017 15:16:06.23 ReadVars 
  ReadVarsESO
- getting all vars from:eplusout.eso
-  number variables requested for output=           0
- EOF encountered on eplusout.eso while reading data
- probable EnergyPlus error condition -- check eplusout.err
+ Requested ESO file=eplusout.eso
+ does not exist.  ReadVarsESO program terminated.
  ReadVarsESO program terminated.
- ReadVars Run Time=00hr 00min  0.02sec
  ReadVarsESO
  processing:test.mvi
- input file:eplusout.mtr
- output file:eplusmtr.csv
- getting all vars from:eplusout.mtr
-  number variables requested for output=           0
- EOF encountered on eplusout.eso while reading data
- probable EnergyPlus error condition -- check eplusout.err
+ Requested ESO file=eplusout.mtr
+ does not exist.  ReadVarsESO program terminated.
  ReadVarsESO program terminated.
- ReadVars Run Time=00hr 00min  0.03sec

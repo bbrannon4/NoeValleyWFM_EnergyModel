@@ -8,6 +8,7 @@
   Total Number of Fields=       58850
   Processing Input Data File -- Start
   Echo of input lines is off. May be activated by setting the environmental variable DISPLAYINPUTINAUDIT=YES
+   ** Severe  ** , or ; expected on this line
   Processing Input Data File -- Complete
   Maximum number of Alpha IDF Args=          66
   Maximum number of Numeric IDF Args=          62
@@ -98,7 +99,6 @@
  Getting object=CONTROLLER:MECHANICALVENTILATION
  Getting object=COILSYSTEM:COOLING:DX
  Getting object=OUTPUTCONTROL:TABLE:STYLE
-<<<<<<< HEAD
  MonthlyInputCount=           0
  sizeMonthlyInput=           0
  MonthlyFieldSetInputCount=           0
@@ -146,5 +146,3 @@
  maxEMSInternalVarsAvailable=           0
  NumOfNodeConnections=         303
  MaxNumOfNodeConnections=        1000
-=======
->>>>>>> origin/master

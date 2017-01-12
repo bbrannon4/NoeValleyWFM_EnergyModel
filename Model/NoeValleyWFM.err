@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 13:00,IDD_Version 8.6.0
-=======
-Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 10:01,IDD_Version 8.6.0
->>>>>>> origin/master
+Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 14:45,IDD_Version 8.6.0
+   ************* IP: IDF Line~1 <<<<<<< HEAD
+   ** Severe  ** , or ; expected on this line
    ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
    **   ~~~   ** ..Location object=1E1ABA
    **   ~~~   ** ..Weather File Location=San Francisco Intl Ap CA USA TMY3 WMO#=724940
@@ -143,7 +141,6 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 10:01,IDD_V
    ************* All Return Air Paths passed integrity testing
    ************* No node connection errors were found.
    ************* Beginning Simulation
-<<<<<<< HEAD
    ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =4.598E-003 vs Max Allowed Temp Diff [C] =2.000E-003
    **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 06:20 - 06:22
    ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.780E-003 vs Max Allowed Temp Diff [C] =2.000E-003
@@ -271,153 +268,6 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 10:01,IDD_V
    ************* Simulation Error Summary *************
    ************* There are 5 unused schedules in input.
    ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
-=======
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =4.858E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 06:20 - 06:22
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.610E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 06:30 - 06:32
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =6.299E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 08:20 - 08:22
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.780E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 08:30 - 08:32
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.190E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 08:40 - 08:42
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =4.302E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 09:20 - 09:22
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.253E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 09:30 - 09:32
-   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="PACU WEST 1 SPD DX CLG COIL" - Air volume flow rate per watt of rated total cooling capacity is out of range at 8.068E-005 m3/s/W.
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 10:20 - 10:30
-   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--6.713E-005]
-   **   ~~~   ** Possible causes include inconsistent air flow rates in system components,
-   **   ~~~   ** or variable air volume [VAV] system using incorrect coil type.
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =5.743E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 21:20 - 21:22
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.404E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 21:30 - 21:32
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =4.349E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 22:20 - 22:22
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.442E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 22:30 - 22:32
-   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "PACU EAST 1 SPD DX CLG COIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = 0.24 C.
-   **   ~~~   **  ...Occurrence info = SIMULATION, 01/01 22:30 - 22:32
-   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
-   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.863 C.
-   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
-   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =4.911E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/02 06:20 - 06:22
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.611E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/02 06:30 - 06:32
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =6.304E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/02 08:20 - 08:22
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.808E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/02 08:30 - 08:32
-   ** Warning ** Temperature out of range [-100. to 200.] (PsyPsatFnTemp)
-   **   ~~~   **  Routine=CorrectZoneHumRat, Environment=SIMULATION, at Simulation time=06/06 14:50 - 15:00
-   **   ~~~   **  Input Temperature=200.23
-   ** Severe  ** Temperature (high) out of bounds (200.08] for zone="M-155-EXGOFFICE THERMAL ZONE", for surface="M-155-EXGOFFICE_SRF_4"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/07 12:50 - 12:52
-   **   ~~~   ** Zone="M-155-EXGOFFICE THERMAL ZONE", Diagnostic Details:
-   **   ~~~   ** ...Internal Heat Gain [31.345] W/m2
-   **   ~~~   ** ...Infiltration/Ventilation [0.000] m3/s
-   **   ~~~   ** ...Mixing/Cross Mixing [0.000] m3/s
-   **   ~~~   ** ...Zone is part of HVAC controlled system.
-   ** Severe  ** Temperature (high) out of bounds (200.06] for zone="M-155-EXGOFFICE THERMAL ZONE", for surface="M-155-EXGOFFICE_SRF_2"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/07 13:20 - 13:23
-   ** Severe  ** Temperature (high) out of bounds (200.00] for zone="M-155-EXGOFFICE THERMAL ZONE", for surface="M-155-EXGOFFICE_SRF_0"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/07 13:40 - 13:43
-   ** Severe  ** Temperature (high) out of bounds (200.01] for zone="M-155-EXGOFFICE THERMAL ZONE", for surface="M-155-EXGOFFICE_SRF_1"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/07 13:50 - 13:53
-   ** Severe  ** Temperature (high) out of bounds (200.01] for zone="M-154-EXGOFFICE THERMAL ZONE", for surface="M-154-EXGOFFICE_SRF_4"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/07 15:50 - 15:53
-   **   ~~~   ** Zone="M-154-EXGOFFICE THERMAL ZONE", Diagnostic Details:
-   **   ~~~   ** ...Internal Heat Gain [38.389] W/m2
-   **   ~~~   ** ...Infiltration/Ventilation [0.000] m3/s
-   **   ~~~   ** ...Mixing/Cross Mixing [0.000] m3/s
-   **   ~~~   ** ...Zone is part of HVAC controlled system.
-   ** Severe  ** Temperature (high) out of bounds (200.02] for zone="M-154-EXGOFFICE THERMAL ZONE", for surface="M-154-EXGOFFICE_SRF_1"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/07 16:00 - 16:05
-   ** Severe  ** Temperature (high) out of bounds (200.04] for zone="M-155-EXGOFFICE THERMAL ZONE", for surface="M-155-EXGOFFICE_SRF_5"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/07 16:40 - 16:45
-   ** Severe  ** Temperature (high) out of bounds (200.07] for zone="M-155-EXGOFFICE THERMAL ZONE", for surface="M-155-EXGOFFICE_SRF_6"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/07 16:50 - 16:55
-   ** Severe  ** Temperature (high) out of bounds (200.03] for zone="M-154-EXGOFFICE THERMAL ZONE", for surface="M-154-EXGOFFICE_SRF_0"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/07 17:00 - 17:05
-   ** Severe  ** Temperature (high) out of bounds (200.00] for zone="M-154-EXGOFFICE THERMAL ZONE", for surface="M-154-EXGOFFICE_SRF_2"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/07 20:50 - 20:55
-   ** Severe  ** Temperature (high) out of bounds (200.01] for zone="M-154-EXGOFFICE THERMAL ZONE", for surface="M-154-EXGOFFICE_SRF_5"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/08 10:00 - 10:02
-   ** Severe  ** Temperature (high) out of bounds (200.07] for zone="M-154-EXGOFFICE THERMAL ZONE", for surface="M-154-EXGOFFICE_SRF_6"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/08 10:10 - 10:12
-   ** Severe  ** Temperature (high) out of bounds (200.04] for zone="M-155-EXGOFFICE THERMAL ZONE", for surface="M-155-EXGOFFICE_SRF_3"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/08 10:20 - 10:23
-   ** Severe  ** Temperature (high) out of bounds (200.01] for zone="M-154-EXGOFFICE THERMAL ZONE", for surface="M-154-EXGOFFICE_SRF_3"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/08 13:20 - 13:23
-   ** Severe  ** Temperature (high) out of bounds (200.08] for zone="M-156-STLOFFICE THERMAL ZONE", for surface="M-156-STLOFFICE_SRF_2"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/08 13:30 - 13:33
-   **   ~~~   ** Zone="M-156-STLOFFICE THERMAL ZONE", Diagnostic Details:
-   **   ~~~   ** ...Internal Heat Gain [44.559] W/m2
-   **   ~~~   ** ...Infiltration/Ventilation [0.000] m3/s
-   **   ~~~   ** ...Mixing/Cross Mixing [0.000] m3/s
-   **   ~~~   ** ...Zone is part of HVAC controlled system.
-   ** Severe  ** Temperature (high) out of bounds (200.06] for zone="M-156-STLOFFICE THERMAL ZONE", for surface="M-156-STLOFFICE_SRF_4"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/08 14:10 - 14:13
-   ** Severe  ** Temperature (high) out of bounds (200.04] for zone="M-156-STLOFFICE THERMAL ZONE", for surface="M-156-STLOFFICE_SRF_0"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/08 15:00 - 15:03
-   ** Severe  ** Temperature (high) out of bounds (200.10] for zone="M-156-STLOFFICE THERMAL ZONE", for surface="M-156-STLOFFICE_SRF_1"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/08 15:30 - 15:33
-   ** Severe  ** Temperature (high) out of bounds (200.11] for zone="M-158-BREAKROOM THERMAL ZONE", for surface="M-158-BREAKROOM_SRF_6"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/08 16:20 - 16:23
-   **   ~~~   ** Zone="M-158-BREAKROOM THERMAL ZONE", Diagnostic Details:
-   **   ~~~   ** ...Internal Heat Gain [211.717] W/m2
-   **   ~~~   ** ...Infiltration/Ventilation [0.000] m3/s
-   **   ~~~   ** ...Mixing/Cross Mixing [0.000] m3/s
-   **   ~~~   ** ...Zone is part of HVAC controlled system.
-   ** Severe  ** Temperature (high) out of bounds (200.03] for zone="M-158-BREAKROOM THERMAL ZONE", for surface="M-158-BREAKROOM_SRF_1"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/08 17:20 - 17:25
-   ** Severe  ** Temperature (high) out of bounds (200.00] for zone="M-158-BREAKROOM THERMAL ZONE", for surface="M-158-BREAKROOM_SRF_4"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/08 17:20 - 17:25
-   ** Severe  ** Temperature (high) out of bounds (200.02] for zone="M-156-STLOFFICE THERMAL ZONE", for surface="M-156-STLOFFICE_SRF_5"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/08 18:00 - 18:05
-   ** Severe  ** Temperature (high) out of bounds (200.01] for zone="M-156-STLOFFICE THERMAL ZONE", for surface="M-156-STLOFFICE_SRF_6"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/08 18:00 - 18:05
-   ** Severe  ** Temperature (high) out of bounds (200.03] for zone="M-156-STLOFFICE THERMAL ZONE", for surface="M-156-STLOFFICE_SRF_7"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/08 18:00 - 18:05
-   ** Severe  ** Temperature (high) out of bounds (200.01] for zone="M-156-STLOFFICE THERMAL ZONE", for surface="M-156-STLOFFICE_SRF_3"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/09 13:30 - 13:33
-   ** Severe  ** Temperature (high) out of bounds (200.08] for zone="M-158-BREAKROOM THERMAL ZONE", for surface="M-158-BREAKROOM_SRF_0"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/09 14:00 - 14:03
-   ** Severe  ** Temperature (high) out of bounds (200.16] for zone="M-158-BREAKROOM THERMAL ZONE", for surface="M-158-BREAKROOM_SRF_3"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/09 14:10 - 14:13
-   ** Severe  ** Temperature (high) out of bounds (200.08] for zone="M-158-BREAKROOM THERMAL ZONE", for surface="M-158-BREAKROOM_SRF_8"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/09 14:10 - 14:13
-   ** Severe  ** Temperature (high) out of bounds (200.06] for zone="M-158-BREAKROOM THERMAL ZONE", for surface="M-158-BREAKROOM_SRF_7"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/09 14:20 - 14:23
-   ** Severe  ** Temperature (high) out of bounds (200.11] for zone="M-158-BREAKROOM THERMAL ZONE", for surface="M-158-BREAKROOM_SRF_2"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/09 15:00 - 15:05
-   ** Severe  ** Temperature (high) out of bounds (200.05] for zone="M-158-BREAKROOM THERMAL ZONE", for surface="M-158-BREAKROOM_SRF_5"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/09 15:50 - 15:55
-   ** Severe  ** Temperature (high) out of bounds (200.02] for zone="M-164-MEATCOOLER THERMAL ZONE", for surface="M-164-MEATCOOLER_SRF_6"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/09 19:00 - 19:05
-   **   ~~~   ** Zone="M-164-MEATCOOLER THERMAL ZONE", Diagnostic Details:
-   **   ~~~   ** ...Internal Heat Gain [271.907] W/m2
-   **   ~~~   ** ...Infiltration/Ventilation [0.000] m3/s
-   **   ~~~   ** ...Mixing/Cross Mixing [0.000] m3/s
-   **   ~~~   ** ...Zone is not part of HVAC controlled system.
-   ** Severe  ** Temperature (high) out of bounds (200.01] for zone="M-164-MEATCOOLER THERMAL ZONE", for surface="M-164-MEATCOOLER_SRF_1"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/09 19:40 - 19:42
-   ** Severe  ** Temperature (high) out of bounds (200.00] for zone="M-164-MEATCOOLER THERMAL ZONE", for surface="M-164-MEATCOOLER_SRF_5"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/10 18:00 - 18:02
-   ** Severe  ** Temperature (low) out of bounds [-100.97] for zone="M-155-EXGOFFICE THERMAL ZONE", for surface="M-155-EXGOFFICE_SRF_0"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/10 18:10 - 18:15
-   ** Severe  ** Temperature (high) out of bounds [526.27] for zone="M-155-EXGOFFICE THERMAL ZONE", for surface="M-155-EXGOFFICE_SRF_0"
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=06/10 18:10 - 18:15
-   **  Fatal  ** Program terminates due to preceding condition.
-   ...Summary of Errors that led to program termination:
-   ..... Reference severe error count=2934848
-   ..... Last severe error=Temperature (high) out of bounds [526.27] for zone="M-155-EXGOFFICE THERMAL ZONE", for surface="M-155-EXGOFFICE_SRF_0"
->>>>>>> origin/master
    *************
    ************* ===== Recurring Surface Error Summary =====
    ************* The following surface error messages occurred.
@@ -436,7 +286,6 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 10:01,IDD_V
    ************* The following recurring error messages occurred.
    *************
    *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="PACU WEST 1 SPD DX CLG COIL" - Air volume flow rate per watt of rated total cooling capacity is out of range error continues...
-<<<<<<< HEAD
    *************  **   ~~~   **   This error occurred 305136 total times;
    *************  **   ~~~   **   during Warmup 0 times;
    *************  **   ~~~   **   during Sizing 0 times.
@@ -453,240 +302,6 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 10:01,IDD_V
    *************  **   ~~~   **   during Warmup 0 times;
    *************  **   ~~~   **   during Sizing 0 times.
    *************  **   ~~~   **   Max=1.383876E-002 [C]  Min=1.996079E-003 [C]
-=======
-   *************  **   ~~~   **   This error occurred 294150 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=8.615321E-005  Min=6.713348E-005
-   *************
-   *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="PACU EAST 1 SPD DX CLG COIL" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
-   *************  **   ~~~   **   This error occurred 48 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=1.998253  Min=-1.027072
-   *************
-   *************  ** Warning ** Inside surface heat balance convergence problem continues
-   *************  **   ~~~   **   This error occurred 1903 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=226.403149 [C]  Min=1.996559E-003 [C]
-   *************
-   *************  ** Warning ** Temperature out of range [-100. to 200.] (PsyPsatFnTemp)
-   *************  **   ~~~   **   This error occurred 10723 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=243.999214 C  Min=200.001404 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-155-EXGOFFICE THERMAL ZONE for surface=M-155-EXGOFFICE_SRF_4
-   *************  **   ~~~   **   This error occurred 133089 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=436.807305 C  Min=200.021829 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-155-EXGOFFICE THERMAL ZONE for surface=M-155-EXGOFFICE_SRF_2
-   *************  **   ~~~   **   This error occurred 124227 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=468.06421 C  Min=200.000936 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-155-EXGOFFICE THERMAL ZONE for surface=M-155-EXGOFFICE_SRF_0
-   *************  **   ~~~   **   This error occurred 111412 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=526.273959 C  Min=200.000065 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-155-EXGOFFICE THERMAL ZONE for surface=M-155-EXGOFFICE_SRF_1
-   *************  **   ~~~   **   This error occurred 122753 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=460.250147 C  Min=200.003221 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-154-EXGOFFICE THERMAL ZONE for surface=M-154-EXGOFFICE_SRF_4
-   *************  **   ~~~   **   This error occurred 136794 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=249.637617 C  Min=200.010942 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-154-EXGOFFICE THERMAL ZONE for surface=M-154-EXGOFFICE_SRF_1
-   *************  **   ~~~   **   This error occurred 130420 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=321.785656 C  Min=200.005775 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-155-EXGOFFICE THERMAL ZONE for surface=M-155-EXGOFFICE_SRF_5
-   *************  **   ~~~   **   This error occurred 135612 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=482.875911 C  Min=200.01464 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-155-EXGOFFICE THERMAL ZONE for surface=M-155-EXGOFFICE_SRF_6
-   *************  **   ~~~   **   This error occurred 135516 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=482.835728 C  Min=200.015946 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-154-EXGOFFICE THERMAL ZONE for surface=M-154-EXGOFFICE_SRF_0
-   *************  **   ~~~   **   This error occurred 132832 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=276.558634 C  Min=200.003162 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-154-EXGOFFICE THERMAL ZONE for surface=M-154-EXGOFFICE_SRF_2
-   *************  **   ~~~   **   This error occurred 125820 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=307.549268 C  Min=200.000067 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-154-EXGOFFICE THERMAL ZONE for surface=M-154-EXGOFFICE_SRF_5
-   *************  **   ~~~   **   This error occurred 115129 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=236.89126 C  Min=200.001008 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-154-EXGOFFICE THERMAL ZONE for surface=M-154-EXGOFFICE_SRF_6
-   *************  **   ~~~   **   This error occurred 115102 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=236.874 C  Min=200.073271 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-155-EXGOFFICE THERMAL ZONE for surface=M-155-EXGOFFICE_SRF_3
-   *************  **   ~~~   **   This error occurred 114723 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=433.147834 C  Min=200.042306 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-154-EXGOFFICE THERMAL ZONE for surface=M-154-EXGOFFICE_SRF_3
-   *************  **   ~~~   **   This error occurred 110329 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=232.608328 C  Min=200.008875 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-156-STLOFFICE THERMAL ZONE for surface=M-156-STLOFFICE_SRF_2
-   *************  **   ~~~   **   This error occurred 110139 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=210.041322 C  Min=200.080574 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-156-STLOFFICE THERMAL ZONE for surface=M-156-STLOFFICE_SRF_4
-   *************  **   ~~~   **   This error occurred 109473 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=208.764093 C  Min=200.059387 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-156-STLOFFICE THERMAL ZONE for surface=M-156-STLOFFICE_SRF_0
-   *************  **   ~~~   **   This error occurred 108819 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=208.234046 C  Min=200.038126 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-156-STLOFFICE THERMAL ZONE for surface=M-156-STLOFFICE_SRF_1
-   *************  **   ~~~   **   This error occurred 108495 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=207.670117 C  Min=200.095307 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-158-BREAKROOM THERMAL ZONE for surface=M-158-BREAKROOM_SRF_6
-   *************  **   ~~~   **   This error occurred 71489 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=210.481028 C  Min=200.001399 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-158-BREAKROOM THERMAL ZONE for surface=M-158-BREAKROOM_SRF_1
-   *************  **   ~~~   **   This error occurred 63507 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=209.318956 C  Min=200.023135 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-158-BREAKROOM THERMAL ZONE for surface=M-158-BREAKROOM_SRF_4
-   *************  **   ~~~   **   This error occurred 64696 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=209.213426 C  Min=200.000085 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-156-STLOFFICE THERMAL ZONE for surface=M-156-STLOFFICE_SRF_5
-   *************  **   ~~~   **   This error occurred 79110 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=205.228072 C  Min=200.000286 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-156-STLOFFICE THERMAL ZONE for surface=M-156-STLOFFICE_SRF_6
-   *************  **   ~~~   **   This error occurred 79082 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=205.202221 C  Min=200.00032 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-156-STLOFFICE THERMAL ZONE for surface=M-156-STLOFFICE_SRF_7
-   *************  **   ~~~   **   This error occurred 79129 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=205.219169 C  Min=200.001151 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-156-STLOFFICE THERMAL ZONE for surface=M-156-STLOFFICE_SRF_3
-   *************  **   ~~~   **   This error occurred 48500 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=203.340243 C  Min=200.006547 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-158-BREAKROOM THERMAL ZONE for surface=M-158-BREAKROOM_SRF_0
-   *************  **   ~~~   **   This error occurred 44473 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=206.88271 C  Min=200.002433 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-158-BREAKROOM THERMAL ZONE for surface=M-158-BREAKROOM_SRF_3
-   *************  **   ~~~   **   This error occurred 43821 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=206.784275 C  Min=200.057814 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-158-BREAKROOM THERMAL ZONE for surface=M-158-BREAKROOM_SRF_8
-   *************  **   ~~~   **   This error occurred 43820 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=206.739216 C  Min=200.009762 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-158-BREAKROOM THERMAL ZONE for surface=M-158-BREAKROOM_SRF_7
-   *************  **   ~~~   **   This error occurred 43685 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=206.655845 C  Min=200.01605 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-158-BREAKROOM THERMAL ZONE for surface=M-158-BREAKROOM_SRF_2
-   *************  **   ~~~   **   This error occurred 40210 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=205.915022 C  Min=200.01989 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-158-BREAKROOM THERMAL ZONE for surface=M-158-BREAKROOM_SRF_5
-   *************  **   ~~~   **   This error occurred 35747 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=204.932379 C  Min=200.025148 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-164-MEATCOOLER THERMAL ZONE for surface=M-164-MEATCOOLER_SRF_6
-   *************  **   ~~~   **   This error occurred 9998 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=202.385215 C  Min=200.000053 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-164-MEATCOOLER THERMAL ZONE for surface=M-164-MEATCOOLER_SRF_1
-   *************  **   ~~~   **   This error occurred 6688 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=201.402981 C  Min=200.01131 C
-   *************
-   *************  ** Severe  ** Temperature (high) out of bounds for zone=M-164-MEATCOOLER THERMAL ZONE for surface=M-164-MEATCOOLER_SRF_5
-   *************  **   ~~~   **   This error occurred 200 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=200.406981 C  Min=200.000432 C
-   *************
-   *************  ** Severe  ** Temperature (low) out of bounds for zone=M-155-EXGOFFICE THERMAL ZONE for surface=M-155-EXGOFFICE_SRF_0
-   *************  **   ~~~   **   This error occurred 1 total times;
-   *************  **   ~~~   **   during Warmup 0 times;
-   *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=-100.970478 C  Min=-100.970478 C
->>>>>>> origin/master
    *************
    *************
    ************* ===== Final Error Summary =====
@@ -694,18 +309,6 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 10:01,IDD_V
    ************* InterZone Surface Areas -- mismatch
    ************* ..Area mismatch errors happen when the interzone surface in zone A is
    ************* ..not the same size as it's companion in zone B.
-   ************* Temperature (low) out of bounds
-   ************* ..A temperature out of bounds problem can be caused by several things. The user should check:
-   ************* ..1) the weather environment (including the horizontal IR from sky)
-   ************* ..2) the level of interal gains with respect to the zone
-   ************* ..3) the thermal properties of their materials.  And other things.
-   ************* ..A common cause is a building with no or little thermal mass - all materials with Material:NoMass definitions.
-   ************* Temperature (high) out of bounds
-   ************* ..A temperature out of bounds problem can be caused by several things. The user should check:
-   ************* ..1) the weather environment (including the horizontal IR from sky)
-   ************* ..2) the level of interal gains with respect to the zone
-   ************* ..3) the thermal properties of their materials.  And other things.
-   ************* ..A common cause is a building with no or little thermal mass - all materials with Material:NoMass definitions.
    ************* Nominally Unused Constructions
    ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause
    ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm
@@ -713,8 +316,4 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 10:01,IDD_V
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
-<<<<<<< HEAD
-   ************* EnergyPlus Completed Successfully-- 307878 Warning; 7 Severe Errors; Elapsed Time=00hr 20min 58.34sec
-=======
-   ************* EnergyPlus Terminated--Fatal Error Detected. 306905 Warning; 2934848 Severe Errors; Elapsed Time=00hr 20min 24.99sec
->>>>>>> origin/master
+   ************* EnergyPlus Completed Successfully-- 307878 Warning; 8 Severe Errors; Elapsed Time=00hr 30min 42.20sec
