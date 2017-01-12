@@ -5853,30 +5853,290 @@
   OnMeter=Cooling:EnergyTransfer [J]
   OnMeter=Cooling:EnergyTransfer:Zone:M-EXGWOMEN THERMAL ZONE [J]
 
- Meters for 6886,Whole Building:Facility Total Purchased Electric Energy [J]
+ Meters for 6886,CV UNIT HEATER FAN:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 6917,PTHP CV FAN:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 6918,CV UNIT HEATER FAN 1:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 6919,OFFICE/BOH SUPPLY FAN:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 6920,PACU EAST FAN CONSTANT VOLUME:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 6921,PACU WEST FAN CONSTANT VOLUME:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 6922,L1S1 COFFEE EXHAUST FAN:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 6923,L1S1 LOADING  EXHAUST FAN:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 6924,L1S1 MENS EXHAUST FAN:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 6925,L1S1 PREPARED FOODS PREP EXHAUST FAN:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 6926,L1S1 SEAFOOD SURFACE EXHAUST FAN:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 6927,L1S1 WOMEN EXHAUST FAN:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 6928,M-151 STAIRS EXHAUST FAN:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 6929,M 161 MEN EXHAUST FAN:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 6930,M-EXGWOMEN EXHAUST FAN:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 6931,PTHP ELEC HTG BACKUP COIL:Heating Coil Air Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 6952,PTHP ELEC HTG BACKUP COIL:Heating Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 6963,UNIT HEATER GAS HTG COIL:Heating Coil Air Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 6964,UNIT HEATER GAS HTG COIL:Heating Coil Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:HVAC [J]
+  OnMeter=Heating:Gas [J]
+
+ Meters for 6995,UNIT HEATER GAS HTG COIL:Heating Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 6996,UNIT HEATER GAS HTG COIL:Heating Coil Ancillary Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:HVAC [J]
+  OnMeter=Heating:Gas [J]
+
+ Meters for 6997,UNIT HEATER GAS HTG COIL 1:Heating Coil Air Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 6998,UNIT HEATER GAS HTG COIL 1:Heating Coil Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:HVAC [J]
+  OnMeter=Heating:Gas [J]
+
+ Meters for 6999,UNIT HEATER GAS HTG COIL 1:Heating Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 7000,UNIT HEATER GAS HTG COIL 1:Heating Coil Ancillary Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:HVAC [J]
+  OnMeter=Heating:Gas [J]
+
+ Meters for 7001,COIL HEATING GAS 3:Heating Coil Air Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 7002,COIL HEATING GAS 3:Heating Coil Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:HVAC [J]
+  OnMeter=Heating:Gas [J]
+
+ Meters for 7003,COIL HEATING GAS 3:Heating Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 7004,COIL HEATING GAS 3:Heating Coil Ancillary Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:HVAC [J]
+  OnMeter=Heating:Gas [J]
+
+ Meters for 7005,PACU EAST COIL HEATING GAS:Heating Coil Air Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 7006,PACU EAST COIL HEATING GAS:Heating Coil Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:HVAC [J]
+  OnMeter=Heating:Gas [J]
+
+ Meters for 7007,PACU EAST COIL HEATING GAS:Heating Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 7008,PACU EAST COIL HEATING GAS:Heating Coil Ancillary Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:HVAC [J]
+  OnMeter=Heating:Gas [J]
+
+ Meters for 7009,PACU WEST COIL HEATING GAS:Heating Coil Air Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 7010,PACU WEST COIL HEATING GAS:Heating Coil Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:HVAC [J]
+  OnMeter=Heating:Gas [J]
+
+ Meters for 7011,PACU WEST COIL HEATING GAS:Heating Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 7012,PACU WEST COIL HEATING GAS:Heating Coil Ancillary Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:HVAC [J]
+  OnMeter=Heating:Gas [J]
+
+ Meters for 7013,PTHP 1 SPD DX CLG COIL:Cooling Coil Total Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=CoolingCoils:EnergyTransfer [J]
+
+ Meters for 7024,PTHP 1 SPD DX CLG COIL:Cooling Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Cooling:Electricity [J]
+
+ Meters for 7035,PACU WEST 1 SPD DX CLG COIL:Cooling Coil Total Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=CoolingCoils:EnergyTransfer [J]
+
+ Meters for 7036,PACU WEST 1 SPD DX CLG COIL:Cooling Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Cooling:Electricity [J]
+
+ Meters for 7037,PACU EAST 1 SPD DX CLG COIL:Cooling Coil Total Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=CoolingCoils:EnergyTransfer [J]
+
+ Meters for 7038,PACU EAST 1 SPD DX CLG COIL:Cooling Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Cooling:Electricity [J]
+
+ Meters for 7039,PTHP 1 SPD DX HTG COIL:Heating Coil Total Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 7040,PTHP 1 SPD DX HTG COIL:Heating Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 7041,PTHP 1 SPD DX HTG COIL:Heating Coil Defrost Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 7042,PTHP 1 SPD DX HTG COIL:Heating Coil Crankcase Heater Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 7043,PACU WEST 1 SPD DX CLG COIL:Cooling Coil Crankcase Heater Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Plant [J]
+  OnMeter=Cooling:Electricity [J]
+
+ Meters for 7054,PACU EAST 1 SPD DX CLG COIL:Cooling Coil Crankcase Heater Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Plant [J]
+  OnMeter=Cooling:Electricity [J]
+
+ Meters for 7055,Whole Building:Facility Total Purchased Electric Energy [J]
   OnMeter=ElectricityPurchased:Facility [J]
   OnMeter=ElectricityPurchased:Plant [J]
   OnMeter=Cogeneration:ElectricityPurchased [J]
 
- Meters for 6917,Whole Building:Facility Total Surplus Electric Energy [J]
+ Meters for 7086,Whole Building:Facility Total Surplus Electric Energy [J]
   OnMeter=ElectricitySurplusSold:Facility [J]
   OnMeter=ElectricitySurplusSold:Plant [J]
   OnMeter=Cogeneration:ElectricitySurplusSold [J]
 
- Meters for 6948,Whole Building:Facility Net Purchased Electric Energy [J]
+ Meters for 7117,Whole Building:Facility Net Purchased Electric Energy [J]
   OnMeter=ElectricityNet:Facility [J]
   OnMeter=ElectricityNet:Plant [J]
   OnMeter=Cogeneration:ElectricityNet [J]
 
- Meters for 6979,Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass [kg]
+ Meters for 7148,Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass [kg]
   OnMeter=Carbon Equivalent:Facility [kg]
   OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
 
- Meters for 7000,Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass [kg]
+ Meters for 7169,Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass [kg]
   OnMeter=Carbon Equivalent:Facility [kg]
   OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
 
- Meters for 7001,Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass [kg]
+ Meters for 7170,Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass [kg]
   OnMeter=Carbon Equivalent:Facility [kg]
   OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
 
@@ -6375,6 +6635,35 @@
   DESKTOP5:Electric Equipment Electric Energy
   LAPTOP (X4):Electric Equipment Electric Energy
   PRINTER (LG):Electric Equipment Electric Energy
+  CV UNIT HEATER FAN:Fan Electric Energy
+  PTHP CV FAN:Fan Electric Energy
+  CV UNIT HEATER FAN 1:Fan Electric Energy
+  OFFICE/BOH SUPPLY FAN:Fan Electric Energy
+  PACU EAST FAN CONSTANT VOLUME:Fan Electric Energy
+  PACU WEST FAN CONSTANT VOLUME:Fan Electric Energy
+  L1S1 COFFEE EXHAUST FAN:Fan Electric Energy
+  L1S1 LOADING  EXHAUST FAN:Fan Electric Energy
+  L1S1 MENS EXHAUST FAN:Fan Electric Energy
+  L1S1 PREPARED FOODS PREP EXHAUST FAN:Fan Electric Energy
+  L1S1 SEAFOOD SURFACE EXHAUST FAN:Fan Electric Energy
+  L1S1 WOMEN EXHAUST FAN:Fan Electric Energy
+  M-151 STAIRS EXHAUST FAN:Fan Electric Energy
+  M 161 MEN EXHAUST FAN:Fan Electric Energy
+  M-EXGWOMEN EXHAUST FAN:Fan Electric Energy
+  PTHP ELEC HTG BACKUP COIL:Heating Coil Electric Energy
+  UNIT HEATER GAS HTG COIL:Heating Coil Electric Energy
+  UNIT HEATER GAS HTG COIL 1:Heating Coil Electric Energy
+  COIL HEATING GAS 3:Heating Coil Electric Energy
+  PACU EAST COIL HEATING GAS:Heating Coil Electric Energy
+  PACU WEST COIL HEATING GAS:Heating Coil Electric Energy
+  PTHP 1 SPD DX CLG COIL:Cooling Coil Electric Energy
+  PACU WEST 1 SPD DX CLG COIL:Cooling Coil Electric Energy
+  PACU EAST 1 SPD DX CLG COIL:Cooling Coil Electric Energy
+  PTHP 1 SPD DX HTG COIL:Heating Coil Electric Energy
+  PTHP 1 SPD DX HTG COIL:Heating Coil Defrost Electric Energy
+  PTHP 1 SPD DX HTG COIL:Heating Coil Crankcase Heater Electric Energy
+  PACU WEST 1 SPD DX CLG COIL:Cooling Coil Crankcase Heater Electric Energy
+  PACU EAST 1 SPD DX CLG COIL:Cooling Coil Crankcase Heater Electric Energy
 
  For Meter=ExteriorLights:Electricity [J], ResourceType=Electricity, EndUse=ExteriorLights, contents are:
   M3-A EXTERIOR:Exterior Lights Electric Energy
@@ -9477,6 +9766,16 @@
   M-BAKERYFREEZER THERMAL ZONE:Zone Air System Sensible Cooling Energy
   M-EXGWOMEN THERMAL ZONE:Zone Air System Sensible Heating Energy
   M-EXGWOMEN THERMAL ZONE:Zone Air System Sensible Cooling Energy
+  PTHP ELEC HTG BACKUP COIL:Heating Coil Air Heating Energy
+  UNIT HEATER GAS HTG COIL:Heating Coil Air Heating Energy
+  UNIT HEATER GAS HTG COIL 1:Heating Coil Air Heating Energy
+  COIL HEATING GAS 3:Heating Coil Air Heating Energy
+  PACU EAST COIL HEATING GAS:Heating Coil Air Heating Energy
+  PACU WEST COIL HEATING GAS:Heating Coil Air Heating Energy
+  PTHP 1 SPD DX CLG COIL:Cooling Coil Total Cooling Energy
+  PACU WEST 1 SPD DX CLG COIL:Cooling Coil Total Cooling Energy
+  PACU EAST 1 SPD DX CLG COIL:Cooling Coil Total Cooling Energy
+  PTHP 1 SPD DX HTG COIL:Heating Coil Total Heating Energy
 
  For Meter=EnergyTransfer:Building [J], ResourceType=EnergyTransfer, Group=Building, contents are:
   L1-101-ENTRANCEEXIT THERMAL ZONE:Zone Air System Sensible Heating Energy
@@ -11415,6 +11714,153 @@
 
  For Meter=Cooling:EnergyTransfer:Zone:M-EXGWOMEN THERMAL ZONE [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
   M-EXGWOMEN THERMAL ZONE:Zone Air System Sensible Cooling Energy
+
+ For Meter=Electricity:HVAC [J], ResourceType=Electricity, Group=HVAC, contents are:
+  CV UNIT HEATER FAN:Fan Electric Energy
+  PTHP CV FAN:Fan Electric Energy
+  CV UNIT HEATER FAN 1:Fan Electric Energy
+  OFFICE/BOH SUPPLY FAN:Fan Electric Energy
+  PACU EAST FAN CONSTANT VOLUME:Fan Electric Energy
+  PACU WEST FAN CONSTANT VOLUME:Fan Electric Energy
+  L1S1 COFFEE EXHAUST FAN:Fan Electric Energy
+  L1S1 LOADING  EXHAUST FAN:Fan Electric Energy
+  L1S1 MENS EXHAUST FAN:Fan Electric Energy
+  L1S1 PREPARED FOODS PREP EXHAUST FAN:Fan Electric Energy
+  L1S1 SEAFOOD SURFACE EXHAUST FAN:Fan Electric Energy
+  L1S1 WOMEN EXHAUST FAN:Fan Electric Energy
+  M-151 STAIRS EXHAUST FAN:Fan Electric Energy
+  M 161 MEN EXHAUST FAN:Fan Electric Energy
+  M-EXGWOMEN EXHAUST FAN:Fan Electric Energy
+  PTHP ELEC HTG BACKUP COIL:Heating Coil Electric Energy
+  UNIT HEATER GAS HTG COIL:Heating Coil Electric Energy
+  UNIT HEATER GAS HTG COIL 1:Heating Coil Electric Energy
+  COIL HEATING GAS 3:Heating Coil Electric Energy
+  PACU EAST COIL HEATING GAS:Heating Coil Electric Energy
+  PACU WEST COIL HEATING GAS:Heating Coil Electric Energy
+  PTHP 1 SPD DX CLG COIL:Cooling Coil Electric Energy
+  PACU WEST 1 SPD DX CLG COIL:Cooling Coil Electric Energy
+  PACU EAST 1 SPD DX CLG COIL:Cooling Coil Electric Energy
+  PTHP 1 SPD DX HTG COIL:Heating Coil Electric Energy
+  PTHP 1 SPD DX HTG COIL:Heating Coil Defrost Electric Energy
+  PTHP 1 SPD DX HTG COIL:Heating Coil Crankcase Heater Electric Energy
+
+ For Meter=Fans:Electricity [J], ResourceType=Electricity, EndUse=Fans, contents are:
+  CV UNIT HEATER FAN:Fan Electric Energy
+  PTHP CV FAN:Fan Electric Energy
+  CV UNIT HEATER FAN 1:Fan Electric Energy
+  OFFICE/BOH SUPPLY FAN:Fan Electric Energy
+  PACU EAST FAN CONSTANT VOLUME:Fan Electric Energy
+  PACU WEST FAN CONSTANT VOLUME:Fan Electric Energy
+  L1S1 COFFEE EXHAUST FAN:Fan Electric Energy
+  L1S1 LOADING  EXHAUST FAN:Fan Electric Energy
+  L1S1 MENS EXHAUST FAN:Fan Electric Energy
+  L1S1 PREPARED FOODS PREP EXHAUST FAN:Fan Electric Energy
+  L1S1 SEAFOOD SURFACE EXHAUST FAN:Fan Electric Energy
+  L1S1 WOMEN EXHAUST FAN:Fan Electric Energy
+  M-151 STAIRS EXHAUST FAN:Fan Electric Energy
+  M 161 MEN EXHAUST FAN:Fan Electric Energy
+  M-EXGWOMEN EXHAUST FAN:Fan Electric Energy
+
+ For Meter=General:Fans:Electricity [J], ResourceType=Electricity, EndUse=Fans, contents are:
+  CV UNIT HEATER FAN:Fan Electric Energy
+  PTHP CV FAN:Fan Electric Energy
+  CV UNIT HEATER FAN 1:Fan Electric Energy
+  OFFICE/BOH SUPPLY FAN:Fan Electric Energy
+  PACU EAST FAN CONSTANT VOLUME:Fan Electric Energy
+  PACU WEST FAN CONSTANT VOLUME:Fan Electric Energy
+  L1S1 COFFEE EXHAUST FAN:Fan Electric Energy
+  L1S1 LOADING  EXHAUST FAN:Fan Electric Energy
+  L1S1 MENS EXHAUST FAN:Fan Electric Energy
+  L1S1 PREPARED FOODS PREP EXHAUST FAN:Fan Electric Energy
+  L1S1 SEAFOOD SURFACE EXHAUST FAN:Fan Electric Energy
+  L1S1 WOMEN EXHAUST FAN:Fan Electric Energy
+  M-151 STAIRS EXHAUST FAN:Fan Electric Energy
+  M 161 MEN EXHAUST FAN:Fan Electric Energy
+  M-EXGWOMEN EXHAUST FAN:Fan Electric Energy
+
+ For Meter=EnergyTransfer:HVAC [J], ResourceType=EnergyTransfer, Group=HVAC, contents are:
+  PTHP ELEC HTG BACKUP COIL:Heating Coil Air Heating Energy
+  UNIT HEATER GAS HTG COIL:Heating Coil Air Heating Energy
+  UNIT HEATER GAS HTG COIL 1:Heating Coil Air Heating Energy
+  COIL HEATING GAS 3:Heating Coil Air Heating Energy
+  PACU EAST COIL HEATING GAS:Heating Coil Air Heating Energy
+  PACU WEST COIL HEATING GAS:Heating Coil Air Heating Energy
+  PTHP 1 SPD DX CLG COIL:Cooling Coil Total Cooling Energy
+  PACU WEST 1 SPD DX CLG COIL:Cooling Coil Total Cooling Energy
+  PACU EAST 1 SPD DX CLG COIL:Cooling Coil Total Cooling Energy
+  PTHP 1 SPD DX HTG COIL:Heating Coil Total Heating Energy
+
+ For Meter=HeatingCoils:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=HeatingCoils, contents are:
+  PTHP ELEC HTG BACKUP COIL:Heating Coil Air Heating Energy
+  UNIT HEATER GAS HTG COIL:Heating Coil Air Heating Energy
+  UNIT HEATER GAS HTG COIL 1:Heating Coil Air Heating Energy
+  COIL HEATING GAS 3:Heating Coil Air Heating Energy
+  PACU EAST COIL HEATING GAS:Heating Coil Air Heating Energy
+  PACU WEST COIL HEATING GAS:Heating Coil Air Heating Energy
+  PTHP 1 SPD DX HTG COIL:Heating Coil Total Heating Energy
+
+ For Meter=Heating:Electricity [J], ResourceType=Electricity, EndUse=Heating, contents are:
+  PTHP ELEC HTG BACKUP COIL:Heating Coil Electric Energy
+  UNIT HEATER GAS HTG COIL:Heating Coil Electric Energy
+  UNIT HEATER GAS HTG COIL 1:Heating Coil Electric Energy
+  COIL HEATING GAS 3:Heating Coil Electric Energy
+  PACU EAST COIL HEATING GAS:Heating Coil Electric Energy
+  PACU WEST COIL HEATING GAS:Heating Coil Electric Energy
+  PTHP 1 SPD DX HTG COIL:Heating Coil Electric Energy
+  PTHP 1 SPD DX HTG COIL:Heating Coil Defrost Electric Energy
+  PTHP 1 SPD DX HTG COIL:Heating Coil Crankcase Heater Electric Energy
+
+ For Meter=Gas:Facility [J], ResourceType=Gas, contents are:
+  UNIT HEATER GAS HTG COIL:Heating Coil Gas Energy
+  UNIT HEATER GAS HTG COIL:Heating Coil Ancillary Gas Energy
+  UNIT HEATER GAS HTG COIL 1:Heating Coil Gas Energy
+  UNIT HEATER GAS HTG COIL 1:Heating Coil Ancillary Gas Energy
+  COIL HEATING GAS 3:Heating Coil Gas Energy
+  COIL HEATING GAS 3:Heating Coil Ancillary Gas Energy
+  PACU EAST COIL HEATING GAS:Heating Coil Gas Energy
+  PACU EAST COIL HEATING GAS:Heating Coil Ancillary Gas Energy
+  PACU WEST COIL HEATING GAS:Heating Coil Gas Energy
+  PACU WEST COIL HEATING GAS:Heating Coil Ancillary Gas Energy
+
+ For Meter=Gas:HVAC [J], ResourceType=Gas, Group=HVAC, contents are:
+  UNIT HEATER GAS HTG COIL:Heating Coil Gas Energy
+  UNIT HEATER GAS HTG COIL:Heating Coil Ancillary Gas Energy
+  UNIT HEATER GAS HTG COIL 1:Heating Coil Gas Energy
+  UNIT HEATER GAS HTG COIL 1:Heating Coil Ancillary Gas Energy
+  COIL HEATING GAS 3:Heating Coil Gas Energy
+  COIL HEATING GAS 3:Heating Coil Ancillary Gas Energy
+  PACU EAST COIL HEATING GAS:Heating Coil Gas Energy
+  PACU EAST COIL HEATING GAS:Heating Coil Ancillary Gas Energy
+  PACU WEST COIL HEATING GAS:Heating Coil Gas Energy
+  PACU WEST COIL HEATING GAS:Heating Coil Ancillary Gas Energy
+
+ For Meter=Heating:Gas [J], ResourceType=Gas, EndUse=Heating, contents are:
+  UNIT HEATER GAS HTG COIL:Heating Coil Gas Energy
+  UNIT HEATER GAS HTG COIL:Heating Coil Ancillary Gas Energy
+  UNIT HEATER GAS HTG COIL 1:Heating Coil Gas Energy
+  UNIT HEATER GAS HTG COIL 1:Heating Coil Ancillary Gas Energy
+  COIL HEATING GAS 3:Heating Coil Gas Energy
+  COIL HEATING GAS 3:Heating Coil Ancillary Gas Energy
+  PACU EAST COIL HEATING GAS:Heating Coil Gas Energy
+  PACU EAST COIL HEATING GAS:Heating Coil Ancillary Gas Energy
+  PACU WEST COIL HEATING GAS:Heating Coil Gas Energy
+  PACU WEST COIL HEATING GAS:Heating Coil Ancillary Gas Energy
+
+ For Meter=CoolingCoils:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=CoolingCoils, contents are:
+  PTHP 1 SPD DX CLG COIL:Cooling Coil Total Cooling Energy
+  PACU WEST 1 SPD DX CLG COIL:Cooling Coil Total Cooling Energy
+  PACU EAST 1 SPD DX CLG COIL:Cooling Coil Total Cooling Energy
+
+ For Meter=Cooling:Electricity [J], ResourceType=Electricity, EndUse=Cooling, contents are:
+  PTHP 1 SPD DX CLG COIL:Cooling Coil Electric Energy
+  PACU WEST 1 SPD DX CLG COIL:Cooling Coil Electric Energy
+  PACU EAST 1 SPD DX CLG COIL:Cooling Coil Electric Energy
+  PACU WEST 1 SPD DX CLG COIL:Cooling Coil Crankcase Heater Electric Energy
+  PACU EAST 1 SPD DX CLG COIL:Cooling Coil Crankcase Heater Electric Energy
+
+ For Meter=Electricity:Plant [J], ResourceType=Electricity, Group=Plant, contents are:
+  PACU WEST 1 SPD DX CLG COIL:Cooling Coil Crankcase Heater Electric Energy
+  PACU EAST 1 SPD DX CLG COIL:Cooling Coil Crankcase Heater Electric Energy
 
  For Meter=ElectricityPurchased:Facility [J], ResourceType=ElectricityPurchased, contents are:
   Whole Building:Facility Total Purchased Electric Energy

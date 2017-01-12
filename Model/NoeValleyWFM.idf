@@ -159,8 +159,8 @@ RunPeriod,
     Simulation,              !- Name
     1,                       !- Begin Month
     1,                       !- Begin Day of Month
-    1,                       !- End Month
-    2,                       !- End Day of Month
+    12,                      !- End Month
+    31,                      !- End Day of Month
     Thursday,                !- Day of Week for Start Day
     Yes,                     !- Use Weather File Holidays and Special Days
     Yes,                     !- Use Weather File Daylight Saving Period
@@ -168,6 +168,23 @@ RunPeriod,
     Yes,                     !- Use Weather File Rain Indicators
     Yes,                     !- Use Weather File Snow Indicators
     1;                       !- Number of Times Runperiod to be Repeated
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SITE:GROUNDTEMPERATURE:BUILDINGSURFACE ===========
+
+Site:GroundTemperature:BuildingSurface,
+    19.905,                  !- January Ground Temperature {C}
+    19.922,                  !- February Ground Temperature {C}
+    19.910,                  !- March Ground Temperature {C}
+    19.932,                  !- April Ground Temperature {C}
+    19.949,                  !- May Ground Temperature {C}
+    20.038,                  !- June Ground Temperature {C}
+    20.327,                  !- July Ground Temperature {C}
+    20.062,                  !- August Ground Temperature {C}
+    20.443,                  !- September Ground Temperature {C}
+    20.088,                  !- October Ground Temperature {C}
+    19.986,                  !- November Ground Temperature {C}
+    19.948;                  !- December Ground Temperature {C}
 
 
 !-   ===========  ALL OBJECTS IN CLASS: SCHEDULETYPELIMITS ===========
@@ -260,15 +277,13 @@ ScheduleTypeLimits,
     Control Type,            !- Name
     0,                       !- Lower Limit Value
     4,                       !- Upper Limit Value
-    DISCRETE,                !- Numeric Type
-    controlmode;             !- Unit Type
+    DISCRETE;                !- Numeric Type
 
 ScheduleTypeLimits,
     ControlMode,             !- Name
     0,                       !- Lower Limit Value
     1,                       !- Upper Limit Value
-    Discrete,                !- Numeric Type
-    controlmode;             !- Unit Type
+    Discrete;                !- Numeric Type
 
 ScheduleTypeLimits,
     DeltaTemperature,        !- Name
@@ -312,8 +327,7 @@ ScheduleTypeLimits,
     LinearPowerDensity,      !- Name
     0,                       !- Lower Limit Value
     ,                        !- Upper Limit Value
-    Continuous,              !- Numeric Type
-    linearpowerdensity;      !- Unit Type
+    Continuous;              !- Numeric Type
 
 ScheduleTypeLimits,
     On/Off,                  !- Name
@@ -354,8 +368,7 @@ ScheduleTypeLimits,
     VolumetricFlowRate,      !- Name
     0,                       !- Lower Limit Value
     ,                        !- Upper Limit Value
-    Continuous,              !- Numeric Type
-    volumetricflowrate;      !- Unit Type
+    Continuous;              !- Numeric Type
 
 
 !-   ===========  ALL OBJECTS IN CLASS: SCHEDULE:DAY:INTERVAL ===========
