@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+! Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 13:00,IDD_Version 8.6.0
+=======
 ! Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 10:01,IDD_Version 8.6.0
+>>>>>>> origin/master
 ! Output:Meter Objects (applicable to this run)
 Output:Meter,Backstock:InteriorLights:Electricity,hourly; !- [J]
 Output:Meter:Cumulative,Backstock:InteriorLights:Electricity,hourly; !- [J]

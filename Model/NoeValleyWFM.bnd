@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 13:00
+=======
 Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 10:01
+>>>>>>> origin/master
 ! This file shows details about the branches, nodes, and other
 ! elements of the flow connections.
 ! This file is intended for use in "debugging" potential problems
