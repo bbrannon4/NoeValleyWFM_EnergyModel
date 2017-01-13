@@ -1,47 +1,16 @@
-Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 14:45,IDD_Version 8.6.0
-   ************* IP: IDF Line~1 <<<<<<< HEAD
-   ** Severe  ** , or ; expected on this line
+Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 15:43,IDD_Version 8.6.0
    ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
    **   ~~~   ** ..Location object=1E1ABA
    **   ~~~   ** ..Weather File Location=San Francisco Intl Ap CA USA TMY3 WMO#=724940
    **   ~~~   ** ..due to location differences, Latitude difference=[37.62] degrees, Longitude difference=[122.40] degrees.
    **   ~~~   ** ..Time Zone difference=[8.0] hour(s), Elevation difference=[200.00] percent, [2.00] meters.
-   ** Warning ** ProcessScheduleInput: ScheduleTypeLimits="CONTROL TYPE", Unit Type="CONTROLMODE" is invalid.
-   ** Warning ** ProcessScheduleInput: ScheduleTypeLimits="CONTROLMODE", Unit Type="CONTROLMODE" is invalid.
-   ** Warning ** ProcessScheduleInput: ScheduleTypeLimits="LINEARPOWERDENSITY", Unit Type="LINEARPOWERDENSITY" is invalid.
-   ** Warning ** ProcessScheduleInput: ScheduleTypeLimits="VOLUMETRICFLOWRATE", Unit Type="VOLUMETRICFLOWRATE" is invalid.
-   ** Warning ** GetHTSurfaceData: Surfaces with interface to Ground found but no "Ground Temperatures" were input.
-   **   ~~~   ** Found first in surface=L1-101-ENTRANCEEXIT_SRF_0
-   **   ~~~   ** Defaults, constant throughout the year of (18.0) will be used.
-   ** Warning ** BuildingSurface:Detailed="L1S1-BACKSTOCK_SRF_7", Sun Exposure="SUNEXPOSED".
-   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
-   ** Warning ** BuildingSurface:Detailed="L1S1-BEERCAGE_SRF_5", Sun Exposure="SUNEXPOSED".
-   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
-   ** Warning ** BuildingSurface:Detailed="L1S1-CORRIDOR_SRF_8", Sun Exposure="SUNEXPOSED".
-   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
-   ** Warning ** BuildingSurface:Detailed="L1S1-DAIRYCOOLER_SRF_10", Sun Exposure="SUNEXPOSED".
-   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
-   ** Warning ** BuildingSurface:Detailed="L1S1-DELICOOLER_SRF_6", Sun Exposure="SUNEXPOSED".
-   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
-   ** Warning ** BuildingSurface:Detailed="L1S1-MEATSEAFOODCOOLER_SRF_5", Sun Exposure="SUNEXPOSED".
-   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
-   ** Warning ** BuildingSurface:Detailed="L1S1-MEN_SRF_5", Sun Exposure="SUNEXPOSED".
-   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
-   ** Warning ** BuildingSurface:Detailed="L1S1-PREPAREDFOODSPREP_SRF_8", Sun Exposure="SUNEXPOSED".
-   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
-   ** Warning ** BuildingSurface:Detailed="L1S1-SALESNORTH_SRF_25", Sun Exposure="SUNEXPOSED".
-   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
-   ** Warning ** BuildingSurface:Detailed="L1S1-SEAFOODSURFACE_SRF_7", Sun Exposure="SUNEXPOSED".
-   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
-   ** Warning ** BuildingSurface:Detailed="L1S1-WOMEN_SRF_5", Sun Exposure="SUNEXPOSED".
-   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
    ** Warning ** GetSurfaceData: InterZone Surface Areas do not match as expected and might not satisfy conservation of energy:
    **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual mismatches.
    ** Warning ** GetSurfaceData: There are 3 coincident/collinear vertices; These have been deleted unless the deletion would bring the number of surface sides < 3.
    **   ~~~   ** For explicit details on each problem surface, use Output:Diagnostics,DisplayExtraWarnings;
    ** Warning ** CheckUsedConstructions: There are 2 nominally unused constructions in input.
    **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
-   ** Warning ** DetermineShadowingCombinations: There are 16 surfaces which are receiving surfaces and are non-convex.
+   ** Warning ** DetermineShadowingCombinations: There are 13 surfaces which are receiving surfaces and are non-convex.
    **   ~~~   ** ...Shadowing values may be inaccurate. Check .shd report file for more surface shading details
    **   ~~~   ** ...Add Output:Diagnostics,DisplayExtraWarnings; to see individual warnings for each surface.
    ** Severe  ** DetermineShadowingCombinations: There are 7 surfaces which are casting surfaces and are non-convex.
@@ -141,46 +110,46 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 14:45,IDD_V
    ************* All Return Air Paths passed integrity testing
    ************* No node connection errors were found.
    ************* Beginning Simulation
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =4.598E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =4.726E-003 vs Max Allowed Temp Diff [C] =2.000E-003
    **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 06:20 - 06:22
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.780E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.857E-003 vs Max Allowed Temp Diff [C] =2.000E-003
    **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 08:20 - 08:22
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.368E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 18:20 - 18:22
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.294E-003 vs Max Allowed Temp Diff [C] =2.000E-003
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 18:30 - 18:32
-   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="PACU WEST 1 SPD DX CLG COIL" - Air volume flow rate per watt of rated total cooling capacity is out of range at 8.065E-005 m3/s/W.
-   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 22:00 - 22:02
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="PACU WEST 1 SPD DX CLG COIL" - Air volume flow rate per watt of rated total cooling capacity is out of range at 8.122E-005 m3/s/W.
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 15:10 - 15:20
    **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--6.713E-005]
    **   ~~~   ** Possible causes include inconsistent air flow rates in system components,
    **   ~~~   ** or variable air volume [VAV] system using incorrect coil type.
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.372E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.383E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 18:20 - 18:22
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.262E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 18:30 - 18:32
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.214E-003 vs Max Allowed Temp Diff [C] =2.000E-003
    **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 22:20 - 22:22
-   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "PACU EAST 1 SPD DX CLG COIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = -0.10 C.
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "PACU EAST 1 SPD DX CLG COIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = -3.94E-002 C.
    **   ~~~   **  ...Occurrence info = SIMULATION, 01/01 22:10 - 22:12
    **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
-   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.670 C.
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 15.783 C.
    **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
    **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =4.592E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =4.730E-003 vs Max Allowed Temp Diff [C] =2.000E-003
    **   ~~~   **  Environment=SIMULATION, at Simulation time=01/02 06:20 - 06:22
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.789E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.868E-003 vs Max Allowed Temp Diff [C] =2.000E-003
    **   ~~~   **  Environment=SIMULATION, at Simulation time=01/02 08:20 - 08:22
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.385E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.398E-003 vs Max Allowed Temp Diff [C] =2.000E-003
    **   ~~~   **  Environment=SIMULATION, at Simulation time=01/02 18:20 - 18:22
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.266E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.237E-003 vs Max Allowed Temp Diff [C] =2.000E-003
    **   ~~~   **  Environment=SIMULATION, at Simulation time=01/02 18:30 - 18:32
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.393E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.234E-003 vs Max Allowed Temp Diff [C] =2.000E-003
    **   ~~~   **  Environment=SIMULATION, at Simulation time=01/02 22:20 - 22:22
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =4.506E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =4.557E-003 vs Max Allowed Temp Diff [C] =2.000E-003
    **   ~~~   **  Environment=SIMULATION, at Simulation time=01/03 00:20 - 00:22
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.554E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.512E-003 vs Max Allowed Temp Diff [C] =2.000E-003
    **   ~~~   **  Environment=SIMULATION, at Simulation time=01/03 00:30 - 00:32
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.955E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =3.673E-003 vs Max Allowed Temp Diff [C] =2.000E-003
    **   ~~~   **  Environment=SIMULATION, at Simulation time=01/03 06:20 - 06:22
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.129E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.221E-003 vs Max Allowed Temp Diff [C] =2.000E-003
    **   ~~~   **  Environment=SIMULATION, at Simulation time=01/03 06:30 - 06:32
-   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =6.530E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =6.532E-003 vs Max Allowed Temp Diff [C] =2.000E-003
    **   ~~~   **  Environment=SIMULATION, at Simulation time=01/03 08:20 - 08:22
    ** Warning ** More than 4% of time (350.4 hours) uncomfortable in one or more zones 
    **   ~~~   ** Based on ASHRAE 55-2004 graph (Section 5.2.1.1)
@@ -256,13 +225,13 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 14:45,IDD_V
    **   ~~~   ** 5840.0 hours were uncomfortable in zone: L1-127-COFFEE THERMAL ZONE
    **   ~~~   ** 5804.3 hours were uncomfortable in zone: L2-201-EXGSTORAGE THERMAL ZONE
    **   ~~~   ** 5685.0 hours were uncomfortable in zone: M-153-CASHROOM THERMAL ZONE
-   **   ~~~   ** 5765.7 hours were uncomfortable in zone: M-154-EXGOFFICE THERMAL ZONE
+   **   ~~~   ** 5765.8 hours were uncomfortable in zone: M-154-EXGOFFICE THERMAL ZONE
    **   ~~~   ** 5765.0 hours were uncomfortable in zone: M-155-EXGOFFICE THERMAL ZONE
-   **   ~~~   ** 5767.7 hours were uncomfortable in zone: M-156-STLOFFICE THERMAL ZONE
+   **   ~~~   ** 5767.5 hours were uncomfortable in zone: M-156-STLOFFICE THERMAL ZONE
    **   ~~~   ** 5794.5 hours were uncomfortable in zone: M-157-EXGOFFICE THERMAL ZONE
    **   ~~~   ** 5840.0 hours were uncomfortable in zone: M-158-BREAKROOM THERMAL ZONE
    **   ~~~   ** 5745.0 hours were uncomfortable in zone: M-162-PREPROOM THERMAL ZONE
-   **   ~~~   ** 5630.8 hours were uncomfortable in zone: M-163-MEATPREP THERMAL ZONE
+   **   ~~~   ** 5631.0 hours were uncomfortable in zone: M-163-MEATPREP THERMAL ZONE
    **   ~~~   ** 5840.0 hours were uncomfortable in zone: M-164-MEATCOOLER THERMAL ZONE
    **   ~~~   ** 5840.0 hours were uncomfortable in zone: M-201-EXGSTORAGE THERMAL ZONE
    ************* Simulation Error Summary *************
@@ -286,22 +255,22 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 14:45,IDD_V
    ************* The following recurring error messages occurred.
    *************
    *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="PACU WEST 1 SPD DX CLG COIL" - Air volume flow rate per watt of rated total cooling capacity is out of range error continues...
-   *************  **   ~~~   **   This error occurred 305136 total times;
+   *************  **   ~~~   **   This error occurred 325752 total times;
    *************  **   ~~~   **   during Warmup 0 times;
    *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=8.651112E-005  Min=6.713157E-005
+   *************  **   ~~~   **   Max=8.652321E-005  Min=6.713210E-005
    *************
    *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="PACU EAST 1 SPD DX CLG COIL" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
-   *************  **   ~~~   **   This error occurred 97 total times;
+   *************  **   ~~~   **   This error occurred 90 total times;
    *************  **   ~~~   **   during Warmup 0 times;
    *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=1.998919  Min=-3.759922
+   *************  **   ~~~   **   Max=1.991689  Min=-3.611492
    *************
    *************  ** Warning ** Inside surface heat balance convergence problem continues
-   *************  **   ~~~   **   This error occurred 2563 total times;
+   *************  **   ~~~   **   This error occurred 2460 total times;
    *************  **   ~~~   **   during Warmup 0 times;
    *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=1.383876E-002 [C]  Min=1.996079E-003 [C]
+   *************  **   ~~~   **   Max=1.384650E-002 [C]  Min=1.997367E-003 [C]
    *************
    *************
    ************* ===== Final Error Summary =====
@@ -316,4 +285,4 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.01.12 14:45,IDD_V
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 307878 Warning; 8 Severe Errors; Elapsed Time=00hr 30min 42.20sec
+   ************* EnergyPlus Completed Successfully-- 328365 Warning; 7 Severe Errors; Elapsed Time=00hr 31min  2.90sec
