@@ -8,13 +8,12 @@
   Total Number of Fields=       58850
   Processing Input Data File -- Start
   Echo of input lines is off. May be activated by setting the environmental variable DISPLAYINPUTINAUDIT=YES
-   ** Severe  ** , or ; expected on this line
   Processing Input Data File -- Complete
   Maximum number of Alpha IDF Args=          66
   Maximum number of Numeric IDF Args=          62
-  Number of IDF "Lines"=        2332
+  Number of IDF "Lines"=        2334
   Number of Defaulted Fields=        2909
-  Number of Fields with Defaults=        9448
+  Number of Fields with Defaults=        9458
   Number of Autosized Fields=           4
   Number of Autosizable Fields =          76
   Number of Autocalculated Fields=        2558
@@ -37,9 +36,11 @@
  Getting object=SIZING:ZONE
  Getting object=SIZING:SYSTEM
  Getting object=OUTPUT:TABLE:SUMMARYREPORTS
+ Getting object=OUTPUT:VARIABLE
  Getting object=SIZINGPERIOD:DESIGNDAY
  Getting object=RUNPERIOD
  Getting object=SITE:LOCATION
+ Getting object=SITE:GROUNDTEMPERATURE:BUILDINGSURFACE
  Getting object=SCHEDULE:COMPACT
   Processing Schedule Input -- Start
  Getting object=SCHEDULETYPELIMITS
@@ -115,13 +116,13 @@
  numTableEntry=       19978
  sizeCompSizeTableEntry=         100
  numCompSizeTableEntry=          57
- NumOfRVariable=       93005
- NumOfRVariable(Total)=       93005
- NumOfRVariable(Actual)=         825
+ NumOfRVariable=       92796
+ NumOfRVariable(Total)=       92796
+ NumOfRVariable(Actual)=         963
  NumOfRVariable(Summed)=         825
  NumOfRVariable(Meter)=         825
- NumOfIVariable=        4792
- NumOfIVariable(Total)=        4792
+ NumOfIVariable=        4781
+ NumOfIVariable(Total)=        4781
  NumOfIVariable(Actual)=           0
  NumOfIVariable(Summed)=           0
  MaxRVariable=        1000
@@ -136,8 +137,8 @@
  InstMeterCacheSize=        1000
  ClippingAlgorithm=SutherlandHodgman
  MonthlyFieldSetInputCount=           0
- NumConsideredOutputVariables=           0
- MaxConsideredOutputVariables=       10000
+ NumConsideredOutputVariables=           1
+ MaxConsideredOutputVariables=           1
  numActuatorsUsed=           0
  numEMSActuatorsAvailable=           0
  maxEMSActuatorsAvailable=           0
