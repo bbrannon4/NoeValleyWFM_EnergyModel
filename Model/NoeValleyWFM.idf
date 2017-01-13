@@ -170,23 +170,6 @@ RunPeriod,
     1;                       !- Number of Times Runperiod to be Repeated
 
 
-!-   ===========  ALL OBJECTS IN CLASS: SITE:GROUNDTEMPERATURE:BUILDINGSURFACE ===========
-
-Site:GroundTemperature:BuildingSurface,
-    19.905,                  !- January Ground Temperature {C}
-    19.922,                  !- February Ground Temperature {C}
-    19.910,                  !- March Ground Temperature {C}
-    19.932,                  !- April Ground Temperature {C}
-    19.949,                  !- May Ground Temperature {C}
-    20.038,                  !- June Ground Temperature {C}
-    20.327,                  !- July Ground Temperature {C}
-    20.062,                  !- August Ground Temperature {C}
-    20.443,                  !- September Ground Temperature {C}
-    20.088,                  !- October Ground Temperature {C}
-    19.986,                  !- November Ground Temperature {C}
-    19.948;                  !- December Ground Temperature {C}
-
-
 !-   ===========  ALL OBJECTS IN CLASS: SCHEDULETYPELIMITS ===========
 
 ScheduleTypeLimits,
@@ -19643,8 +19626,8 @@ BuildingSurface:Detailed,
     L1S1-Backstock Thermal Zone,  !- Zone Name
     Adiabatic,               !- Outside Boundary Condition
     ,                        !- Outside Boundary Condition Object
-    NoSun,              !- Sun Exposure
-    NoWind,             !- Wind Exposure
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
     ,                        !- View Factor to Ground
     ,                        !- Number of Vertices
     50.688,                  !- Vertex 1 X-coordinate {m}
@@ -19787,8 +19770,8 @@ BuildingSurface:Detailed,
     L1S1-BeerCage Thermal Zone,  !- Zone Name
     Adiabatic,               !- Outside Boundary Condition
     ,                        !- Outside Boundary Condition Object
-    NoSun,              !- Sun Exposure
-    NoWind,             !- Wind Exposure
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
     ,                        !- View Factor to Ground
     ,                        !- Number of Vertices
     46.421,                  !- Vertex 1 X-coordinate {m}
@@ -20822,8 +20805,8 @@ BuildingSurface:Detailed,
     L1S1-Corridor Thermal Zone,  !- Zone Name
     Adiabatic,               !- Outside Boundary Condition
     ,                        !- Outside Boundary Condition Object
-    NoSun,              !- Sun Exposure
-    NoWind,             !- Wind Exposure
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
     ,                        !- View Factor to Ground
     ,                        !- Number of Vertices
     78.334,                  !- Vertex 1 X-coordinate {m}
@@ -20906,8 +20889,8 @@ BuildingSurface:Detailed,
     L1S1-DairyCooler Thermal Zone,  !- Zone Name
     Adiabatic,               !- Outside Boundary Condition
     ,                        !- Outside Boundary Condition Object
-    NoSun,              !- Sun Exposure
-    NoWind,             !- Wind Exposure
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
     ,                        !- View Factor to Ground
     ,                        !- Number of Vertices
     43.312,                  !- Vertex 1 X-coordinate {m}
@@ -21278,8 +21261,8 @@ BuildingSurface:Detailed,
     L1S1-DeliCooler Thermal Zone,  !- Zone Name
     Adiabatic,               !- Outside Boundary Condition
     ,                        !- Outside Boundary Condition Object
-    NoSun,              !- Sun Exposure
-    NoWind,             !- Wind Exposure
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
     ,                        !- View Factor to Ground
     ,                        !- Number of Vertices
     79.675,                  !- Vertex 1 X-coordinate {m}
@@ -21926,8 +21909,8 @@ BuildingSurface:Detailed,
     L1S1-MeatSeafoodCooler Thermal Zone,  !- Zone Name
     Adiabatic,               !- Outside Boundary Condition
     ,                        !- Outside Boundary Condition Object
-    NoSun,              !- Sun Exposure
-    NoWind,             !- Wind Exposure
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
     ,                        !- View Factor to Ground
     ,                        !- Number of Vertices
     54.529,                  !- Vertex 1 X-coordinate {m}
@@ -22070,8 +22053,8 @@ BuildingSurface:Detailed,
     L1S1-Men Thermal Zone,   !- Zone Name
     Adiabatic,               !- Outside Boundary Condition
     ,                        !- Outside Boundary Condition Object
-    NoSun,              !- Sun Exposure
-    NoWind,             !- Wind Exposure
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
     ,                        !- View Factor to Ground
     ,                        !- Number of Vertices
     76.566,                  !- Vertex 1 X-coordinate {m}
@@ -22526,8 +22509,8 @@ BuildingSurface:Detailed,
     L1S1-PreparedFoodsPrep Thermal Zone,  !- Zone Name
     Adiabatic,               !- Outside Boundary Condition
     ,                        !- Outside Boundary Condition Object
-    NoSun,              !- Sun Exposure
-    NoWind,             !- Wind Exposure
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
     ,                        !- View Factor to Ground
     ,                        !- Number of Vertices
     77.424,                  !- Vertex 1 X-coordinate {m}
@@ -24110,8 +24093,8 @@ BuildingSurface:Detailed,
     L1S1-SalesNorth Thermal Zone,  !- Zone Name
     Adiabatic,               !- Outside Boundary Condition
     ,                        !- Outside Boundary Condition Object
-    NoSun,              !- Sun Exposure
-    NoWind,             !- Wind Exposure
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
     ,                        !- View Factor to Ground
     ,                        !- Number of Vertices
     68.001,                  !- Vertex 1 X-coordinate {m}
@@ -25979,8 +25962,8 @@ BuildingSurface:Detailed,
     L1S1-SeafoodSurface Thermal Zone,  !- Zone Name
     Adiabatic,               !- Outside Boundary Condition
     ,                        !- Outside Boundary Condition Object
-    NoSun,              !- Sun Exposure
-    NoWind,             !- Wind Exposure
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
     ,                        !- View Factor to Ground
     ,                        !- Number of Vertices
     64.557,                  !- Vertex 1 X-coordinate {m}
@@ -26957,8 +26940,8 @@ BuildingSurface:Detailed,
     L1S1-Women Thermal Zone, !- Zone Name
     Adiabatic,               !- Outside Boundary Condition
     ,                        !- Outside Boundary Condition Object
-    NoSun,              !- Sun Exposure
-    NoWind,             !- Wind Exposure
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
     ,                        !- View Factor to Ground
     ,                        !- Number of Vertices
     76.566,                  !- Vertex 1 X-coordinate {m}
