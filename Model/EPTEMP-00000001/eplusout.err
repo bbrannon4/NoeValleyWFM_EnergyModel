@@ -1,0 +1,221 @@
+Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.03.20 16:07,IDD_Version 8.6.0
+   ** Warning ** BuildingSurface:Detailed="M-155-EXGOFFICE_SRF_5", Sun Exposure="SUNEXPOSED".
+   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
+   ** Warning ** GetSurfaceData: InterZone Surface Areas do not match as expected and might not satisfy conservation of energy:
+   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual mismatches.
+   ** Warning ** GetSurfaceData: There are 3 coincident/collinear vertices; These have been deleted unless the deletion would bring the number of surface sides < 3.
+   **   ~~~   ** For explicit details on each problem surface, use Output:Diagnostics,DisplayExtraWarnings;
+   ** Warning ** CheckUsedConstructions: There are 2 nominally unused constructions in input.
+   **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
+   ** Warning ** DetermineShadowingCombinations: There are 13 surfaces which are receiving surfaces and are non-convex.
+   **   ~~~   ** ...Shadowing values may be inaccurate. Check .shd report file for more surface shading details
+   **   ~~~   ** ...Add Output:Diagnostics,DisplayExtraWarnings; to see individual warnings for each surface.
+   ** Severe  ** DetermineShadowingCombinations: There are 7 surfaces which are casting surfaces and are non-convex.
+   **   ~~~   ** ...Shadowing values may be inaccurate. Check .shd report file for more surface shading details
+   **   ~~~   ** ...Add Output:Diagnostics,DisplayExtraWarnings; to see individual severes for each surface.
+   ** Warning ** Refrigeration:Case="HGT136-AE GROCERY FREEZER CASE", invalid  Defrost Energy Correction Curve Name is only applicable to Defrost Temperature Termination types.
+   **   ~~~   ** Defrost Energy Correction Curve Name will be disregarded and simulation continues.
+   ** Warning ** Refrigeration:Case="WKG130-AE MEAT/SEAFOOD COOLER CASE", invalid  Defrost Energy Correction Curve Name is only applicable to Defrost Temperature Termination types.
+   **   ~~~   ** Defrost Energy Correction Curve Name will be disregarded and simulation continues.
+   ** Warning ** Refrigeration:System="MEDIUMTEMPSYSTEM", You may wish to check the system sizing. Total nominal cooling capacity is 147844W. Condenser capacity is 87495W. Nominal compressor capacity is 87151W.
+   ** Warning ** GetRefrigerationInput: Refrigeration:WalkIn -> 1 unused refrigeration WalkIns found during input processing.
+   **   ~~~   **    Those refrigeration WalkIns are in the input file but are not connected to a 
+   **   ~~~   **    Refrigeration:CompressorRack, Refrigeration:System or Refrigeration:SecondarySystem object.
+   **   ~~~   **    These unused refrigeration WalkIns will not be simulated.
+   **   ~~~   **    Use Output:Diagnostics,DisplayUnusedObjects; to see them. 
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** GetAirPathData: AirLoopHVAC="GAS FIRED FURNACE" has no Controllers.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 3
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="L1S1-PRODUCE THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 3
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="L1S1-LOADING THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 3
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="L1S1-SALESAISLE1 THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 3
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="L1S1-SALESNORTH THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 2
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="L1S1-PREPAREDFOODS THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 2
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="L1S1-CHECKOUT THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 2
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="L1S1-PREPAREDFOODSPREP THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 2
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="L1S1-SALESSOUTH THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 2
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="L1S1-SPECIALTYSERVICE THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 1
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="M-154-EXGOFFICE THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 1
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="M-153-CASHROOM THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 1
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="M-155-EXGOFFICE THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 1
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="M-156-STLOFFICE THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 1
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="M-157-EXGOFFICE THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 1
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="M-158-BREAKROOM THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 1
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="M-162-PREPROOM THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 1
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="M-163-MEATPREP THERMAL ZONE".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ** Warning ** In zone L1S1-COFFEE THERMAL ZONE there is unbalanced exhaust air flow.
+   **   ~~~   **  During Warmup, Environment=SAN_FRANCISCO ANN HTG 99.6% CONDNS DB, at Simulation time=01/21 00:00 - 00:15
+   **   ~~~   **   Unless there is balancing infiltration / ventilation air flow, this will result in
+   **   ~~~   **   load due to induced outdoor air being neglected in the simulation.
+   ** Warning ** In zone L1S1-MEN THERMAL ZONE there is unbalanced exhaust air flow.
+   **   ~~~   **  During Warmup, Environment=SAN_FRANCISCO ANN HTG 99.6% CONDNS DB, at Simulation time=01/21 00:00 - 00:15
+   **   ~~~   **   Unless there is balancing infiltration / ventilation air flow, this will result in
+   **   ~~~   **   load due to induced outdoor air being neglected in the simulation.
+   ** Warning ** In zone L1S1-SEAFOODSURFACE THERMAL ZONE there is unbalanced exhaust air flow.
+   **   ~~~   **  During Warmup, Environment=SAN_FRANCISCO ANN HTG 99.6% CONDNS DB, at Simulation time=01/21 00:00 - 00:15
+   **   ~~~   **   Unless there is balancing infiltration / ventilation air flow, this will result in
+   **   ~~~   **   load due to induced outdoor air being neglected in the simulation.
+   ** Warning ** In zone L1S1-WOMEN THERMAL ZONE there is unbalanced exhaust air flow.
+   **   ~~~   **  During Warmup, Environment=SAN_FRANCISCO ANN HTG 99.6% CONDNS DB, at Simulation time=01/21 00:00 - 00:15
+   **   ~~~   **   Unless there is balancing infiltration / ventilation air flow, this will result in
+   **   ~~~   **   load due to induced outdoor air being neglected in the simulation.
+   ** Warning ** In zone M-151-STAIRS1 THERMAL ZONE there is unbalanced exhaust air flow.
+   **   ~~~   **  During Warmup, Environment=SAN_FRANCISCO ANN HTG 99.6% CONDNS DB, at Simulation time=01/21 00:00 - 00:15
+   **   ~~~   **   Unless there is balancing infiltration / ventilation air flow, this will result in
+   **   ~~~   **   load due to induced outdoor air being neglected in the simulation.
+   ** Warning ** In zone M-161-MEN THERMAL ZONE there is unbalanced exhaust air flow.
+   **   ~~~   **  During Warmup, Environment=SAN_FRANCISCO ANN HTG 99.6% CONDNS DB, at Simulation time=01/21 00:00 - 00:15
+   **   ~~~   **   Unless there is balancing infiltration / ventilation air flow, this will result in
+   **   ~~~   **   load due to induced outdoor air being neglected in the simulation.
+   ** Warning ** In zone M-EXGWOMEN THERMAL ZONE there is unbalanced exhaust air flow.
+   **   ~~~   **  During Warmup, Environment=SAN_FRANCISCO ANN HTG 99.6% CONDNS DB, at Simulation time=01/21 00:00 - 00:15
+   **   ~~~   **   Unless there is balancing infiltration / ventilation air flow, this will result in
+   **   ~~~   **   load due to induced outdoor air being neglected in the simulation.
+   ** Warning ** In AirLoopHVAC RTU1 - SALES RIGHT there is unbalanced exhaust air flow.
+   **   ~~~   **  During Warmup, Environment=SAN_FRANCISCO ANN HTG 99.6% CONDNS DB, at Simulation time=01/21 00:00 - 00:15
+   **   ~~~   **   Unless there is balancing infiltration / ventilation air flow, this will result in
+   **   ~~~   **   load due to induced outdoor air being neglected in the simulation.
+   ** Warning ** For zone=L1-101-SALESAISLE1 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESAISLE4 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESCIRCULATION10 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESCIRCULATIONMEATSEAFOOD THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESREFRIGERATIONAISLE1 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESREFRIGERATIONAISLE2 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESREFRIGERATIONAISLE3 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESREFRIGERATIONAISLE4 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESREFRIGERATIONAISLE5 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESREFRIGERATIONAISLE6 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESREFRIGERATIONAISLE7 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESREFRIGERATIONREACHINBEER THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESREFRIGERATIONREACHINBEVERAGES THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESREFRIGERATIONREACHINCHEES THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESREFRIGERATIONREACHINDAIRY1 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESREFRIGERATIONREACHINDAIRY2 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESREFRIGERATIONREACHINDAIRY3 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESREFRIGERATIONREACHINMEATSUBSTITUTES THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-101-SALESREFRIGERATIONREACHINPREPARED THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-104-PRODUCECOOLERS1 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-104-PRODUCECOOLERS2 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-104-PRODUCECOOLERS3 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-108-PRODUCECOOLER THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-110-PRODUCEPREP THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-111-GROCERYFREEZER THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-112-DAIRYCOOLER THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-115-MEATSEAFOODCOOLER THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-119-DELICOOLER THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-124-SPECIALTYSERVICE THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ** Warning ** For zone=L1-125-PREPAREDFOODS1 THERMAL ZONE return air cooling by refrigerated cases will be applied to the zone air.
+   **   ~~~   **   This zone has no return air or is served by an on/off HVAC system.
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =1.728E-002 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 00:15 - 00:17
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="PACU WEST 1 SPD DX CLG COIL" - Air volume flow rate per watt of rated total cooling capacity is out of range at 7.914E-005 m3/s/W.
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 00:00 - 00:15
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--6.713E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components,
+   **   ~~~   ** or variable air volume [VAV] system using incorrect coil type.
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "PACU EAST 1 SPD DX CLG COIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = -1.29 C.
+   **   ~~~   **  ...Occurrence info = SIMULATION, 01/01 00:00 - 00:02
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 12.150 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =1.788E-002 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 00:30 - 00:32
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =1.723E-002 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 00:45 - 00:47
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =1.781E-002 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 01:00 - 01:02
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =1.720E-002 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 01:15 - 01:17
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =1.775E-002 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 01:30 - 01:32
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =1.718E-002 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 01:45 - 01:47
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =1.771E-002 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 02:00 - 02:02
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =1.717E-002 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 02:15 - 02:17
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =1.767E-002 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 02:30 - 02:32
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =1.716E-002 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 02:45 - 02:47
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =1.764E-002 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 03:00 - 03:02
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =1.715E-002 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 03:15 - 03:17
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =1.762E-002 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 03:30 - 03:32
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =1.715E-002 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=SIMULATION, at Simulation time=01/01 03:45 - 03:47
+   ** Warning ** Calculated Relative Humidity out of range (PsyRhFnTd
