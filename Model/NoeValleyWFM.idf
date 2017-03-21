@@ -442,6 +442,50 @@ Schedule:Year,
 !-   ===========  ALL OBJECTS IN CLASS: SCHEDULE:COMPACT ===========
 
 Schedule:Compact,
+    Always ON,               !- Name
+    On/Off,                  !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 24:00, 1;         !- Field 4
+
+Schedule:Compact,
+    Always OFF,              !- Name
+    On/Off,                  !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 24:00, 0;         !- Field 4
+
+Schedule:Compact,
+    Mostly OFF,              !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 1:00, 0,          !- Field 4
+    Until: 2:00, 0,          !- Field 6
+    Until: 3:00, 0,          !- Field 8
+    Until: 4:00, 0,          !- Field 10
+    Until: 5:00, 0,          !- Field 12
+    Until: 6:00, 0,          !- Field 14
+    Until: 7:00, 0.01,       !- Field 16
+    Until: 8:00, 0.02,       !- Field 18
+    Until: 9:00, 0.05,       !- Field 20
+    Until: 10:00, 0.05,      !- Field 22
+    Until: 11:00, 0.02,      !- Field 24
+    Until: 12:00, 0.01,      !- Field 26
+    Until: 13:00, 0,         !- Field 28
+    Until: 14:00, 0,         !- Field 30
+    Until: 15:00, 0,         !- Field 32
+    Until: 16:00, 0,         !- Field 34
+    Until: 17:00, 0,         !- Field 36
+    Until: 18:00, 0,         !- Field 38
+    Until: 19:00, 0,         !- Field 40
+    Until: 20:00, 0,         !- Field 42
+    Until: 21:00, 0,         !- Field 44
+    Until: 22:00, 0,         !- Field 46
+    Until: 23:00, 0,         !- Field 48
+    Until: 24:00, 0;         !- Field 50
+
+Schedule:Compact,
     Lighting - Night Switched 1,  !- Name
     Fraction,                !- Schedule Type Limits Name
     Through: 12/31,          !- Field 1
@@ -622,18 +666,364 @@ Schedule:Compact,
     Until: 24:00, 1;         !- Field 50
 
 Schedule:Compact,
-    Always ON,               !- Name
-    On/Off,                  !- Schedule Type Limits Name
+    Steamer,                 !- Name
+    Fraction,                !- Schedule Type Limits Name
     Through: 12/31,          !- Field 1
     For: AllDays,            !- Field 2
-    Until: 24:00, 1;         !- Field 4
+    Until: 1:00, 0.002,      !- Field 4
+    Until: 2:00, 0.002,      !- Field 6
+    Until: 3:00, 0.002,      !- Field 8
+    Until: 4:00, 0.002,      !- Field 10
+    Until: 5:00, 0.002,      !- Field 12
+    Until: 6:00, 0.03,       !- Field 14
+    Until: 7:00, 0.162,      !- Field 16
+    Until: 8:00, 0.236,      !- Field 18
+    Until: 9:00, 0.186,      !- Field 20
+    Until: 10:00, 0.254,     !- Field 22
+    Until: 11:00, 0.152,     !- Field 24
+    Until: 12:00, 0.154,     !- Field 26
+    Until: 13:00, 0.21,      !- Field 28
+    Until: 14:00, 0.182,     !- Field 30
+    Until: 15:00, 0.204,     !- Field 32
+    Until: 16:00, 0.161,     !- Field 34
+    Until: 17:00, 0.212,     !- Field 36
+    Until: 18:00, 0.144,     !- Field 38
+    Until: 19:00, 0.131,     !- Field 40
+    Until: 20:00, 0.079,     !- Field 42
+    Until: 21:00, 0.053,     !- Field 44
+    Until: 22:00, 0.002,     !- Field 46
+    Until: 23:00, 0.002,     !- Field 48
+    Until: 24:00, 0.002;     !- Field 50
 
 Schedule:Compact,
-    Always OFF,              !- Name
-    On/Off,                  !- Schedule Type Limits Name
+    Conveyor motor 1,        !- Name
+    Fraction,                !- Schedule Type Limits Name
     Through: 12/31,          !- Field 1
     For: AllDays,            !- Field 2
-    Until: 24:00, 0;         !- Field 4
+    Until: 1:00, 0.001,      !- Field 4
+    Until: 2:00, 0.001,      !- Field 6
+    Until: 3:00, 0.001,      !- Field 8
+    Until: 4:00, 0.001,      !- Field 10
+    Until: 5:00, 0.001,      !- Field 12
+    Until: 6:00, 0.001,      !- Field 14
+    Until: 7:00, 0.003,      !- Field 16
+    Until: 8:00, 0.01,       !- Field 18
+    Until: 9:00, 0.025,      !- Field 20
+    Until: 10:00, 0.028,     !- Field 22
+    Until: 11:00, 0.047,     !- Field 24
+    Until: 12:00, 0.017,     !- Field 26
+    Until: 13:00, 0.012,     !- Field 28
+    Until: 14:00, 0.008,     !- Field 30
+    Until: 15:00, 0.023,     !- Field 32
+    Until: 16:00, 0.021,     !- Field 34
+    Until: 17:00, 0.012,     !- Field 36
+    Until: 18:00, 0.006,     !- Field 38
+    Until: 19:00, 0.003,     !- Field 40
+    Until: 20:00, 0.003,     !- Field 42
+    Until: 21:00, 0.002,     !- Field 44
+    Until: 22:00, 0.007,     !- Field 46
+    Until: 23:00, 0.004,     !- Field 48
+    Until: 24:00, 0.001;     !- Field 50
+
+Schedule:Compact,
+    Checkstand,              !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 1:00, 0.014,      !- Field 4
+    Until: 2:00, 0.014,      !- Field 6
+    Until: 3:00, 0.014,      !- Field 8
+    Until: 4:00, 0.014,      !- Field 10
+    Until: 5:00, 0.014,      !- Field 12
+    Until: 6:00, 0.014,      !- Field 14
+    Until: 7:00, 0.014,      !- Field 16
+    Until: 8:00, 0.014,      !- Field 18
+    Until: 9:00, 0.091,      !- Field 20
+    Until: 10:00, 0.299,     !- Field 22
+    Until: 11:00, 0.388,     !- Field 24
+    Until: 12:00, 0.429,     !- Field 26
+    Until: 13:00, 0.495,     !- Field 28
+    Until: 14:00, 0.499,     !- Field 30
+    Until: 15:00, 0.526,     !- Field 32
+    Until: 16:00, 0.562,     !- Field 34
+    Until: 17:00, 0.583,     !- Field 36
+    Until: 18:00, 0.714,     !- Field 38
+    Until: 19:00, 0.586,     !- Field 40
+    Until: 20:00, 0.52,      !- Field 42
+    Until: 21:00, 0.4,       !- Field 44
+    Until: 22:00, 0.014,     !- Field 46
+    Until: 23:00, 0.013,     !- Field 48
+    Until: 24:00, 0.014;     !- Field 50
+
+Schedule:Compact,
+    Register computer,       !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 1:00, 0.24,       !- Field 4
+    Until: 2:00, 0.242,      !- Field 6
+    Until: 3:00, 0.243,      !- Field 8
+    Until: 4:00, 0.244,      !- Field 10
+    Until: 5:00, 0.244,      !- Field 12
+    Until: 6:00, 0.244,      !- Field 14
+    Until: 7:00, 0.245,      !- Field 16
+    Until: 8:00, 0.246,      !- Field 18
+    Until: 9:00, 0.254,      !- Field 20
+    Until: 10:00, 0.244,     !- Field 22
+    Until: 11:00, 0.239,     !- Field 24
+    Until: 12:00, 0.237,     !- Field 26
+    Until: 13:00, 0.234,     !- Field 28
+    Until: 14:00, 0.231,     !- Field 30
+    Until: 15:00, 0.229,     !- Field 32
+    Until: 16:00, 0.228,     !- Field 34
+    Until: 17:00, 0.226,     !- Field 36
+    Until: 18:00, 0.226,     !- Field 38
+    Until: 19:00, 0.226,     !- Field 40
+    Until: 20:00, 0.226,     !- Field 42
+    Until: 21:00, 0.227,     !- Field 44
+    Until: 22:00, 0.229,     !- Field 46
+    Until: 23:00, 0.233,     !- Field 48
+    Until: 24:00, 0.237;     !- Field 50
+
+Schedule:Compact,
+    Induction heat table,    !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 1:00, 0.793,      !- Field 4
+    Until: 2:00, 0.791,      !- Field 6
+    Until: 3:00, 0.778,      !- Field 8
+    Until: 4:00, 0.769,      !- Field 10
+    Until: 5:00, 0.769,      !- Field 12
+    Until: 6:00, 0.77,       !- Field 14
+    Until: 7:00, 0.751,      !- Field 16
+    Until: 8:00, 0.74,       !- Field 18
+    Until: 9:00, 0.737,      !- Field 20
+    Until: 10:00, 0.754,     !- Field 22
+    Until: 11:00, 0.798,     !- Field 24
+    Until: 12:00, 0.813,     !- Field 26
+    Until: 13:00, 0.823,     !- Field 28
+    Until: 14:00, 0.823,     !- Field 30
+    Until: 15:00, 0.824,     !- Field 32
+    Until: 16:00, 0.824,     !- Field 34
+    Until: 17:00, 0.823,     !- Field 36
+    Until: 18:00, 0.823,     !- Field 38
+    Until: 19:00, 0.823,     !- Field 40
+    Until: 20:00, 0.831,     !- Field 42
+    Until: 21:00, 0.832,     !- Field 44
+    Until: 22:00, 0.819,     !- Field 46
+    Until: 23:00, 0.798,     !- Field 48
+    Until: 24:00, 0.796;     !- Field 50
+
+Schedule:Compact,
+    Refrigerator table top,  !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 1:00, 0.176,      !- Field 4
+    Until: 2:00, 0.172,      !- Field 6
+    Until: 3:00, 0.177,      !- Field 8
+    Until: 4:00, 0.172,      !- Field 10
+    Until: 5:00, 0.181,      !- Field 12
+    Until: 6:00, 0.176,      !- Field 14
+    Until: 7:00, 0.165,      !- Field 16
+    Until: 8:00, 0.163,      !- Field 18
+    Until: 9:00, 0.181,      !- Field 20
+    Until: 10:00, 0.178,     !- Field 22
+    Until: 11:00, 0.194,     !- Field 24
+    Until: 12:00, 0.184,     !- Field 26
+    Until: 13:00, 0.183,     !- Field 28
+    Until: 14:00, 0.188,     !- Field 30
+    Until: 15:00, 0.189,     !- Field 32
+    Until: 16:00, 0.187,     !- Field 34
+    Until: 17:00, 0.19,      !- Field 36
+    Until: 18:00, 0.184,     !- Field 38
+    Until: 19:00, 0.188,     !- Field 40
+    Until: 20:00, 0.183,     !- Field 42
+    Until: 21:00, 0.175,     !- Field 44
+    Until: 22:00, 0.178,     !- Field 46
+    Until: 23:00, 0.178,     !- Field 48
+    Until: 24:00, 0.178;     !- Field 50
+
+Schedule:Compact,
+    IG MDF Room 1,           !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 1:00, 0.232,      !- Field 4
+    Until: 2:00, 0.232,      !- Field 6
+    Until: 3:00, 0.232,      !- Field 8
+    Until: 4:00, 0.232,      !- Field 10
+    Until: 5:00, 0.231,      !- Field 12
+    Until: 6:00, 0.231,      !- Field 14
+    Until: 7:00, 0.234,      !- Field 16
+    Until: 8:00, 0.233,      !- Field 18
+    Until: 9:00, 0.241,      !- Field 20
+    Until: 10:00, 0.332,     !- Field 22
+    Until: 11:00, 0.279,     !- Field 24
+    Until: 12:00, 0.228,     !- Field 26
+    Until: 13:00, 0.228,     !- Field 28
+    Until: 14:00, 0.229,     !- Field 30
+    Until: 15:00, 0.229,     !- Field 32
+    Until: 16:00, 0.23,      !- Field 34
+    Until: 17:00, 0.229,     !- Field 36
+    Until: 18:00, 0.229,     !- Field 38
+    Until: 19:00, 0.229,     !- Field 40
+    Until: 20:00, 0.229,     !- Field 42
+    Until: 21:00, 0.231,     !- Field 44
+    Until: 22:00, 0.231,     !- Field 46
+    Until: 23:00, 0.231,     !- Field 48
+    Until: 24:00, 0.231;     !- Field 50
+
+Schedule:Compact,
+    IG MDF Room 2,           !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 1:00, 0.754,      !- Field 4
+    Until: 2:00, 0.753,      !- Field 6
+    Until: 3:00, 0.754,      !- Field 8
+    Until: 4:00, 0.754,      !- Field 10
+    Until: 5:00, 0.756,      !- Field 12
+    Until: 6:00, 0.757,      !- Field 14
+    Until: 7:00, 0.759,      !- Field 16
+    Until: 8:00, 0.759,      !- Field 18
+    Until: 9:00, 0.735,      !- Field 20
+    Until: 10:00, 0.691,     !- Field 22
+    Until: 11:00, 0.708,     !- Field 24
+    Until: 12:00, 0.745,     !- Field 26
+    Until: 13:00, 0.747,     !- Field 28
+    Until: 14:00, 0.745,     !- Field 30
+    Until: 15:00, 0.745,     !- Field 32
+    Until: 16:00, 0.745,     !- Field 34
+    Until: 17:00, 0.745,     !- Field 36
+    Until: 18:00, 0.741,     !- Field 38
+    Until: 19:00, 0.742,     !- Field 40
+    Until: 20:00, 0.741,     !- Field 42
+    Until: 21:00, 0.751,     !- Field 44
+    Until: 22:00, 0.751,     !- Field 46
+    Until: 23:00, 0.748,     !- Field 48
+    Until: 24:00, 0.751;     !- Field 50
+
+Schedule:Compact,
+    IG MDF Room 3,           !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 1:00, 0.001,      !- Field 4
+    Until: 2:00, 0.001,      !- Field 6
+    Until: 3:00, 0.001,      !- Field 8
+    Until: 4:00, 0.001,      !- Field 10
+    Until: 5:00, 0.001,      !- Field 12
+    Until: 6:00, 0.001,      !- Field 14
+    Until: 7:00, 0.001,      !- Field 16
+    Until: 8:00, 0.001,      !- Field 18
+    Until: 9:00, 0.02,       !- Field 20
+    Until: 10:00, 0.14,      !- Field 22
+    Until: 11:00, 0.07,      !- Field 24
+    Until: 12:00, 0.001,     !- Field 26
+    Until: 13:00, 0.001,     !- Field 28
+    Until: 14:00, 0.001,     !- Field 30
+    Until: 15:00, 0.001,     !- Field 32
+    Until: 16:00, 0.001,     !- Field 34
+    Until: 17:00, 0.001,     !- Field 36
+    Until: 18:00, 0.001,     !- Field 38
+    Until: 19:00, 0.001,     !- Field 40
+    Until: 20:00, 0.001,     !- Field 42
+    Until: 21:00, 0.001,     !- Field 44
+    Until: 22:00, 0.001,     !- Field 46
+    Until: 23:00, 0.001,     !- Field 48
+    Until: 24:00, 0.001;     !- Field 50
+
+Schedule:Compact,
+    IG MDF Room 4,           !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 1:00, 0.148,      !- Field 4
+    Until: 2:00, 0.149,      !- Field 6
+    Until: 3:00, 0.15,       !- Field 8
+    Until: 4:00, 0.149,      !- Field 10
+    Until: 5:00, 0.149,      !- Field 12
+    Until: 6:00, 0.148,      !- Field 14
+    Until: 7:00, 0.148,      !- Field 16
+    Until: 8:00, 0.148,      !- Field 18
+    Until: 9:00, 0.157,      !- Field 20
+    Until: 10:00, 0.266,     !- Field 22
+    Until: 11:00, 0.211,     !- Field 24
+    Until: 12:00, 0.153,     !- Field 26
+    Until: 13:00, 0.153,     !- Field 28
+    Until: 14:00, 0.153,     !- Field 30
+    Until: 15:00, 0.154,     !- Field 32
+    Until: 16:00, 0.154,     !- Field 34
+    Until: 17:00, 0.153,     !- Field 36
+    Until: 18:00, 0.154,     !- Field 38
+    Until: 19:00, 0.151,     !- Field 40
+    Until: 20:00, 0.15,      !- Field 42
+    Until: 21:00, 0.148,     !- Field 44
+    Until: 22:00, 0.148,     !- Field 46
+    Until: 23:00, 0.15,      !- Field 48
+    Until: 24:00, 0.149;     !- Field 50
+
+Schedule:Compact,
+    IG Office Mezzanine 1,   !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 1:00, 0.004,      !- Field 4
+    Until: 2:00, 0.004,      !- Field 6
+    Until: 3:00, 0.003,      !- Field 8
+    Until: 4:00, 0.003,      !- Field 10
+    Until: 5:00, 0.003,      !- Field 12
+    Until: 6:00, 0.003,      !- Field 14
+    Until: 7:00, 0.003,      !- Field 16
+    Until: 8:00, 0.009,      !- Field 18
+    Until: 9:00, 0.045,      !- Field 20
+    Until: 10:00, 0.081,     !- Field 22
+    Until: 11:00, 0.073,     !- Field 24
+    Until: 12:00, 0.05,      !- Field 26
+    Until: 13:00, 0.038,     !- Field 28
+    Until: 14:00, 0.034,     !- Field 30
+    Until: 15:00, 0.021,     !- Field 32
+    Until: 16:00, 0.013,     !- Field 34
+    Until: 17:00, 0.004,     !- Field 36
+    Until: 18:00, 0.005,     !- Field 38
+    Until: 19:00, 0.005,     !- Field 40
+    Until: 20:00, 0.005,     !- Field 42
+    Until: 21:00, 0.004,     !- Field 44
+    Until: 22:00, 0.004,     !- Field 46
+    Until: 23:00, 0.004,     !- Field 48
+    Until: 24:00, 0.004;     !- Field 50
+
+Schedule:Compact,
+    Dishwasher temperature booster,  !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 1:00, 0.001,      !- Field 4
+    Until: 2:00, 0.001,      !- Field 6
+    Until: 3:00, 0.001,      !- Field 8
+    Until: 4:00, 0.058,      !- Field 10
+    Until: 5:00, 0.181,      !- Field 12
+    Until: 6:00, 0.094,      !- Field 14
+    Until: 7:00, 0.153,      !- Field 16
+    Until: 8:00, 0.189,      !- Field 18
+    Until: 9:00, 0.291,      !- Field 20
+    Until: 10:00, 0.193,     !- Field 22
+    Until: 11:00, 0.124,     !- Field 24
+    Until: 12:00, 0.2,       !- Field 26
+    Until: 13:00, 0.154,     !- Field 28
+    Until: 14:00, 0.128,     !- Field 30
+    Until: 15:00, 0.149,     !- Field 32
+    Until: 16:00, 0.198,     !- Field 34
+    Until: 17:00, 0.139,     !- Field 36
+    Until: 18:00, 0.119,     !- Field 38
+    Until: 19:00, 0.144,     !- Field 40
+    Until: 20:00, 0.109,     !- Field 42
+    Until: 21:00, 0.139,     !- Field 44
+    Until: 22:00, 0.249,     !- Field 46
+    Until: 23:00, 0.128,     !- Field 48
+    Until: 24:00, 0.001;     !- Field 50
 
 Schedule:Compact,
     CLOTHING_SCH,            !- Name
