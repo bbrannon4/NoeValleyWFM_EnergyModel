@@ -2126,6 +2126,13 @@ Schedule:Compact,
     For: AllDays,            !- Field 2
     Until: 24:00, 1;         !- Field 4
 
+Schedule:Compact,
+    DHW_Setpoint,            !- Name
+    Temperature,             !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 24:00, 140;       !- Field 4
+
 
 !-   ===========  ALL OBJECTS IN CLASS: SCHEDULE:CONSTANT ===========
 
@@ -30307,7 +30314,7 @@ Lights,
 ElectricEquipment,
     10300A - Checkstand,     !- Name
     L1-102-Checkout1 Thermal Zone,  !- Zone or ZoneList Name
-    Checkstand,       !- Schedule Name
+    Checkstand,              !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30320,7 +30327,7 @@ ElectricEquipment,
 ElectricEquipment,
     10300B - Checkstand,     !- Name
     L1-102-Checkout2 Thermal Zone,  !- Zone or ZoneList Name
-    Checkstand,       !- Schedule Name
+    Checkstand,              !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30333,7 +30340,7 @@ ElectricEquipment,
 ElectricEquipment,
     10300C - Checkstand,     !- Name
     L1-102-Checkout3 Thermal Zone,  !- Zone or ZoneList Name
-    Checkstand,       !- Schedule Name
+    Checkstand,              !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30346,7 +30353,7 @@ ElectricEquipment,
 ElectricEquipment,
     10300D - Checkstand,     !- Name
     L1-102-Checkout4 Thermal Zone,  !- Zone or ZoneList Name
-    Checkstand,       !- Schedule Name
+    Checkstand,              !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30359,7 +30366,7 @@ ElectricEquipment,
 ElectricEquipment,
     10301 - Express Check,   !- Name
     L1-102-SelfCheckout Thermal Zone,  !- Zone or ZoneList Name
-    Checkstand,       !- Schedule Name
+    Checkstand,              !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     400,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30372,7 +30379,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600A - Register,       !- Name
     L1-102-Checkout1 Thermal Zone,  !- Zone or ZoneList Name
-    Register computer,        !- Schedule Name
+    Register computer,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     58.1,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30385,7 +30392,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600B - Register,       !- Name
     L1-102-Checkout2 Thermal Zone,  !- Zone or ZoneList Name
-    Register computer,        !- Schedule Name
+    Register computer,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     58.1,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30398,7 +30405,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600C - Register,       !- Name
     L1-102-Checkout3 Thermal Zone,  !- Zone or ZoneList Name
-    Register computer,        !- Schedule Name
+    Register computer,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     58.1,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30411,7 +30418,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600D - Register,       !- Name
     L1-102-Checkout4 Thermal Zone,  !- Zone or ZoneList Name
-    Register computer,        !- Schedule Name
+    Register computer,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     58.1,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30424,7 +30431,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600F - Register,       !- Name
     L1-102-SelfCheckout Thermal Zone,  !- Zone or ZoneList Name
-    Register computer,        !- Schedule Name
+    Register computer,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     58.1,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30437,7 +30444,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600G - Register,       !- Name
     L1-102-SelfCheckout Thermal Zone,  !- Zone or ZoneList Name
-    Register computer,        !- Schedule Name
+    Register computer,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     58.1,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30450,7 +30457,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600H - Register,       !- Name
     L1-102-SelfCheckout Thermal Zone,  !- Zone or ZoneList Name
-    Register computer,        !- Schedule Name
+    Register computer,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     58.1,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30463,7 +30470,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600J - Register,       !- Name
     L1-102-SelfCheckout Thermal Zone,  !- Zone or ZoneList Name
-    Register computer,        !- Schedule Name
+    Register computer,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     58.1,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30476,7 +30483,7 @@ ElectricEquipment,
 ElectricEquipment,
     10600K - Register,       !- Name
     L1-103-Floral Thermal Zone,  !- Zone or ZoneList Name
-    Register computer,        !- Schedule Name
+    Register computer,       !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     58.1,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30671,7 +30678,7 @@ ElectricEquipment,
 ElectricEquipment,
     9309 - Dishwasher,       !- Name
     L1-126-BakeryService Thermal Zone,  !- Zone or ZoneList Name
-    Dishwasher temperature booster,         !- Schedule Name
+    Dishwasher temperature booster,  !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1848,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30840,7 +30847,7 @@ ElectricEquipment,
 ElectricEquipment,
     5253 - Ref Table Top,    !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    Refrigerator table top,         !- Schedule Name
+    Refrigerator table top,  !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     660,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30853,7 +30860,7 @@ ElectricEquipment,
 ElectricEquipment,
     5254 - Sandwhich Table,  !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    Induction heat table,         !- Schedule Name
+    Induction heat table,    !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     1440,                    !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30892,7 +30899,7 @@ ElectricEquipment,
 ElectricEquipment,
     5284A - Convection Steamer,  !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    Steamer,         !- Schedule Name
+    Steamer,                 !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     17000,                   !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30905,7 +30912,7 @@ ElectricEquipment,
 ElectricEquipment,
     5284B - Convection Steamer,  !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    Steamer,         !- Schedule Name
+    Steamer,                 !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     17000,                   !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -30970,7 +30977,7 @@ ElectricEquipment,
 ElectricEquipment,
     5455 - Ref Table Top,    !- Name
     L1-118-PreparedFoodsPrep Thermal Zone,  !- Zone or ZoneList Name
-    Refrigerator table top,         !- Schedule Name
+    Refrigerator table top,  !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     660,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31022,7 +31029,7 @@ ElectricEquipment,
 ElectricEquipment,
     2313A - Ref Table Top,   !- Name
     L1-117-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
-    Refrigerator table top,         !- Schedule Name
+    Refrigerator table top,  !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     660,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31035,7 +31042,7 @@ ElectricEquipment,
 ElectricEquipment,
     2313B - Ref Table Top,   !- Name
     L1-117-SeafoodSurface Thermal Zone,  !- Zone or ZoneList Name
-    Refrigerator table top,         !- Schedule Name
+    Refrigerator table top,  !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     660,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31100,7 +31107,7 @@ ElectricEquipment,
 ElectricEquipment,
     3213A - Ref Table Top,   !- Name
     L1-116-MeatService Thermal Zone,  !- Zone or ZoneList Name
-    Refrigerator table top,         !- Schedule Name
+    Refrigerator table top,  !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     660,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31113,7 +31120,7 @@ ElectricEquipment,
 ElectricEquipment,
     3213B - Ref Table Top,   !- Name
     L1-116-MeatService Thermal Zone,  !- Zone or ZoneList Name
-    Refrigerator table top,         !- Schedule Name
+    Refrigerator table top,  !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     660,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31126,7 +31133,7 @@ ElectricEquipment,
 ElectricEquipment,
     3213C - Ref Table Top,   !- Name
     L1-116-MeatService Thermal Zone,  !- Zone or ZoneList Name
-    Refrigerator table top,         !- Schedule Name
+    Refrigerator table top,  !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     660,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31139,7 +31146,7 @@ ElectricEquipment,
 ElectricEquipment,
     3213D - Ref Table Top,   !- Name
     L1-116-MeatService Thermal Zone,  !- Zone or ZoneList Name
-    Refrigerator table top,         !- Schedule Name
+    Refrigerator table top,  !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     660,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31165,7 +31172,7 @@ ElectricEquipment,
 ElectricEquipment,
     3302 - Slicer,           !- Name
     L1-116-MeatService Thermal Zone,  !- Zone or ZoneList Name
-    Mostly OFF,         !- Schedule Name
+    Mostly OFF,              !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     300,                     !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31282,7 +31289,7 @@ ElectricEquipment,
 ElectricEquipment,
     12320 - Microwave,       !- Name
     M-158-BreakRoom Thermal Zone,  !- Zone or ZoneList Name
-    Mostly OFF,         !- Schedule Name
+    Mostly OFF,              !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     0,                       !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31464,7 +31471,7 @@ ElectricEquipment,
 ElectricEquipment,
     Desktop4,                !- Name
     M-154-ExgOffice Thermal Zone,  !- Zone or ZoneList Name
-    IG Office Mezzanine 1,        !- Schedule Name
+    IG Office Mezzanine 1,   !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     0,                       !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31477,7 +31484,7 @@ ElectricEquipment,
 ElectricEquipment,
     Desktop5,                !- Name
     M-155-ExgOffice Thermal Zone,  !- Zone or ZoneList Name
-    IG Office Mezzanine 1,        !- Schedule Name
+    IG Office Mezzanine 1,   !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     0,                       !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31490,7 +31497,7 @@ ElectricEquipment,
 ElectricEquipment,
     Laptop (x4),             !- Name
     M-156-StlOffice Thermal Zone,  !- Zone or ZoneList Name
-    IG Office Mezzanine 1,        !- Schedule Name
+    IG Office Mezzanine 1,   !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     0,                       !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -31503,7 +31510,7 @@ ElectricEquipment,
 ElectricEquipment,
     Printer (lg),            !- Name
     M-156-StlOffice Thermal Zone,  !- Zone or ZoneList Name
-    Mostly OFF,        !- Schedule Name
+    Mostly OFF,              !- Schedule Name
     EquipmentLevel,          !- Design Level Calculation Method
     0,                       !- Design Level {W}
     ,                        !- Watts per Zone Floor Area {W/m2}
@@ -34897,6 +34904,29 @@ Coil:Heating:DX:SingleSpeed,
     2000;                    !- Resistive Defrost Heater Capacity {W}
 
 
+!-   ===========  ALL OBJECTS IN CLASS: COIL:WATERHEATING:DESUPERHEATER ===========
+
+Coil:WaterHeating:Desuperheater,
+    Refrigeration Heat Recovery,  !- Name
+    Always ON,               !- Availability Schedule Name
+    DHW_Setpoint,            !- Setpoint Temperature Schedule Name
+    5,                       !- Dead Band Temperature Difference {deltaC}
+    0.8,                     !- Rated Heat Reclaim Recovery Efficiency
+    10,                      !- Rated Inlet Water Temperature {C}
+    10,                      !- Rated Outdoor Air Temperature {C}
+    115.555555555556,        !- Maximum Inlet Water Temperature for Heat Reclaim {C}
+    ,                        !- Heat Reclaim Efficiency Function of Temperature Curve Name
+    DHWTank_Source_Outlet,   !- Water Inlet Node Name
+    DHWTank_Source_Inlet,    !- Water Outlet Node Name
+    WaterHeater:Mixed,       !- Tank Object Type
+    DHW Tank,                !- Tank Name
+    Refrigeration:Condenser:AirCooled,  !- Heating Source Object Type
+    SharedCondenser,         !- Heating Source Name
+    8.20172599999999E-04,    !- Water Flow Rate {m3/s}
+    80,                      !- Water Pump Power {W}
+    0.2;                     !- Fraction of Pump Heat to Water
+
+
 !-   ===========  ALL OBJECTS IN CLASS: COILSYSTEM:COOLING:DX ===========
 
 CoilSystem:Cooling:DX,
@@ -35549,6 +35579,51 @@ OutdoorAir:NodeList,
 
 OutdoorAir:NodeList,
     CondenserOAnode;         !- Node or NodeList Name 1
+
+
+!-   ===========  ALL OBJECTS IN CLASS: WATERHEATER:MIXED ===========
+
+WaterHeater:Mixed,
+    DHW Tank,                !- Name
+    0.431536967999999,       !- Tank Volume {m3}
+    DHW_Setpoint,            !- Setpoint Temperature Schedule Name
+    ,                        !- Deadband Temperature Difference {deltaC}
+    ,                        !- Maximum Temperature Limit {C}
+    Cycle,                   !- Heater Control Type
+    23445.688,               !- Heater Maximum Capacity {W}
+    ,                        !- Heater Minimum Capacity {W}
+    ,                        !- Heater Ignition Minimum Flow Rate {m3/s}
+    ,                        !- Heater Ignition Delay {s}
+    Electricity,             !- Heater Fuel Type
+    1,                       !- Heater Thermal Efficiency
+    ,                        !- Part Load Factor Curve Name
+    ,                        !- Off Cycle Parasitic Fuel Consumption Rate {W}
+    ,                        !- Off Cycle Parasitic Fuel Type
+    ,                        !- Off Cycle Parasitic Heat Fraction to Tank
+    ,                        !- On Cycle Parasitic Fuel Consumption Rate {W}
+    ,                        !- On Cycle Parasitic Fuel Type
+    ,                        !- On Cycle Parasitic Heat Fraction to Tank
+    Zone,                    !- Ambient Temperature Indicator
+    ,                        !- Ambient Temperature Schedule Name
+    L2-205-RefrigerationEquipmentRoomLower Thermal Zone,  !- Ambient Temperature Zone Name
+    ,                        !- Ambient Temperature Outdoor Air Node Name
+    ,                        !- Off Cycle Loss Coefficient to Ambient Temperature {W/K}
+    1,                       !- Off Cycle Loss Fraction to Zone
+    ,                        !- On Cycle Loss Coefficient to Ambient Temperature {W/K}
+    1,                       !- On Cycle Loss Fraction to Zone
+    ,                        !- Peak Use Flow Rate {m3/s}
+    ,                        !- Use Flow Rate Fraction Schedule Name
+    ,                        !- Cold Water Supply Temperature Schedule Name
+    ,                        !- Use Side Inlet Node Name
+    ,                        !- Use Side Outlet Node Name
+    1,                       !- Use Side Effectiveness
+    DHWTank_Source_Inlet,    !- Source Side Inlet Node Name
+    DHWTank_Source_Outlet,   !- Source Side Outlet Node Name
+    1,                       !- Source Side Effectiveness
+    autosize,                !- Use Side Design Flow Rate {m3/s}
+    autosize,                !- Source Side Design Flow Rate {m3/s}
+    1.5,                     !- Indirect Water Heating Recovery Time {hr}
+    IndirectHeatPrimarySetpoint;  !- Source Side Flow Control Mode
 
 
 !-   ===========  ALL OBJECTS IN CLASS: AVAILABILITYMANAGER:SCHEDULED ===========
