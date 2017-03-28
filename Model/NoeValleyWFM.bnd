@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.03.20 16:07
+Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.03.27 21:27
 ! This file shows details about the branches, nodes, and other
 ! elements of the flow connections.
 ! This file is intended for use in "debugging" potential problems
@@ -8,7 +8,7 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.03.20 16:07
 ! schematic diagram of the HVAC system.
 ! ===============================================================
 ! #Nodes,<Number of Unique Nodes>
- #Nodes,283
+ #Nodes,285
 ! <Node>,<NodeNumber>,<Node Name>,<Node Fluid Type>,<# Times Node Referenced After Definition>
  Node,1,L1S1 CHECKOUT INLET NODE,Air,4
  Node,2,NODE 3,Air,2
@@ -293,6 +293,8 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.03.20 16:07
  Node,281,PACU EAST OA OUTLET NODE,Air,1
  Node,282,PACU WEST OH OUTLET NODE,Air,1
  Node,283,M-152 MDF ROOM DAC COOLING COIL OUTLET NODE,Air,1
+ Node,284,DHWTANK_SOURCE_OUTLET,Water,1
+ Node,285,DHWTANK_SOURCE_INLET,Water,1
 ! ===============================================================
 ! Suspicious nodes have 0 references.  It is normal for some nodes, however.
 ! Listing nodes with 0 references (culled from previous list):
@@ -555,7 +557,7 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.03.20 16:07
  Outdoor Air Node,229,CONDENSEROANODE
 ! ===============================================================
 ! <#Component Sets>,<Number of Component Sets>
- #Component Sets,87
+ #Component Sets,88
 ! <Component Set>,<Component Set Count>,<Parent Object Type>,<Parent Object Name>,<Component Type>,<Component Name>,<Inlet Node ID>,<Outlet Node ID>,<Description>
  Component Set,1,BRANCH,GAS FIRED FURNACE MAIN BRANCH,AIRLOOPHVAC:OUTDOORAIRSYSTEM,AIR LOOP HVAC OUTDOOR AIR SYSTEM 3,BOH POST-DEMAND NODE 2,BOH PRE-FURNACE NODE,Air Nodes
  Component Set,2,BRANCH,GAS FIRED FURNACE MAIN BRANCH,COIL:HEATING:FUEL,COIL HEATING GAS 3,BOH PRE-FURNACE NODE,BOH PRE-FAN NODE,Air Nodes
@@ -644,6 +646,7 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.03.20 16:07
  Component Set,85,COILSYSTEM:COOLING:DX,PACU WEST 1 SPD DX CLG COIL COILSYSTEM,COIL:COOLING:DX:SINGLESPEED,PACU WEST 1 SPD DX CLG COIL,PACU EAST PRE-COIL NODE,PACU EAST PREHEAT NODE,Air Nodes
  Component Set,86,COILSYSTEM:COOLING:DX,PACU EAST 1 SPD DX CLG COIL COILSYSTEM,COIL:COOLING:DX:SINGLESPEED,PACU EAST 1 SPD DX CLG COIL,PACU WEST PRE COIL NODE,PACU PRE-HEAT NODE,Air Nodes
  Component Set,87,ZONEHVAC:PACKAGEDTERMINALHEATPUMP,M-152 MDF ROOM DAC,COIL:HEATING:DX:SINGLESPEED,PTHP 1 SPD DX HTG COIL,M-152 MDF ROOM DAC COOLING COIL OUTLET NODE,M-152 MDF ROOM DAC HEATING COIL OUTLET NODE,Air Nodes
+ Component Set,88,COIL:WATERHEATING:DESUPERHEATER,REFRIGERATION HEAT RECOVERY,WATERHEATER:MIXED,DHW TANK,DHWTANK_SOURCE_INLET,DHWTANK_SOURCE_OUTLET,Source Side Water Nodes
 ! ===============================================================
 ! <# Plant Loops>,<Number of Plant Loops>
  #Plant Loops,0
@@ -984,7 +987,7 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.03.20 16:07
    Outdoor Air Connections,46,PACU WEST POST DEMAND NODE 2,47,PACU WEST PRE COIL NODE,RTU2 - SALES LEFT
 ! ===============================================================
 ! <#Parent Node Connections>,<Number of Parent Node Connections>
- #Parent Node Connections,107
+ #Parent Node Connections,109
 ! <Parent Node Connection>,<Node Name>,<Node ObjectType>,<Node ObjectName>,<Node ConnectionType>,<Node FluidStream>
  Parent Node Connection,BOH POST-DEMAND NODE 2,BRANCH,GAS FIRED FURNACE MAIN BRANCH,Inlet,1
  Parent Node Connection,BOH PRE-FURNACE NODE,BRANCH,GAS FIRED FURNACE MAIN BRANCH,Internal,1
@@ -1093,9 +1096,11 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.03.20 16:07
  Parent Node Connection,PACU WEST PRE COIL NODE,COILSYSTEM:COOLING:DX,PACU EAST 1 SPD DX CLG COIL COILSYSTEM,Inlet,1
  Parent Node Connection,PACU PRE-HEAT NODE,COILSYSTEM:COOLING:DX,PACU EAST 1 SPD DX CLG COIL COILSYSTEM,Outlet,1
  Parent Node Connection,PACU PRE-HEAT NODE,COILSYSTEM:COOLING:DX,PACU EAST 1 SPD DX CLG COIL COILSYSTEM,Sensor,1
+ Parent Node Connection,DHWTANK_SOURCE_OUTLET,COIL:WATERHEATING:DESUPERHEATER,REFRIGERATION HEAT RECOVERY,Inlet,1
+ Parent Node Connection,DHWTANK_SOURCE_INLET,COIL:WATERHEATING:DESUPERHEATER,REFRIGERATION HEAT RECOVERY,Outlet,1
 ! ===============================================================
 ! <#Non-Parent Node Connections>,<Number of Non-Parent Node Connections>
- #Non-Parent Node Connections,508
+ #Non-Parent Node Connections,510
 ! <Non-Parent Node Connection>,<Node Name>,<Node ObjectType>,<Node ObjectName>,<Node ConnectionType>,<Node FluidStream>
  Non-Parent Node Connection,{38762942-7D7E-4CAC-9DDD-1F779D226BEF},ZONEHVAC:EQUIPMENTCONNECTIONS,L1S1-CHECKOUT THERMAL ZONE,ZoneNode,1
  Non-Parent Node Connection,L1S1 CHECKOUT OUTLET NODE,ZONEHVAC:EQUIPMENTCONNECTIONS,L1S1-CHECKOUT THERMAL ZONE,ZoneReturn,1
@@ -1605,3 +1610,5 @@ Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.03.20 16:07
  Non-Parent Node Connection,PACU WEST OH INLET NODE,CONTROLLER:OUTDOORAIR,CONTROLLER OUTDOOR AIR 1,Actuator,1
  Non-Parent Node Connection,PACU WEST OH OUTLET NODE,CONTROLLER:OUTDOORAIR,CONTROLLER OUTDOOR AIR 1,Actuator,1
  Non-Parent Node Connection,PACU WEST POST DEMAND NODE 2,CONTROLLER:OUTDOORAIR,CONTROLLER OUTDOOR AIR 1,Sensor,1
+ Non-Parent Node Connection,DHWTANK_SOURCE_INLET,WATERHEATER:MIXED,DHW TANK,Inlet,2
+ Non-Parent Node Connection,DHWTANK_SOURCE_OUTLET,WATERHEATER:MIXED,DHW TANK,Outlet,2

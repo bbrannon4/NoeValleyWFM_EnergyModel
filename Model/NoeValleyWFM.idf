@@ -38923,11 +38923,17 @@ OutputControl:Table:Style,
     HTML;                    !- Column Separator
 
 
-!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:VARIABLE ===========
-
-Output:Variable,*,Site Outdoor Air Drybulb Temperature,Timestep;
-
 !-   ===========  ALL OBJECTS IN CLASS: OUTPUT:METER ===========
 
-Output:Meter,Electricity:Facility,Timestep;
-Output:Meter,Gas:Facility,Timestep;
+Output:Meter,Electricity:Facility,Hourly;
+Output:Meter,Electricity:HVAC,Hourly;
+Output:Meter,Refrigeration:Electricity,Hourly;
+Output:Meter,Cooling:Electricity,Hourly;
+Output:Meter,Heating:Electricity,Hourly;
+Output:Meter,InteriorEquipment:Electricity,Hourly;
+Output:Meter,InteriorLights:Electricity,Hourly;
+Output:Meter,ExteriorLights:Electricity,Hourly;
+Output:Meter,Fans:Electricity,Hourly;
+Output:Meter,Gas:Facility,Hourly;
+Output:Meter,Gas:HVAC,Hourly;
+Output:Meter,Heating:Gas,Hourly;
